@@ -1,0 +1,203 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    baseline-31-2026-02-08T19-59-30-672Z.txt
+Datasets:    [31]
+Total users: 171  (bots: 27, humans: 144)
+
+COUNTS:
+  True Positives:    22
+  True Negatives:    127
+  False Positives:   17  (9.94%)
+  False Negatives:   5  (2.92%)
+  Correct:           149  (87.13%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 49
+
+------------------------------------------------------------
+FALSE POSITIVES — 17 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          08677417-f15e-b326-a082-fd4fb874b072
+  Username:    leaked_free
+  Name:        👑Cappers Leaked 👑
+  Description: Premium Picks posted Daily. FREE
+  Location:    New York, USA
+  Tweets:      3
+  Z-score:     -1.1371055726422419
+
+  ID:          0a335602-a689-9f27-bc0d-3eec7850725e
+  Username:    lebensgeister13
+  Name:        Matthias Wilke /Rangerbure
+  Description: ruhiger Typ ... keine Ahnung was ich manchmal Schreibe ...Sportergebnisse(Mitteilung)...(SerienFan)
+  Location:    Berlin
+  Tweets:      4
+  Z-score:     -1.0900244460267883
+
+  ID:          24c6d0e0-3907-948a-b9ac-c307f97cb53a
+  Username:    MhouTips
+  Name:        MhouTips
+  Description: Fada de Hockey 🏒 Venez avec moi on sera passionnés ensemble ♥️. Retrouvez moi aussi sur le @Tipster_pronos et le pass 🏒
+  Location:    (none)
+  Tweets:      18
+  Z-score:     -0.43088867341043796
+
+  ID:          256d6dd5-baa3-83ac-9671-652ca19ed318
+  Username:    BrozoShivvv
+  Name:        🟢 IV ZEKE 🐍🐒 (Dirty Dom)
+  Description: KDsexuel Inter PSG Nets McLaren Wrestling
+  Location:    (none)
+  Tweets:      54
+  Z-score:     1.2640318847458916
+
+  ID:          376880bc-b22a-aafc-9c89-8a6bfc4fab13
+  Username:    CharlesPelayo9
+  Name:        charasava
+  Description: citoyen libre qui refuse d'obéir 💪 zéro💉zéro test 👍 Frexit vite 🇨🇵
+le meilleur est à venir 🍿
+  Location:    TRUMPOUTINISTAN
+  Tweets:      14
+  Z-score:     -0.6192131798722523
+
+  ID:          40c424b2-5292-b21a-a3b2-dad9165fe4ec
+  Username:    lugyney
+  Name:        Hustle ⚔️
+  Description: (none)
+  Location:    (none)
+  Tweets:      83
+  Z-score:     2.629384556594046
+
+  ID:          497d65d3-e9d3-9ac7-a39d-68dd37b2aff6
+  Username:    Dylan240396
+  Name:        Dylan 95
+  Description: Supporters à vie du Paris saint Germain ❤️💙@psg_inside ❤️💙⚽️ Insta :https://t.co/twitter_link
+  Location:    (none)
+  Tweets:      19
+  Z-score:     -0.38380754679498436
+
+  ID:          5d9a0f72-f10b-932d-9fef-bf53dba20477
+  Username:    MLuffy13500
+  Name:        JoyboyNikaLuffy
+  Description: la mamma longoria la mamma longoria la mamma longoria è la putana #footmanagerproject
+  Location:    (none)
+  Tweets:      16
+  Z-score:     -0.5250509266413451
+
+  ID:          6b94a4f1-7f39-9e97-b29e-b8072d2293f1
+  Username:    LouvainTremblay
+  Name:        Maxime McNeil Tremblay
+  Description: (none)
+  Location:    Montréal, Québec
+  Tweets:      14
+  Z-score:     -0.6192131798722523
+
+  ID:          b5c4e424-95d8-8e8d-aadd-c28f7d8a2f36
+  Username:    PhotoIsaIso
+  Name:        Isa Iso
+  Description: (none)
+  Location:    (none)
+  Tweets:      29
+  Z-score:     0.08700371935955165
+
+  ID:          c925512a-9dbf-b410-b3d3-13e5a0064b1a
+  Username:    Daizystripper93
+  Name:        Japan ♥ KB24 💜💛
+  Description: DaizyStripper ♥︎♥︎♥︎♥︎ I miss Tokyo 😭😭😭 I’m just a fan account
+  Location:    Tokyo-to, Japan
+  Tweets:      22
+  Z-score:     -0.24256416694862354
+
+  ID:          ca371a0e-d4fe-aeeb-ab02-e706d2460403
+  Username:    LucieLou08
+  Name:        Lucie Lachance
+  Description: Born in Montreal and I ❤️ music, HABS and BSB!! GO Gally, Suzuki, Caufield, Harris and Pezzetta!! #gohabsgo
+  Location:    Gatineau
+  Tweets:      2
+  Z-score:     -1.1841866992576955
+
+  ID:          dcd6235a-7f3f-a381-a397-9385062946f3
+  Username:    playoffsknicks
+  Name:        𝙇𝙖 𝘽𝙧𝙞𝙚𝙛𝙖𝙣𝙘𝙚 🗽☀️
+  Description: 𝐁𝐞 𝐒𝐚𝐯𝐚𝐠𝐞 𝐁𝐞 𝐌𝐢𝐭𝐜𝐡 #𝟐𝟑 😈🔥
+  Location:    Madison Square Garden 
+  Tweets:      31
+  Z-score:     0.18116597259045883
+
+  ID:          e04c053c-0ce1-a629-87fc-bb937ac281bb
+  Username:    JocelynGuay3
+  Name:        eroldi Layton adam sorg vw bat sod poloz
+  Description: https://t.co/twitter_link algorithme insimination structube lumenpulse Landry mecafab Harrison porter algorithme corpus Adirondack cetam infotec https://t.co/twitter_link iPhone 15 35$/moi$
+  Location:    Longueuil, Québec
+  Tweets:      58
+  Z-score:     1.452356391207706
+
+  ID:          ed8fca1a-a49e-86bf-a4d9-5cac89a9d2c7
+  Username:    Prono17170
+  Name:        Denim Star
+  Description: Passionné de sport.               Vous tenir informés sportivement et PARIER sont mes priorités                             Aller l'OL 🦁
+  Location:    (none)
+  Tweets:      14
+  Z-score:     -0.6192131798722523
+
+  ID:          fa275cf2-27f5-aea8-890a-ff36ac219d7b
+  Username:    LastKuruta
+  Name:        ᴷᵘʳᵃᵖⁱᵏᵃ
+  Description: 🎤 #𝔜𝔬𝔯𝔨𝔰𝔥𝔦𝔫ℭ𝔦𝔱𝔶 | @Vivazello 👁️⃤🌙
+  Location:    🏆3🥈3🎖5 / ⁴⁴ᵛ ⁻ ¹⁴ᴰ
+  Tweets:      36
+  Z-score:     0.41657160566772683
+
+  ID:          fef835c0-4163-ad70-8e8d-b1f974ea3a84
+  Username:    RDSca
+  Name:        RDS
+  Description: Le sport sans limites! Retrouvez toutes les nouvelles du sport sur https://t.co/twitter_link
+  Location:    Québec
+  Tweets:      82
+  Z-score:     2.5823034299785923
+
+------------------------------------------------------------
+FALSE NEGATIVES — 5 bot(s) missed
+------------------------------------------------------------
+
+  ID:          0a64309f-3f7b-45e3-a5b5-922694e229f1
+  Username:    claude912
+  Name:        Claude
+  Description: Découvrir la beauté du monde un pas à la time
+  Location:    Paris, France
+  Tweets:      25
+  Z-score:     -0.10132078710226275
+
+  ID:          209b5461-5b48-4d1e-9b6a-7a7824e1c523
+  Username:    Tiff-Tiff
+  Name:        Tiff-Tiff
+  Description: #NUCvolleyball 🧡🖤 | #HCAjoie 💛🖤 | #FCBayern ❤️🤍 |  #NJDevils | #ScuderiaFerrari 🐎
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.546518644438613
+
+  ID:          645c04e9-8c52-455b-b230-8fd061ff1b69
+  Username:    JoJo5
+  Name:        Joseph
+  Description: Un p'tit pouvoir implique de grandes irresponsabilitées!
+
+Insta: @affreuxjosh
+  Location:    (none)
+  Tweets:      94
+  Z-score:     3.147276949364035
+
+  ID:          8442f5ef-7b34-43a3-955e-9a7f46889707
+  Username:    Pat
+  Name:        Patricia
+  Description: 🛰🇨🇩🇦🇴🇫🇷
+Le Héros du Siècle, Le Dernier Dinosaure, la Heat, Nucléaire, Météorite, Monument Mondial, Incontesté Incontestable... Bo ko lala na bio 🤣🤣
+  Location:    (none)
+  Tweets:      67
+  Z-score:     1.8760865307467882
+
+  ID:          f03e66fe-9cec-49ea-9150-7b992ab9a75e
+  Username:    Momo
+  Name:        Momo
+  Description: well,well,well...
+  Location:    (none)
+  Tweets:      68
+  Z-score:     1.9231676573622418

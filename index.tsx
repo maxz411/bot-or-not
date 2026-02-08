@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import { render, Box, Text, useInput, useApp } from "ink";
 import { chat, generate, stream } from "./llm.ts";
 import { getPostsByUser, getUserMetadata, type Post, type User } from "./data.ts";
-import { runDetector, MODEL_OPENAI, MODEL_ANTHROPIC } from "./detector.ts";
+import { runDetector as runBaseline, MODEL_OPENAI, MODEL_ANTHROPIC } from "./detectors/baseline.ts";
+import { runDetector as runBatching } from "./detectors/batching.ts";
+import { runDetector as runPRG, MODEL_STAGE1 as PRG_STAGE1, MODEL_STAGE2 as PRG_STAGE2 } from "./detectors/politics-ragebait-grammar.ts";
+import { runDetector as runPRGBatched } from "./detectors/politics-ragebait-grammar-batched.ts";
 import { Glob } from "bun";
 
 // ── Helpers ──────────────────────────────────────────────────────────
@@ -21,6 +24,10 @@ type MenuItem = { name: string; needsInput?: boolean; action?: string };
 const MENU: MenuItem[] = [
   { name: `Baseline OpenAI (${MODEL_OPENAI})`, action: "detector-openai" },
   { name: `Baseline Anthropic (${MODEL_ANTHROPIC})`, action: "detector-anthropic" },
+  { name: `Batching OpenAI (${MODEL_OPENAI})`, action: "detector-batching-openai" },
+  { name: `Batching Anthropic (${MODEL_ANTHROPIC})`, action: "detector-batching-anthropic" },
+  { name: `PRG 2-stage (${PRG_STAGE1} → ${PRG_STAGE2})`, action: "detector-prg" },
+  { name: `PRG 2-stage Batched (${PRG_STAGE1} → ${PRG_STAGE2})`, action: "detector-prg-batched" },
   { name: "API: OpenAI SDK — chat()" },
   { name: "API: Vercel AI  — generate()" },
   { name: "API: Vercel AI  — stream()" },
@@ -50,6 +57,7 @@ function App() {
   // Detector state
   const [progress, setProgress] = useState({ done: 0, total: 0 });
   const [detectorModel, setDetectorModel] = useState(MODEL_OPENAI);
+  const [detectorFn, setDetectorFn] = useState<{ fn: typeof runBaseline }>({ fn: runBaseline });
 
   // ── Run an action (possibly with user input) ──
 
@@ -61,18 +69,18 @@ function App() {
     try {
       let lines: string[] = [];
 
-      if (idx === 2) {
+      if (idx === 6) {
         const res = await chat("Say hi in 5 words.");
         lines = [`Response: ${res}`];
-      } else if (idx === 3) {
+      } else if (idx === 7) {
         const res = await generate("Say hi in 5 words.");
         lines = [`Response: ${res}`];
-      } else if (idx === 4) {
+      } else if (idx === 8) {
         const result = await stream("Say hi in 5 words.");
         let text = "";
         for await (const chunk of result.textStream) text += chunk;
         lines = [`Response: ${text}`];
-      } else if (idx === 5 && userInput) {
+      } else if (idx === 9 && userInput) {
         const paths = await allDatasetPaths();
         const posts: Post[] = await getPostsByUser(userInput, paths);
         if (posts.length === 0) {
@@ -86,7 +94,7 @@ function App() {
             ),
           ];
         }
-      } else if (idx === 6 && userInput) {
+      } else if (idx === 10 && userInput) {
         const paths = await allDatasetPaths();
         const user: User | undefined = await getUserMetadata(userInput, paths);
         if (!user) {
@@ -125,7 +133,7 @@ function App() {
     setOutput([]);
 
     try {
-      const result = await runDetector(selectedIds, detectorModel, (done, total) => {
+      const result = await detectorFn.fn(selectedIds, detectorModel, (done, total) => {
         setProgress({ done, total });
       });
 
@@ -181,11 +189,37 @@ function App() {
         const item = MENU[cursor]!;
         if (item.action === "detector-openai") {
           setDetectorModel(MODEL_OPENAI);
+          setDetectorFn({ fn: runBaseline });
           setDsCursor(0);
           setDsChecked(AVAILABLE_DATASETS.map(() => false));
           setScreen("dataset-select");
         } else if (item.action === "detector-anthropic") {
           setDetectorModel(MODEL_ANTHROPIC);
+          setDetectorFn({ fn: runBaseline });
+          setDsCursor(0);
+          setDsChecked(AVAILABLE_DATASETS.map(() => false));
+          setScreen("dataset-select");
+        } else if (item.action === "detector-batching-openai") {
+          setDetectorModel(MODEL_OPENAI);
+          setDetectorFn({ fn: runBatching });
+          setDsCursor(0);
+          setDsChecked(AVAILABLE_DATASETS.map(() => false));
+          setScreen("dataset-select");
+        } else if (item.action === "detector-batching-anthropic") {
+          setDetectorModel(MODEL_ANTHROPIC);
+          setDetectorFn({ fn: runBatching });
+          setDsCursor(0);
+          setDsChecked(AVAILABLE_DATASETS.map(() => false));
+          setScreen("dataset-select");
+        } else if (item.action === "detector-prg") {
+          setDetectorModel(`${PRG_STAGE1} → ${PRG_STAGE2}`);
+          setDetectorFn({ fn: runPRG });
+          setDsCursor(0);
+          setDsChecked(AVAILABLE_DATASETS.map(() => false));
+          setScreen("dataset-select");
+        } else if (item.action === "detector-prg-batched") {
+          setDetectorModel(`${PRG_STAGE1} → ${PRG_STAGE2} (batched)`);
+          setDetectorFn({ fn: runPRGBatched });
           setDsCursor(0);
           setDsChecked(AVAILABLE_DATASETS.map(() => false));
           setScreen("dataset-select");
@@ -284,7 +318,7 @@ function App() {
     const bar = "█".repeat(filled) + "░".repeat(barWidth - filled);
     return (
       <Box flexDirection="column" padding={1}>
-        <Text bold color="cyan">Running Baseline Detector</Text>
+        <Text bold color="cyan">Running Detector</Text>
         <Text dimColor>Model: {detectorModel}</Text>
         <Box marginTop={1} gap={1}>
           <Text color="yellow">{bar}</Text>

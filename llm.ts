@@ -21,6 +21,16 @@ const anthropicDirect = new Anthropic({ apiKey: Bun.env.ANTHROPIC_API_KEY });
 const openaiProvider = createOpenAI({ apiKey: Bun.env.OPENAI_API_KEY });
 const anthropicProvider = createAnthropic({ apiKey: Bun.env.ANTHROPIC_API_KEY });
 
+// Groq (OpenAI-compatible)
+const groqClient = new OpenAI({
+  baseURL: "https://api.groq.com/openai/v1",
+  apiKey: Bun.env.GROQ_API_KEY,
+});
+const groqProvider = createOpenAI({
+  baseURL: "https://api.groq.com/openai/v1",
+  apiKey: Bun.env.GROQ_API_KEY,
+});
+
 // OpenRouter fallback
 const openrouterClient = new OpenAI({
   baseURL: "https://openrouter.ai/api/v1",
@@ -45,7 +55,7 @@ async function withRetry<T>(fn: () => Promise<T>): Promise<T> {
       if (status === 429 && attempt < MAX_RETRIES - 1) {
         // Parse retry-after hint from error message if available
         const match = String(e.message).match(/try again in (\d+)/i);
-        const waitMs = match ? Math.max(parseInt(match[1]!, 10), 100) : 1000 * (attempt + 1);
+        const waitMs = match ? Math.max(parseInt(match[1]!, 10), 2000) : 5000 * (attempt + 1);
         await Bun.sleep(waitMs);
         continue;
       }
@@ -68,6 +78,9 @@ function routeOpenAI(model: string): { client: OpenAI; model: string; isDirect: 
   if (model.startsWith("openai/")) {
     return { client: openaiDirect, model: stripPrefix(model), isDirect: true };
   }
+  if (model.startsWith("groq/")) {
+    return { client: groqClient, model: stripPrefix(model), isDirect: false };
+  }
   // anthropic models don't go through OpenAI SDK
   return { client: openrouterClient, model, isDirect: false };
 }
@@ -80,6 +93,9 @@ function routeVercel(model: string): LanguageModelV3 {
   if (model.startsWith("anthropic/") || model.startsWith("claude-")) {
     const name = model.startsWith("anthropic/") ? stripPrefix(model) : model;
     return anthropicProvider(name) as LanguageModelV3;
+  }
+  if (model.startsWith("groq/")) {
+    return groqProvider(stripPrefix(model)) as LanguageModelV3;
   }
   return openrouterProvider(model) as LanguageModelV3;
 }
