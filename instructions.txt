@@ -1,0 +1,48 @@
+Welcome to the Bot or Not Challenge!
+
+
+
+During this Challenge, you will be competing with the other teams to make the best bot accounts detector. For the three prizes, we have one for the best detector in English, the best detector in French and the best detector for both languages.
+
+
+
+Attached to this email, you will find 2 practice datasets in English and 2 practice datasets in French.
+
+
+
+For each dataset, you have the following files:
+
+dataset.posts&users.json, which contains:
+At the start, a few metadata about the dataset:
+The id of the dataset.
+It’s language in the "lang" field.
+The start time of the window during which we collected the posts.
+The end time of the window during which we collected the posts.
+The total amount of users and posts in the dataset.
+The different topics used to find the first posts (more details on posts collection here https://mchacks.ca/bot_or_not_challenge.pdf.
+The average amount of posts that a user is making.
+The average z-score of a user.
+The dataset.tweets.json file is located in the "posts" field of dataset.post&users.json. It contains all the feed of posts of the users.
+The dataset.users.json is located in the "users" field of dataset.post&users.json. It contains the list of all the users and information related to them.
+dataset.bots.txt contains the list of all the bots user IDs that are present in the dataset. You can use this to evaluate your detector. Also, note that your output text file should look exactly like this one.
+
+
+Note that the number added before .json represents which files go together. So all the files ending with 30 go together, all the files ending with 31 go together and so on.
+
+
+
+To have more information on the competition, the datasets or the submission file, you can refer to: https://mchacks.ca/bot_or_not_challenge.pdf.
+
+
+
+If you have any questions, don’t hesitate to send them to this email address!
+
+
+
+Happy coding, and may the best detectors win!
+
+
+
+Émilie Ducharme
+
+Challenge Co-Organizer

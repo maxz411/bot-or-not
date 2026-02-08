@@ -1,0 +1,23 @@
+{
+  "name": "bot-or-not",
+  "module": "index.tsx",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.38",
+    "@ai-sdk/openai": "^3.0.26",
+    "@anthropic-ai/sdk": "^0.74.0",
+    "@types/react": "^19.2.13",
+    "ai": "^6.0.77",
+    "ink": "^6.6.0",
+    "openai": "^6.18.0",
+    "react": "^19.2.4",
+    "zod": "^4.3.6"
+  }
+}
