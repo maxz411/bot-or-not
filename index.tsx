@@ -12,6 +12,8 @@ import { runDetector as runRecursive, RECURSION_DEPTH, TOTAL_ROUNDS, type Recurs
 import { runDetector as runInvRecursive, RECURSION_DEPTH as INV_RECURSION_DEPTH, TOTAL_ROUNDS as INV_TOTAL_ROUNDS } from "./detectors/inv_recursive.ts";
 import { runDetector as runV2 } from "./detectors/v2.ts";
 import { runDetector as runV3 } from "./detectors/v3.ts";
+import { runDetector as runV4 } from "./detectors/v4.ts";
+import { runDetector as runStatsBased } from "./detectors/stats-based.ts";
 import { runDetector as runRecursiveV2, RECURSION_DEPTH as RV2_RECURSION_DEPTH, TOTAL_ROUNDS as RV2_TOTAL_ROUNDS } from "./detectors/recursive-v2.ts";
 import { listIncompleteCaches, type IncompleteCache } from "./detectors/cache.ts";
 import { clearCache } from "./llm-cache.ts";
@@ -23,6 +25,7 @@ type RunDetectorFn = (datasetIds: number[], model: string, onProgress?: (done: n
 
 function getDetectorFn(detector: string): RunDetectorFn {
   switch (detector) {
+    case "v4": return runV4 as RunDetectorFn;
     case "v3": return runV3 as RunDetectorFn;
     case "v2": return runV2 as RunDetectorFn;
     case "recursive-v2": return runRecursiveV2 as RunDetectorFn;
@@ -32,6 +35,7 @@ function getDetectorFn(detector: string): RunDetectorFn {
     case "prg-batched": return runPRGBatched as RunDetectorFn;
     case "recursive": return runRecursive as RunDetectorFn;
     case "inv_recursive": return runInvRecursive as RunDetectorFn;
+    case "stats-based": return runStatsBased as RunDetectorFn;
     default: return runBaseline as RunDetectorFn;
   }
 }
@@ -118,7 +122,7 @@ async function getHighScores(limit = 10): Promise<HighScoreEntry[]> {
 
 // ── Menu data ────────────────────────────────────────────────────────
 
-type DetectorType = "baseline" | "prg" | "recursive" | "inv_recursive" | "v2" | "v3" | "recursive-v2";
+type DetectorType = "baseline" | "prg" | "recursive" | "inv_recursive" | "v2" | "v3" | "v4" | "recursive-v2" | "stats-based";
 
 type DetectorInfo = {
   name: string;
@@ -129,6 +133,7 @@ type DetectorInfo = {
 };
 
 const DETECTORS: DetectorInfo[] = [
+  { name: "V4", type: "v4", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "V3", type: "v3", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "V2", type: "v2", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "Baseline", type: "baseline", hasBatched: true, hasModelChoice: true, fixedModelDisplay: "" },
@@ -136,6 +141,7 @@ const DETECTORS: DetectorInfo[] = [
   { name: "Recursive", type: "recursive", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "Recursive V2", type: "recursive-v2", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "Inv Recursive", type: "inv_recursive", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
+  { name: "Stats-Based", type: "stats-based", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
 ];
 
 const MODEL_CHOICES = [
@@ -155,6 +161,7 @@ const MODEL_CHOICES = [
 type ListItem = { name: string; action: string; dimDetail?: string };
 
 const MAIN_MENU: ListItem[] = [
+  { name: "V4", action: "det-v4", dimDetail: "v3 + scoring incentive" },
   { name: "V3", action: "det-v3", dimDetail: "minimal prompt" },
   { name: "V2", action: "det-v2", dimDetail: "features + CoT + few-shot" },
   { name: "Baseline", action: "det-baseline", dimDetail: "single-prompt classification" },
@@ -162,8 +169,11 @@ const MAIN_MENU: ListItem[] = [
   { name: "Recursive", action: "det-recursive", dimDetail: "iteratively filter humans" },
   { name: "Recursive V2", action: "det-recursive-v2", dimDetail: "recursive + v3 prompt" },
   { name: "Inv Recursive", action: "det-inv_recursive", dimDetail: "iteratively filter bots" },
+  { name: "Stats-Based", action: "det-stats-based", dimDetail: "two-phase FP correction" },
   { name: "High Scores", action: "high-scores", dimDetail: "top 10 runs by score" },
   { name: "Regenerate results", action: "regen-results", dimDetail: "re-analyze all run files" },
+  { name: "Get user posts", action: "data-posts", dimDetail: "lookup by ID or username" },
+  { name: "Get user metadata", action: "data-metadata", dimDetail: "lookup by ID or username" },
   { name: "API Tests", action: "api-tests", dimDetail: "chat, generate, stream" },
   { name: "Resume run", action: "resume" },
   { name: "Clear LLM cache", action: "clear-cache" },
@@ -251,6 +261,7 @@ function filterSearch(query: string): SearchItem[] {
 
 function resolveDetectorFn(type: DetectorType, batched: boolean): any {
   switch (type) {
+    case "v4": return runV4;
     case "v3": return runV3;
     case "v2": return runV2;
     case "recursive-v2": return runRecursiveV2;
@@ -258,6 +269,7 @@ function resolveDetectorFn(type: DetectorType, batched: boolean): any {
     case "prg": return batched ? runPRGBatched : runPRG;
     case "recursive": return runRecursive;
     case "inv_recursive": return runInvRecursive;
+    case "stats-based": return runStatsBased;
   }
 }
 
@@ -665,6 +677,10 @@ function App() {
           executeHighScores();
         } else if (item.action === "regen-results") {
           executeRegenResults();
+        } else if (item.action === "data-posts") {
+          showInput("Enter user ID or username", (val) => executeDataPosts(val));
+        } else if (item.action === "data-metadata") {
+          showInput("Enter user ID or username", (val) => executeDataMetadata(val));
         } else if (item.action === "api-tests") {
           setCursor(0);
           setScreen("api-tests");

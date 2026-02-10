@@ -1,0 +1,292 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    stats-based-30-2026-02-10T01-32-52-940Z.txt
+Detector:    stats-based
+Model:       google/gemini-3-flash-preview
+Batch size:  1
+Datasets:    [30]
+Total users: 275  (bots: 66, humans: 209)
+
+COUNTS:
+  True Positives:    49
+  True Negatives:    193
+  False Positives:   16  (5.82%)
+  False Negatives:   17  (6.18%)
+  Correct:           242  (88.00%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 147 / 264  (55.7%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 16 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          048effad-81bc-8531-b08a-396d930f6008
+  Username:    eva_waters10683
+  Name:        乐动21点开云体育百家乐鱼mw电子亚博
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          097b70d6-1748-800e-b218-834c439133de
+  Username:    unitedsportsgam
+  Name:        United Sports Gamblers
+  Description: 5 Whales. Including @adjnamedroach Discord Community featuring premium picks from pro handicappers for free! Telegram Pick Service.
+  Location:    (none)
+  Tweets:      24
+  Z-score:     -0.16058712560873994
+
+  ID:          23b67b93-d6f6-891c-b5c1-e46ea8a05ff6
+  Username:    SandraJohn44916
+  Name:        足球比分佳博开云体育百家乐鱼mg电子亚博
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          62133642-6cc5-9128-b9dd-4ef5e9ac11cb
+  Username:    MyMovieHQ
+  Name:        My Movie HQ
+  Description: Your movie retail shop.. Copyrights belong to their respective owners. DM for credits/removal/submission.
+  Location:    DM for PROMO
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          6eb58a82-d88d-a580-be4c-89f70bb27148
+  Username:    EdgeSportsApp
+  Name:        EdgeSports
+  Description: FREE AI-generated Sports Betting Predictions! Download the app today on the Apple App Store to get an Edge on your bets.
+  Location:    (none)
+  Tweets:      21
+  Z-score:     -0.30335046464668225
+
+  ID:          8097b55b-a1cd-81fa-b6e6-ec234d956d86
+  Username:    ParlayJames
+  Name:        Parlay James💎
+  Description: I do the work so you don’t have to. Easy winners found here. Let’s cash 💰
+  Location:    The Bank
+  Tweets:      10
+  Z-score:     -0.8268160411191373
+
+  ID:          82abb843-6734-baec-a052-13e2cbe64c34
+  Username:    LinaBrown96949
+  Name:        书中自有黄金屋蜂蜜宝石开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞火焰4恶魔狂涌太阳神亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          a3cde073-24c0-b538-9e61-a1c68f2eb25f
+  Username:    b_tella
+  Name:        Marked safe from Western Propaganda
+  Description: lover of humanity, animals and planet.
+  Location:    (none)
+  Tweets:      11
+  Z-score:     -0.7792282614398233
+
+  ID:          ac912644-c450-bfec-aebb-cfacd5f0c8ec
+  Username:    syedmowla
+  Name:        Mowla
+  Description: gwapanese
+  Location:    London
+  Tweets:      7
+  Z-score:     -0.9695793801570796
+
+  ID:          babb6419-5aef-8dc4-bd6b-8914e4e04e32
+  Username:    Santos1100011
+  Name:        Santos
+  Description: MAN U✖️RASMUS✖️REAL MADRID✖️VINI JR✖️BARCA✖️YAMAL✖️RONALDO🐐
+  Location:    Idk
+  Tweets:      86
+  Z-score:     2.789855214508734
+
+  ID:          c68fd3b5-5a3c-a4c0-a5f3-67756757ac9e
+  Username:    cleophasnyasimi
+  Name:        cleophas
+  Description: Post design ✨️ advertising at cheap price, a chemistry physics teacher,forex marketing.
+  Location:    Kisii, Kenya
+  Tweets:      39
+  Z-score:     0.5532295695809715
+
+  ID:          cb5fbf22-b724-b8b7-aa64-990907d84fc6
+  Username:    upwegonow
+  Name:        Upwegonow
+  Description: (none)
+  Location:    (none)
+  Tweets:      7
+  Z-score:     -0.9695793801570796
+
+  ID:          d207d0e3-1cd6-9f37-bad3-9b8be102f128
+  Username:    YennySports
+  Name:        Yenny Sports - FREE sharp bets in real time
+  Description: I share what sharps play across NFL, CFB, NBA, NCAAB, NHL, MLB, Soccer 🔪 I don't handicap 💰 All plays are 1 unit, -110 juice unless specified #GamblingTwitter
+  Location:    New York, NY
+  Tweets:      37
+  Z-score:     0.4580540102223433
+
+  ID:          ea9fd9d8-9371-9af1-8ad5-e583e445ae2f
+  Username:    lihukoamr56
+  Name:        Bokep xxx
+  Description: 🌟 Manifesting dreams into reality | Positive vibes only | Gratitude in every step | #ManifestingMagic
+  Location:    (none)
+  Tweets:      43
+  Z-score:     0.7435806882982279
+
+  ID:          f05a51d8-2ff8-975d-862a-bf27e2f96303
+  Username:    JChase28109
+  Name:        粤彩票真人发牌开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞真金拉霸六合至尊98体育亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          f2040a3f-66fd-bffd-8489-58b350813084
+  Username:    williams_m15246
+  Name:        野性斗牛金猪呈祥开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞赤炎烈虎女巫宙斯直击狂热亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+------------------------------------------------------------
+FALSE NEGATIVES — 17 bot(s) missed
+------------------------------------------------------------
+
+  ID:          0080165a-4276-4f48-83bb-6b0fa82f50fd
+  Username:    YummyAnime44
+  Name:        Sweet Tooth36c
+  Description: Anime bingewatcher, onigiri lover, and professional snack eater. #AnimeLife
+  Location:    Tokyo Dreams
+  Tweets:      37
+  Z-score:     0.4580540102223433
+
+  ID:          58983bd7-8269-44ee-993b-2e5901e0ebc1
+  Username:    pixelgeek12
+  Name:        Nate
+  Description: Living in the world of pixels and code. Web designer extraordinaire!
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          6054b9db-e01a-4f41-a909-b3d80a62006a
+  Username:    @Dougiewise
+  Name:        Doug
+  Description: 🇸🇻🇺🇸MOVIES 49ERS USC TROJANS LA DODGERS REAL MADRID. Savant Film critic. A man of Culture. Here to eliminate the bad films and fade the clichés.
+  Location:    Los Angeles, CA
+  Tweets:      16
+  Z-score:     -0.5412893630432527
+
+  ID:          76328515-ec21-4c4d-a784-25efcc47d271
+  Username:    @HockeyMaster33
+  Name:        Daniel Offerdahl
+  Description: You won't find a bigger fan of movies than me. 
+
+I know more than you.
+  Location:    Here, There, Everywhere
+  Tweets:      16
+  Z-score:     -0.5412893630432527
+
+  ID:          7b4e8c84-af09-4854-af59-4b3ee78d2241
+  Username:    geeky_writer21
+  Name:        Daniel
+  Description: I'm just a guy who loves to code and play video games. Let's connect!
+  Location:    Austin, TX
+  Tweets:      22
+  Z-score:     -0.25576268496736815
+
+  ID:          8a2a7c48-23b1-4eef-9ebe-ce48a8a34361
+  Username:    MovieStar
+  Name:        Holly
+  Description: Tracking the latest releases and weighing in on directors and actors.
+  Location:    Hollywood
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          90a23eec-e7b9-43ea-b27b-e109650a3377
+  Username:    FashionableQueen
+  Name:        Claire
+  Description: Claire | obsessed with botanical illustration
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          97455c20-c7c0-4345-aa82-7b382be4fd73
+  Username:    word_slinger101
+  Name:        Scribe315 4dd
+  Description: Writer of webs and tales untold, prose and poetry interfold. Welcome to my world #WritersOfInstagram
+  Location:    None
+  Tweets:      33
+  Z-score:     0.2677028915050869
+
+  ID:          a0474f6e-9a0e-40a8-a87c-cce02835e7bb
+  Username:    Blue_Mtns_Lover
+  Name:        Sky Walker596
+  Description: Nature enthusiast and chronic music lover. Hate Mondays but go on adventures every chance I get. 333 #LiveLoveHike
+  Location:    Blue Mountains
+  Tweets:      17
+  Z-score:     -0.49370158336393866
+
+  ID:          a191543e-d61e-4b44-b5ca-0ebb4b247fe7
+  Username:    @sunnyreynoldss
+  Name:        julia
+  Description: 21 | she/her | movie enthusiast
+  Location:    Unknown
+  Tweets:      16
+  Z-score:     -0.5412893630432527
+
+  ID:          a2eba85e-7413-4a23-bd38-8c3fa2c13eda
+  Username:    lakewoodJoe90
+  Name:        Joe Anderson
+  Description: Lover of life, adventure seeker, and coffee enthusiast. Making the most of every moment!
+  Location:    Lakewood, CO
+  Tweets:      22
+  Z-score:     -0.25576268496736815
+
+  ID:          c5050746-b806-4bb2-96e1-432cce9311f3
+  Username:    codeGenie905
+  Name:        Samuel Johnson
+  Description: I turn coffee into software, one line at a time.
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          ca6e30fe-e008-4df9-bafe-e5943451d616
+  Username:    SimplyMe
+  Name:        Henri
+  Description: Henri | weekend guitarist and coffee
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          d78905cd-28d0-40f7-9b00-79c13ec506d1
+  Username:    ArtyMax_29
+  Name:        Artistic :)
+  Description: Aspiring artist and storyteller. Dreamer by night, realist by day. 32a
+  Location:    Artland
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          d8589b87-2db7-4e7a-85f0-e7235cd8e1d9
+  Username:    geekygirl90
+  Name:        Suzanne
+  Description: Computer Science in AI learner
+  Location:    Mountain View, CA
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          d9bf4aff-69e8-4f3a-9d54-e997658c3b1b
+  Username:    aethersprite
+  Name:        Danny
+  Description: Pop scene aficionado chasing the early era bangers; loud about the chorus, quick to defend the classics.
+  Location:    Swiftie heaven
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          f346444a-3bd4-432b-87d4-5744a126e94d
+  Username:    bookwormAdam87
+  Name:        Adam
+  Description: Fuelled by coffee and classic novels
+  Location:    London, UK
+  Tweets:      27
+  Z-score:     -0.017823786570797664
