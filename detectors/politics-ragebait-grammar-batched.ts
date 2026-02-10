@@ -1,18 +1,18 @@
 /**
  * Politics / Ragebait / Grammar bot detector — two-stage pipeline, BATCHED.
  *
- * Same logic as politics-ragebait-grammar.ts but processes 5 users per
+ * Same logic as politics-ragebait-grammar.ts but processes 10 users per
  * request in both stages, to test whether accuracy degrades with batching.
  *
  * Stage 1 (Groq · openai/gpt-oss-120b):
- *   Evaluate each user on three signals (in batches of 5):
+ *   Evaluate each user on three signals (in batches of 10):
  *     a) Blindly political — parrots talking points without nuance?
  *     b) Ragebait — tries to incite strong emotional reactions?
  *     c) Arbitrary grammar mistakes — makes unnatural/random errors?
  *
  * Stage 2 (Anthropic · claude-haiku-4-5):
  *   Feed the user profiles, posts, AND signal results from Stage 1
- *   into Claude Haiku for the final BOT / HUMAN classification (in batches of 5).
+ *   into Claude Haiku for the final BOT / HUMAN classification (in batches of 10).
  *
  * Can be run standalone:  bun run detectors/politics-ragebait-grammar-batched.ts <dataset_ids...>
  * Or imported:            import { runDetector } from "./detectors/politics-ragebait-grammar-batched.ts"
@@ -20,13 +20,15 @@
 
 import { chatWithSystem } from "../llm.ts";
 import { loadDatasets, getPostsByUserFromLoaded, type User, type Post, type Dataset } from "../data.ts";
-import { MODEL_ANTHROPIC, type DetectorResult } from "./baseline.ts";
+import { MODEL_ANTHROPIC } from "../models.ts";
+import { type DetectorResult } from "./baseline.ts";
+import { createCache, loadCache, writeResult, type CacheData } from "./cache.ts";
 
 export const MODEL_STAGE1 = "groq/openai/gpt-oss-120b";
 export const MODEL_STAGE2 = MODEL_ANTHROPIC;
 export const MODEL = MODEL_STAGE1;
 
-const BATCH_SIZE = 5;
+const BATCH_SIZE = 10;
 
 // ── Stage 1: signal extraction (Groq) — batched ──────────────────────
 
@@ -113,7 +115,8 @@ function formatSignals(signals: SignalResult): string {
 
 function parseStage1Response(response: string, users: User[]): Map<string, SignalResult> {
   const results = new Map<string, SignalResult>();
-  const lines = response.trim().toUpperCase().split("\n");
+  const lines = response.trim().split("\n");
+  const signalRegex = /^(\S+)\s*:?\s*(BLINDLY_POLITICAL|RAGEBAIT|GRAMMAR_MISTAKES)\s*:\s*(YES|NO)/i;
 
   // Initialize defaults
   for (const u of users) {
@@ -124,20 +127,18 @@ function parseStage1Response(response: string, users: User[]): Map<string, Signa
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    for (const user of users) {
-      if (trimmed.startsWith(user.id)) {
-        const existing = results.get(user.id)!;
-        if (trimmed.includes("BLINDLY_POLITICAL") && trimmed.includes("YES")) {
-          existing.blindlyPolitical = true;
-        }
-        if (trimmed.includes("RAGEBAIT") && trimmed.includes("YES")) {
-          existing.ragebait = true;
-        }
-        if (trimmed.includes("GRAMMAR_MISTAKES") && trimmed.includes("YES")) {
-          existing.grammarMistakes = true;
-        }
-      }
-    }
+    const match = trimmed.match(signalRegex);
+    if (!match) continue;
+
+    const userId = match[1]!;
+    const signal = match[2]!.toUpperCase();
+    const isYes = match[3]!.toUpperCase() === "YES";
+    const existing = results.get(userId);
+    if (!existing) continue;
+
+    if (signal === "BLINDLY_POLITICAL") existing.blindlyPolitical = isYes;
+    if (signal === "RAGEBAIT") existing.ragebait = isYes;
+    if (signal === "GRAMMAR_MISTAKES") existing.grammarMistakes = isYes;
   }
 
   return results;
@@ -213,12 +214,14 @@ async function classifyBatch(
  *
  * `model` is accepted for CLI/menu compatibility but ignored internally —
  * Stage 1 always uses MODEL_STAGE1 (Groq) and Stage 2 always uses MODEL_STAGE2 (Anthropic).
+ * cacheFile: if provided, load and resume from this cache; only missing users are classified.
  */
 export async function runDetector(
   datasetIds: number[],
   _model = MODEL,
   onProgress?: (done: number, total: number) => void,
   delayMs = 500,
+  cacheFile?: string,
 ): Promise<DetectorResult> {
   const paths = datasetIds.map((id) => `datasets/dataset.posts&users.${id}.json`);
   const datasets = await loadDatasets(paths);
@@ -235,38 +238,56 @@ export async function runDetector(
     }
   }
 
-  // Split into batches
-  const batches: User[][] = [];
-  for (let i = 0; i < users.length; i += BATCH_SIZE) {
-    batches.push(users.slice(i, i + BATCH_SIZE));
+  let cachePath: string;
+  let cacheData: CacheData;
+
+  if (cacheFile) {
+    cacheData = await loadCache(cacheFile);
+    cachePath = cacheFile;
+  } else {
+    cachePath = await createCache("prg-batched", _model, datasetIds, users.length);
+    cacheData = await loadCache(cachePath);
   }
 
-  // Classify batches — stagger by delayMs to avoid rate limits
-  let done = 0;
-  const allResults: { user: User; isBot: boolean }[] = [];
+  const doneIds = new Set(Object.keys(cacheData.results));
+  const toClassify = users.filter((u) => !doneIds.has(u.id));
 
-  const batchResults = await Promise.all(
+  const batches: User[][] = [];
+  for (let i = 0; i < toClassify.length; i += BATCH_SIZE) {
+    batches.push(toClassify.slice(i, i + BATCH_SIZE));
+  }
+
+  let doneCount = doneIds.size;
+
+  // Emit initial progress so the UI shows totals immediately (important for resume)
+  onProgress?.(doneCount, users.length);
+
+  // Classify batches in parallel with staggered starts for rate limiting
+  await Promise.all(
     batches.map(async (batch, i) => {
       if (delayMs > 0 && i > 0) await Bun.sleep(delayMs * i);
       const results = await classifyBatch(batch, datasets);
-      done += batch.length;
-      onProgress?.(done, users.length);
-      return results;
+      for (const r of results) {
+        cacheData.results[r.user.id] = { isBot: r.isBot };
+      }
+      await writeResult(cachePath, cacheData);
+      doneCount += batch.length;
+      onProgress?.(doneCount, users.length);
     }),
   );
 
-  for (const batch of batchResults) {
-    allResults.push(...batch);
-  }
-
-  const bots = allResults.filter((r) => r.isBot);
+  const bots = users.filter((u) => cacheData.results[u.id]?.isBot);
 
   // Write run file
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
   const runFile = `runs/prg-batched-${datasetIds.join("_")}-${timestamp}.txt`;
   const lines = [
     `Datasets: ${datasetIds.join(", ")}`,
-    ...bots.map((r) => r.user.id),
+    `Detector: prg-batched (2-stage)`,
+    `Model: ${MODEL_STAGE1} → ${MODEL_STAGE2}`,
+    `Batch size: ${BATCH_SIZE}`,
+    "",
+    ...bots.map((u) => u.id),
   ];
   await Bun.write(runFile, lines.join("\n") + "\n");
 

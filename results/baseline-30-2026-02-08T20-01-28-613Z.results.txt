@@ -2,6 +2,9 @@
 RUN ACCURACY REPORT
 ============================================================
 Run file:    baseline-30-2026-02-08T20-01-28-613Z.txt
+Detector:    (unknown)
+Model:       (unknown)
+Batch size:  (unknown)
 Datasets:    [30]
 Total users: 275  (bots: 66, humans: 209)
 
@@ -12,7 +15,7 @@ COUNTS:
   False Negatives:   10  (3.64%)
   Correct:           244  (88.73%)
 
-SCORE (+4 TP, -1 FN, -2 FP): 172
+SCORE (+4 TP, -1 FN, -2 FP): 172 / 264  (65.2%)
 
 ------------------------------------------------------------
 FALSE POSITIVES — 21 human(s) wrongly flagged as bot

@@ -1,0 +1,301 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    prg-batched-32-2026-02-08T20-36-27-373Z.txt
+Detector:    (unknown)
+Model:       (unknown)
+Batch size:  (unknown)
+Datasets:    [32]
+Total users: 271  (bots: 63, humans: 208)
+
+COUNTS:
+  True Positives:    53
+  True Negatives:    185
+  False Positives:   23  (8.49%)
+  False Negatives:   10  (3.69%)
+  Correct:           238  (87.82%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 156 / 252  (61.9%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 23 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          30773b99-067e-aad6-8176-209f29be6900
+  Username:    Shocklobster99
+  Name:        Stellar Arcades
+  Description: political insight, Technology, Arcades, Video games, Virtual Reality, Micro Computing
+  Location:    North Carolina, USA
+  Tweets:      6
+  Z-score:     -1.0889678270792296
+
+  ID:          3142e356-4972-8a44-9afe-1be64c88c338
+  Username:    LawalAyo20
+  Name:        |HãŸ WhŸ 🦁
+  Description: YBNLMafia4LF💯||Love you mom❤️||CR7⚽️🐐||Chelsea Fc||RR🥶
+  Location:    +234
+  Tweets:      28
+  Z-score:     -0.10690366355686273
+
+  ID:          467b1c77-8b94-8eea-aa8b-e4518d180e95
+  Username:    FV15valverdee
+  Name:        A🦅¹⁵
+  Description: #dubnation #chiefskingdom @realmadrid
+  Location:    steph's bed
+  Tweets:      47
+  Z-score:     0.7412426594851813
+
+  ID:          5381afb3-ee61-97ec-addb-9c83469f934e
+  Username:    bnkoo84
+  Name:        ubekoo⁷ ᵇʸ ᴶᴷ
+  Description: Jungkook 🫶
+Jungkookie
+Kookie
+
+Og acct: @bunnykoo84
+  Location:    (none)
+  Tweets:      8
+  Z-score:     -0.9996892667590143
+
+  ID:          5fef3628-ba50-881f-bffd-4c150bb1720d
+  Username:    justnecha
+  Name:        Necha
+  Description: Graphic Designer | Photo Editor | Video Animator.
+  Location:    Lagos
+  Tweets:      43
+  Z-score:     0.5626855388447509
+
+  ID:          6094f8da-117d-8eca-8b81-44de418d2dad
+  Username:    RaleighRul4811
+  Name:        Raleigh Rule
+  Description: (none)
+  Location:    (none)
+  Tweets:      100
+  Z-score:     3.107124507970883
+
+  ID:          6e031903-6a20-ba3b-8fd9-1f93c01a6319
+  Username:    lisashannon1776
+  Name:        Lisa Shannon
+  Description: (none)
+  Location:    (none)
+  Tweets:      6
+  Z-score:     -1.0889678270792296
+
+  ID:          77163f12-9b3b-8a23-968f-6da6c7302794
+  Username:    JenniferRi19215
+  Name:        乐投体育博源体育开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞JJ棋牌Y1体育同城乐亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          8e45cd0a-49de-b72a-8544-7a117a1ac2d6
+  Username:    intelFromBrian
+  Name:        Brian’s Breaking News and Intel
+  Description: Account specializing in international breaking news.
+  Location:    United States
+  Tweets:      32
+  Z-score:     0.07165345708356759
+
+  ID:          9737641a-8588-953e-a132-7f249ddb0bf7
+  Username:    pastorpickss
+  Name:        Swanko 2x
+  Description: please dont tail me #bringthegold #lakernation
+  Location:    (none)
+  Tweets:      15
+  Z-score:     -0.6872143056382612
+
+  ID:          983af1b7-6870-a9ba-b036-ca05d8ddbd1a
+  Username:    gl0balpopstarjk
+  Name:        Jungkook 정국 👑 Golden✨
+  Description: #JUNGKOOK Main Vocalist, Sub Rapper, Lead Dancer, Center/Face of BTS • The Ace & King Of Kpop • Global Pop Star • “The Biggest Pop Icon of the Century”
+  Location:    (none)
+  Tweets:      27
+  Z-score:     -0.1515429437169703
+
+  ID:          bb2e3c59-c16f-b620-b01b-52800e6edd4e
+  Username:    MaryQuinon21669
+  Name:        炸金花二十一点开云体育百家乐鱼bg捕鱼AG真人
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          bfd98eba-af97-bcb8-b872-e0ac38ed2c8e
+  Username:    NYTigers_
+  Name:        New York Tigers 🌐
+  Description: 31st #NBA franchise. Roaring onto the scene in NYC 🐯🏀🗽
+
+#KeepTheClaw
+  Location:    (none)
+  Tweets:      21
+  Z-score:     -0.4193786246776158
+
+  ID:          c61dd021-26f9-adab-ac9d-a54f90543704
+  Username:    SarahCosgr12020
+  Name:        大象踩踏事件非洲狮开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞足球杯狂欢节被施咒的王子亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          c663eaa7-87b6-b756-8498-8650a5c8d73b
+  Username:    CraftyCelt
+  Name:        Pól deNógla 🇮🇪🌍🌎🌏🇺🇳 #COYG
+  Description: Master of Stagecraft, lawyer & human rights advocate in Pattaya, Thailand.
+
+do the Porn it's a Human Rights issue.
+  Location:    เมืองพัทยา, ประเทศไทย
+  Tweets:      93
+  Z-score:     2.79464954685013
+
+  ID:          d09e7861-837a-b182-8f02-7961c5ff69dc
+  Username:    StefanieGa10005
+  Name:        万豪娱乐博狗开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞新威尼斯人奇趣游艺KOK体育亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          d5d83682-41d5-abea-a6d4-82bec5e1f6e2
+  Username:    marteatides
+  Name:        payton
+  Description: @martitides on I n s t A gram
+  Location:    United States
+  Tweets:      83
+  Z-score:     2.348256745249054
+
+  ID:          efd91b1d-5eea-9dd1-abfd-284445235cb9
+  Username:    res_risk
+  Name:        Responsible Risk
+  Description: Increase the Overall Odds of Success through Winning Decisions https://t.co/twitter_link
+  Location:    (none)
+  Tweets:      15
+  Z-score:     -0.6872143056382612
+
+  ID:          f1e0fd30-8e5d-9e6c-8228-e760e5d3e5be
+  Username:    captsingh
+  Name:        Captain Singh, FICArb, 73K
+  Description: 🌎 World-traveled cosmopolitan ■ UK Class.1 Master Mariner  ■ Maritime expert ⚓  ➡️ Stay informed with maritime updates, shipping research and mirthful musings
+  Location:    Singapore 🇸🇬
+  Tweets:      22
+  Z-score:     -0.3747393445175082
+
+  ID:          f50617ad-22fa-942f-902f-49c1525212ad
+  Username:    Ceruleanrdz
+  Name:        Cerulean🔱🌊
+  Description: (none)
+  Location:    Wild North,TX
+  Tweets:      10
+  Z-score:     -0.9104107064387992
+
+  ID:          f584c909-736e-beb0-8ee8-10712fbbf75a
+  Username:    ClydeDager59747
+  Name:        Dager Clyde
+  Description: (none)
+  Location:    (none)
+  Tweets:      42
+  Z-score:     0.5180462586846434
+
+  ID:          f5b93516-f4d0-9719-911c-9f732084cc7c
+  Username:    ChrisDPOMAY
+  Name:        Chris Pomay
+  Description: Radio Host of Live With CDP Sports Talk on WQEE 99.1 FM in Georgia,  CKRT (Border City Radio) in Windsor, Ontario.
+https://t.co/twitter_link
+  Location:    Southern Ontario 
+  Tweets:      17
+  Z-score:     -0.597935745318046
+
+  ID:          ffe60127-9d06-9b5c-ae63-9a1eb2668f86
+  Username:    Steven549310884
+  Name:        Steven
+  Description: I enjoy life and sharing my experiences
+  Location:    (none)
+  Tweets:      12
+  Z-score:     -0.821132146118584
+
+------------------------------------------------------------
+FALSE NEGATIVES — 10 bot(s) missed
+------------------------------------------------------------
+
+  ID:          653f27c6-1001-45f8-8ddb-6d610bfc4740
+  Username:    TechGuru123
+  Name:        Alex the Techie 🤖
+  Description: Tech enthusiast & gadget reviewer. 🖥️📱 #TechReviews @GadgetHub
+  Location:    Silicon Valley, CA
+  Tweets:      80
+  Z-score:     2.214338904768731
+
+  ID:          662a5ef1-cb5c-4e89-9680-ec7296e89425
+  Username:    curlySue13
+  Name:        Mirage Lynn
+  Description: artist and bookworm. she/her.
+  Location:    San Francisco
+  Tweets:      27
+  Z-score:     -0.1515429437169703
+
+  ID:          6a020a6f-3978-4b9e-b08f-4b8ae1c7e7bc
+  Username:    trendy_babe99
+  Name:        Ava Thompson
+  Description: ✨ just a vibey girl living her best life 🌸💖 | obsessed with fashion, music, and all things aesthetic | hit me up for collabs! | #teenfashion
+  Location:    melrose ave, los angeles
+  Tweets:      18
+  Z-score:     -0.5532964651579385
+
+  ID:          6be22ad7-505d-4f89-8f1e-7b5f5380b29c
+  Username:    urbanpoet42
+  Name:        Marcus Finch
+  Description: words are my playground | ink my sword
+  Location:    Brooklyn, NY
+  Tweets:      27
+  Z-score:     -0.1515429437169703
+
+  ID:          8c5f8a42-43aa-4421-8bd8-435fdb3f16f8
+  Username:    ChasingSunsets
+  Name:        🌅 SunsetLover
+  Description: Chasing sunsets, one beach at a time 🌊 #SunsetChaser #BeachVibes
+  Location:    currently in Malibu, originally from Miami
+  Tweets:      80
+  Z-score:     2.214338904768731
+
+  ID:          8e229365-e29a-4321-b70a-401c14b12139
+  Username:    th3tru3king
+  Name:        El Baby 🌍
+  Description: music discussions and random rants
+
+unapologetically black
+  Location:    EARTH
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          a72605f1-5b9a-482b-a11f-fd5c5f3ca76e
+  Username:    KatieXO
+  Name:        Kate James
+  Description: After-hours box scores, headlines, and GOAT debates — keeping the love for the game alive.
+  Location:    Lakers HQ
+  Tweets:      14
+  Z-score:     -0.7318535857983688
+
+  ID:          affbdacc-ecce-4e88-b671-2e1ff85f0034
+  Username:    DefinitelyNotLucy
+  Name:        🇲🇽🇩🇴 ␎ʇoN 𝕵𝖔𝖘𝖎𝖊 𝕲𝖗𝖔𝖘𝖘𝖞 𝐵𝐿𝑀 ACAB
+  Description: 🇲🇽🇩🇴 AfroMexicana-Dominicana • Human Rights 𝐙♡𝐌𝐁𝐈𝐄 • she/her/ella • 𝔟𝔯𝔲𝔧𝔢𝔯í𝔞🕯️hoodoo • BLM✊🏾 • Horror🔪•Ace 🖤🩶🤍💜 • ND
+  Location:    Human Rights Activist
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          dcf22af4-2648-458a-9f20-da15f2170069
+  Username:    IronFist7777
+  Name:        Hellhammer
+  Description: Independent Hockey Raconteur. Goalie Enjoyerer. Stand Up Comedian/Former Talk Radio Personality. Proudly indigenous Sámi🦌🪶 & 🇺🇦! Let's Puck 🏒! 🦩native.
+  Location:    Boston, MA
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          ef97d042-0ba1-4c45-aa67-c6c2d0a72689
+  Username:    topazfire22
+  Name:        Topaz
+  Description: Finding gems in everyday life
+  Location:    New York, NY
+  Tweets:      11
+  Z-score:     -0.8657714262786915

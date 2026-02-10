@@ -2,6 +2,9 @@
 RUN ACCURACY REPORT
 ============================================================
 Run file:    batching-30-2026-02-08T20-20-50-384Z.txt
+Detector:    (unknown)
+Model:       (unknown)
+Batch size:  (unknown)
 Datasets:    [30]
 Total users: 275  (bots: 66, humans: 209)
 
@@ -12,7 +15,7 @@ COUNTS:
   False Negatives:   13  (4.73%)
   Correct:           246  (89.45%)
 
-SCORE (+4 TP, -1 FN, -2 FP): 167
+SCORE (+4 TP, -1 FN, -2 FP): 167 / 264  (63.3%)
 
 ------------------------------------------------------------
 FALSE POSITIVES — 16 human(s) wrongly flagged as bot

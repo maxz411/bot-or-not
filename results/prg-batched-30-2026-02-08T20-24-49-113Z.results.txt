@@ -2,6 +2,9 @@
 RUN ACCURACY REPORT
 ============================================================
 Run file:    prg-batched-30-2026-02-08T20-24-49-113Z.txt
+Detector:    (unknown)
+Model:       (unknown)
+Batch size:  (unknown)
 Datasets:    [30]
 Total users: 275  (bots: 66, humans: 209)
 
@@ -12,7 +15,7 @@ COUNTS:
   False Negatives:   6  (2.18%)
   Correct:           240  (87.27%)
 
-SCORE (+4 TP, -1 FN, -2 FP): 176
+SCORE (+4 TP, -1 FN, -2 FP): 176 / 264  (66.7%)
 
 ------------------------------------------------------------
 FALSE POSITIVES — 29 human(s) wrongly flagged as bot

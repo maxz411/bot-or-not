@@ -11,4 +11,10 @@ wheels/
 
 .env
 
+# Detector run cache (resumable runs)
+cache/
+
+# LLM prompt response cache
+llm-cache.db
+
 node_modules/

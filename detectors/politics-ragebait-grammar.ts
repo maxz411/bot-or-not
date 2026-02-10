@@ -17,7 +17,9 @@
 
 import { chatWithSystem } from "../llm.ts";
 import { loadDatasets, getPostsByUserFromLoaded, type User, type Post, type Dataset } from "../data.ts";
-import { MODEL_ANTHROPIC, type DetectorResult } from "./baseline.ts";
+import { MODEL_ANTHROPIC } from "../models.ts";
+import { type DetectorResult } from "./baseline.ts";
+import { createCache, loadCache, writeResult, type CacheData } from "./cache.ts";
 
 export const MODEL_STAGE1 = "groq/openai/gpt-oss-120b";
 export const MODEL_STAGE2 = MODEL_ANTHROPIC;
@@ -25,15 +27,13 @@ export const MODEL = MODEL_STAGE1; // default shown in CLI menu
 
 // ── Stage 1: signal extraction (Groq) ────────────────────────────────
 
-const STAGE1_SYSTEM = `You are an expert at detecting bot accounts on social media. You will receive a user's profile and their posts. Evaluate the account on exactly three signals.
+const STAGE1_SYSTEM = `You are an expert at detecting bot accounts on social media. You will receive a user's profile and their posts. Evaluate the account on exactly three signals:
 
-IMPORTANT: Set a HIGH bar for YES. Most real humans are opinionated, emotional, and make typos — that is NORMAL. Only answer YES when the pattern is so extreme and mechanical that it is clearly not a real person.
+a) BLINDLY_POLITICAL: Does this user post political content in a one-sided, unnuanced way — parroting talking points, repeating slogans, or pushing a political agenda without genuine discussion? This is NOT about whether they have political opinions — it's about whether they seem to be a bot programmed to push a narrative.
 
-a) BLINDLY_POLITICAL: Is this account EXCLUSIVELY a political propaganda machine? Answer YES only if the account does nothing but push a single political narrative with zero personal content, no humor, no off-topic posts, and reads like an automated campaign. Having strong political opinions, even extreme ones, is normal human behavior — that alone is NOT enough for YES.
+b) RAGEBAIT: Is this user trying to provoke strong emotional reactions? Look for inflammatory language, divisive framing, outrage-bait, hot takes designed to generate engagement rather than real conversation.
 
-b) RAGEBAIT: Is this account systematically manufacturing outrage? Answer YES only if the account's SOLE purpose appears to be provoking anger — every post is inflammatory with no genuine conversation, personal anecdotes, or varied topics. Real humans get angry and post hot takes — that is normal. YES means nearly every post is engineered to provoke.
-
-c) GRAMMAR_MISTAKES: Does this account exhibit MACHINE-LIKE grammar errors? Answer YES only if the errors are clearly non-human — inconsistent language ability (perfect grammar in one sentence, broken in the next), systematic patterns like repeated word substitutions, or text that reads like bad machine translation. Normal human typos, slang, abbreviations, and informal writing are NOT grammar mistakes. Non-native speakers making consistent errors is NOT a bot signal.
+c) GRAMMAR_MISTAKES: Does this user make arbitrary, unnatural grammar mistakes? Bots sometimes produce text with odd errors — random misspellings, broken syntax, or inconsistent quality that doesn't match how real humans write (either fluently or with consistent natural mistakes). Real humans make natural typos; bots make weird ones.
 
 Respond with EXACTLY three lines, one per signal, in this format:
 BLINDLY_POLITICAL: YES or NO
@@ -44,27 +44,17 @@ Nothing else.`;
 
 // ── Stage 2: final classification (Anthropic) ────────────────────────
 
-const STAGE2_SYSTEM = `You are a bot detection expert. You will be given a social media user's profile, their posts, AND the results of a preliminary signal analysis.
+const STAGE2_SYSTEM = `You are a bot detection expert. You will be given a social media user's profile, their posts, AND the results of a preliminary signal analysis that assessed whether the user is:
+- Blindly political (one-sided political posting without nuance)
+- Ragebait (trying to provoke strong emotional reactions)
+- Making arbitrary grammar mistakes (unnatural errors typical of bots)
 
-YOUR DEFAULT ANSWER SHOULD BE "HUMAN". Most accounts are real people. Only classify as BOT when you are confident based on MULTIPLE strong indicators.
-
-The preliminary signals (BLINDLY_POLITICAL, RAGEBAIT, GRAMMAR_MISTAKES) are hints, not proof. A single YES signal is weak evidence. Even two YES signals can describe a real person who is politically passionate and emotional. Treat the signals as one input among many.
-
-Strong BOT indicators (need multiple):
-- Mechanical, repetitive posting with nearly identical structure across tweets
-- Posting at impossibly regular intervals (e.g. exactly every 30 minutes)
-- Zero personal content — no opinions, anecdotes, humor, or casual conversation
-- Content that reads like it was generated or translated by a machine
-- Profile that looks auto-generated (random username, stock-photo-like name)
-
-Things that are NORMAL for humans (do NOT use these alone to classify as BOT):
-- Strong political opinions, even extreme ones
-- Emotional or angry posts
-- Typos, slang, abbreviations, informal writing
-- Posting a lot about one topic they care about (sports, politics, celebrities)
-- Non-native speaker grammar patterns
-
-When in doubt, answer HUMAN.
+Use these signals as strong additional evidence alongside your own analysis of the profile and posts. Consider:
+- Posting patterns (frequency, timing, regularity)
+- Content quality (repetitive, generic, or overly promotional)
+- Profile completeness and authenticity
+- Language patterns (unnatural phrasing, templated responses)
+- Topic diversity vs single-topic focus
 
 Respond with ONLY "BOT" or "HUMAN" — nothing else.`;
 
@@ -137,12 +127,14 @@ async function classifyUser(
  *
  * `model` is accepted for CLI/menu compatibility but ignored internally —
  * Stage 1 always uses MODEL_STAGE1 (Groq) and Stage 2 always uses MODEL_STAGE2 (Anthropic).
+ * cacheFile: if provided, load and resume from this cache; only missing users are classified.
  */
 export async function runDetector(
   datasetIds: number[],
   _model = MODEL,
   onProgress?: (done: number, total: number) => void,
   delayMs = 500,
+  cacheFile?: string,
 ): Promise<DetectorResult> {
   const paths = datasetIds.map((id) => `datasets/dataset.posts&users.${id}.json`);
   const datasets = await loadDatasets(paths);
@@ -159,26 +151,48 @@ export async function runDetector(
     }
   }
 
-  // Classify users — stagger launches by delayMs to avoid rate limits
-  let done = 0;
-  const results = await Promise.all(
-    users.map(async (u, i) => {
+  let cachePath: string;
+  let cacheData: CacheData;
+
+  if (cacheFile) {
+    cacheData = await loadCache(cacheFile);
+    cachePath = cacheFile;
+  } else {
+    cachePath = await createCache("prg", _model, datasetIds, users.length);
+    cacheData = await loadCache(cachePath);
+  }
+
+  const doneIds = new Set(Object.keys(cacheData.results));
+  const toClassify = users.filter((u) => !doneIds.has(u.id));
+  let doneCount = doneIds.size;
+
+  // Emit initial progress so the UI shows totals immediately (important for resume)
+  onProgress?.(doneCount, users.length);
+
+  const newResults = await Promise.all(
+    toClassify.map(async (u, i) => {
       if (delayMs > 0 && i > 0) await Bun.sleep(delayMs * i);
       const result = await classifyUser(u, datasets, MODEL_STAGE1, MODEL_STAGE2);
-      done++;
-      onProgress?.(done, users.length);
+      cacheData.results[result.user.id] = { isBot: result.isBot };
+      await writeResult(cachePath, cacheData);
+      doneCount++;
+      onProgress?.(doneCount, users.length);
       return result;
     }),
   );
 
-  const bots = results.filter((r) => r.isBot);
+  const bots = users.filter((u) => cacheData.results[u.id]?.isBot);
 
   // Write run file
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
   const runFile = `runs/prg-${datasetIds.join("_")}-${timestamp}.txt`;
   const lines = [
     `Datasets: ${datasetIds.join(", ")}`,
-    ...bots.map((r) => r.user.id),
+    `Detector: prg (2-stage)`,
+    `Model: ${MODEL_STAGE1} → ${MODEL_STAGE2}`,
+    `Batch size: 1`,
+    "",
+    ...bots.map((u) => u.id),
   ];
   await Bun.write(runFile, lines.join("\n") + "\n");
 
@@ -196,10 +210,10 @@ if (import.meta.main) {
   const args = Bun.argv.slice(2);
 
   // Parse --delay <ms> flag
-  let delayMs = 50;
+  let delayMs = 500;
   const delayIdx = args.indexOf("--delay");
   if (delayIdx !== -1) {
-    delayMs = parseInt(args[delayIdx + 1] ?? "50", 10);
+    delayMs = parseInt(args[delayIdx + 1] ?? "500", 10);
     args.splice(delayIdx, 2);
   }
 

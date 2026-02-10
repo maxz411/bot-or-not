@@ -1,7 +1,7 @@
 /**
- * Batching bot detector — asks an LLM to classify 5 users at a time.
+ * Batching bot detector — asks an LLM to classify 10 users at a time.
  *
- * Same logic as baseline.ts but sends batches of 5 users per request
+ * Same logic as baseline.ts but sends batches of 10 users per request
  * instead of 1, to test whether accuracy degrades with batching.
  *
  * Can be run standalone:  bun run detectors/batching.ts <dataset_ids...>
@@ -10,11 +10,10 @@
 
 import { chatWithSystem } from "../llm.ts";
 import { loadDatasets, getPostsByUserFromLoaded, type User, type Post, type Dataset } from "../data.ts";
+import { createCache, loadCache, writeResult, type CacheData } from "./cache.ts";
+import { MODEL_OPENAI, MODEL_ANTHROPIC } from "../models.ts";
 
-export const MODEL_OPENAI = "openai/gpt-5.1";
-export const MODEL_ANTHROPIC = "anthropic/claude-haiku-4-5";
-
-const BATCH_SIZE = 5;
+const BATCH_SIZE = 10;
 
 const SYSTEM_PROMPT = `You are a bot detection expert. You will be given multiple social media users' profiles and their posts. Your job is to determine if each account is a bot or a real human.
 
@@ -116,6 +115,7 @@ export type DetectorResult = {
  * Run the batching detector on the given dataset IDs.
  * onProgress is called after each batch is classified (done / total).
  * delayMs adds a delay between each batch request.
+ * cacheFile: if provided, load and resume from this cache; only missing users are classified.
  * Returns the path to the run file + summary counts.
  */
 export async function runDetector(
@@ -123,6 +123,7 @@ export async function runDetector(
   model = MODEL_OPENAI,
   onProgress?: (done: number, total: number) => void,
   delayMs = 50,
+  cacheFile?: string,
 ): Promise<DetectorResult> {
   const paths = datasetIds.map((id) => `datasets/dataset.posts&users.${id}.json`);
   const datasets = await loadDatasets(paths);
@@ -139,38 +140,57 @@ export async function runDetector(
     }
   }
 
-  // Split into batches of BATCH_SIZE
-  const batches: User[][] = [];
-  for (let i = 0; i < users.length; i += BATCH_SIZE) {
-    batches.push(users.slice(i, i + BATCH_SIZE));
+  let cachePath: string;
+  let cacheData: CacheData;
+
+  if (cacheFile) {
+    cacheData = await loadCache(cacheFile);
+    cachePath = cacheFile;
+  } else {
+    cachePath = await createCache("batching", model, datasetIds, users.length);
+    cacheData = await loadCache(cachePath);
   }
 
-  // Classify batches — stagger launches by delayMs to avoid rate limits
-  let done = 0;
-  const allResults: { user: User; isBot: boolean }[] = [];
+  const doneIds = new Set(Object.keys(cacheData.results));
+  const toClassify = users.filter((u) => !doneIds.has(u.id));
 
-  const batchResults = await Promise.all(
+  // Batches of users we still need to classify
+  const batches: User[][] = [];
+  for (let i = 0; i < toClassify.length; i += BATCH_SIZE) {
+    batches.push(toClassify.slice(i, i + BATCH_SIZE));
+  }
+
+  let doneCount = doneIds.size;
+
+  // Emit initial progress so the UI shows totals immediately (important for resume)
+  onProgress?.(doneCount, users.length);
+
+  // Classify batches in parallel with staggered starts for rate limiting
+  await Promise.all(
     batches.map(async (batch, i) => {
       if (delayMs > 0 && i > 0) await Bun.sleep(delayMs * i);
       const results = await classifyBatch(batch, datasets, model);
-      done += batch.length;
-      onProgress?.(done, users.length);
-      return results;
+      for (const r of results) {
+        cacheData.results[r.user.id] = { isBot: r.isBot };
+      }
+      await writeResult(cachePath, cacheData);
+      doneCount += batch.length;
+      onProgress?.(doneCount, users.length);
     }),
   );
 
-  for (const batch of batchResults) {
-    allResults.push(...batch);
-  }
-
-  const bots = allResults.filter((r) => r.isBot);
+  const bots = users.filter((u) => cacheData.results[u.id]?.isBot);
 
   // Write run file
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
   const runFile = `runs/batching-${datasetIds.join("_")}-${timestamp}.txt`;
   const lines = [
     `Datasets: ${datasetIds.join(", ")}`,
-    ...bots.map((r) => r.user.id),
+    `Detector: batching`,
+    `Model: ${model}`,
+    `Batch size: ${BATCH_SIZE}`,
+    "",
+    ...bots.map((u) => u.id),
   ];
   await Bun.write(runFile, lines.join("\n") + "\n");
 

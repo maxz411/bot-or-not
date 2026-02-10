@@ -11,9 +11,8 @@
 
 import { chatWithSystem } from "../llm.ts";
 import { loadDatasets, getPostsByUserFromLoaded, type User, type Post, type Dataset } from "../data.ts";
-
-export const MODEL_OPENAI = "openai/gpt-5.1";
-export const MODEL_ANTHROPIC = "anthropic/claude-haiku-4-5";
+import { createCache, loadCache, writeResult, type CacheData } from "./cache.ts";
+import { MODEL_OPENAI } from "../models.ts";
 
 const SYSTEM_PROMPT = `You are a bot detection expert. You will be given a social media user's profile and their posts. Your job is to determine if this account is a bot or a real human.
 
@@ -63,6 +62,7 @@ export type DetectorResult = {
  * Run the baseline detector on the given dataset IDs.
  * onProgress is called after each user is classified (done / total).
  * delayMs adds a delay between each request (0 = no delay, all parallel).
+ * cacheFile: if provided, load and resume from this cache; only missing users are classified.
  * Returns the path to the run file + summary counts.
  */
 export async function runDetector(
@@ -70,6 +70,7 @@ export async function runDetector(
   model = MODEL_OPENAI,
   onProgress?: (done: number, total: number) => void,
   delayMs = 50,
+  cacheFile?: string,
 ): Promise<DetectorResult> {
   const paths = datasetIds.map((id) => `datasets/dataset.posts&users.${id}.json`);
   const datasets = await loadDatasets(paths);
@@ -86,18 +87,42 @@ export async function runDetector(
     }
   }
 
-  // Classify users — stagger launches by delayMs to avoid rate limits
-  let done = 0;
-  const results = await Promise.all(
-    users.map(async (u, i) => {
+  let cachePath: string;
+  let cacheData: CacheData;
+
+  if (cacheFile) {
+    cacheData = await loadCache(cacheFile);
+    cachePath = cacheFile;
+  } else {
+    cachePath = await createCache("baseline", model, datasetIds, users.length);
+    cacheData = await loadCache(cachePath);
+  }
+
+  const doneIds = new Set(Object.keys(cacheData.results));
+  const toClassify = users.filter((u) => !doneIds.has(u.id));
+  let doneCount = doneIds.size;
+
+  // Emit initial progress so the UI shows totals immediately (important for resume)
+  onProgress?.(doneCount, users.length);
+
+  // Classify only users not yet in cache — stagger by delayMs
+  const newResults = await Promise.all(
+    toClassify.map(async (u, i) => {
       if (delayMs > 0 && i > 0) await Bun.sleep(delayMs * i);
       const result = await classifyUser(u, datasets, model);
-      done++;
-      onProgress?.(done, users.length);
+      cacheData.results[result.user.id] = { isBot: result.isBot };
+      await writeResult(cachePath, cacheData);
+      doneCount++;
+      onProgress?.(doneCount, users.length);
       return result;
     }),
   );
 
+  // Full results from cache (cached + new)
+  const results = users.map((u) => ({
+    user: u,
+    isBot: cacheData.results[u.id]?.isBot ?? false,
+  }));
   const bots = results.filter((r) => r.isBot);
 
   // Write run file
@@ -105,6 +130,10 @@ export async function runDetector(
   const runFile = `runs/baseline-${datasetIds.join("_")}-${timestamp}.txt`;
   const lines = [
     `Datasets: ${datasetIds.join(", ")}`,
+    `Detector: baseline`,
+    `Model: ${model}`,
+    `Batch size: 1`,
+    "",
     ...bots.map((r) => r.user.id),
   ];
   await Bun.write(runFile, lines.join("\n") + "\n");

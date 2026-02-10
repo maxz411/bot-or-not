@@ -1,0 +1,908 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    v3-30_31_32_33-2026-02-09T06-51-12-308Z.txt
+Detector:    v3
+Model:       anthropic/claude-haiku-4-5
+Batch size:  1
+Datasets:    [30, 31, 32, 33]
+Total users: 889  (bots: 184, humans: 705)
+
+COUNTS:
+  True Positives:    166
+  True Negatives:    617
+  False Positives:   88  (9.90%)
+  False Negatives:   18  (2.02%)
+  Correct:           783  (88.08%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 470 / 736  (63.9%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 88 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          048effad-81bc-8531-b08a-396d930f6008
+  Username:    eva_waters10683
+  Name:        乐动21点开云体育百家乐鱼mw电子亚博
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          056e1b5a-f365-a247-af20-7150569fe895
+  Username:    Pineapple6994
+  Name:        Alex_the_nature_gambler
+  Description: nature traveler/casino slots/ sports bets(mostly flex/every now & then I'll power play) / stock investing
+  Location:    (none)
+  Tweets:      10
+  Z-score:     -0.8268160411191373
+
+  ID:          08677417-f15e-b326-a082-fd4fb874b072
+  Username:    leaked_free
+  Name:        👑Cappers Leaked 👑
+  Description: Premium Picks posted Daily. FREE
+  Location:    New York, USA
+  Tweets:      3
+  Z-score:     -1.1371055726422419
+
+  ID:          097b70d6-1748-800e-b218-834c439133de
+  Username:    unitedsportsgam
+  Name:        United Sports Gamblers
+  Description: 5 Whales. Including @adjnamedroach Discord Community featuring premium picks from pro handicappers for free! Telegram Pick Service.
+  Location:    (none)
+  Tweets:      24
+  Z-score:     -0.16058712560873994
+
+  ID:          0a335602-a689-9f27-bc0d-3eec7850725e
+  Username:    lebensgeister13
+  Name:        Matthias Wilke /Rangerbure
+  Description: ruhiger Typ ... keine Ahnung was ich manchmal Schreibe ...Sportergebnisse(Mitteilung)...(SerienFan)
+  Location:    Berlin
+  Tweets:      4
+  Z-score:     -1.0900244460267883
+
+  ID:          0b476e50-47ae-8f82-900a-6df64c517bce
+  Username:    gamblers_dream
+  Name:        THE PREMIUM
+  Description: #1 Sports Betting Consulting Service. We do the research so you don’t have to! Click the link to join #TeamPremium👇
+  Location:    The Office
+  Tweets:      34
+  Z-score:     0.315290671184401
+
+  ID:          103b2579-439d-9b3a-b5e4-57446d555445
+  Username:    emma_k_sells
+  Name:        E.J. Games
+  Description: Picker • Video Game Dealer • Online Seller Of All • https://t.co/twitter_link • https://t.co/twitter_link • https://t.co/twitter_link • 🌎🇺🇸
+  Location:    Chicago Metropolitan Area Only
+  Tweets:      44
+  Z-score:     0.6073248190048586
+
+  ID:          168c7301-85b4-9ae6-b9c8-bd425978abe3
+  Username:    justnecha
+  Name:        Necha
+  Description: Graphic Designer | Photo Editor | Video Animator.
+  Location:    Lagos
+  Tweets:      3
+  Z-score:     -1.0697425971132075
+
+  ID:          1d48c18e-b7e8-8de8-ab42-150a356e0b71
+  Username:    babysquirrels2
+  Name:        babysquirrels
+  Description: i like squirrels
+  Location:    (none)
+  Tweets:      30
+  Z-score:     0.12493955246714462
+
+  ID:          23b67b93-d6f6-891c-b5c1-e46ea8a05ff6
+  Username:    SandraJohn44916
+  Name:        足球比分佳博开云体育百家乐鱼mg电子亚博
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          24c6d0e0-3907-948a-b9ac-c307f97cb53a
+  Username:    MhouTips
+  Name:        MhouTips
+  Description: Fada de Hockey 🏒 Venez avec moi on sera passionnés ensemble ♥️. Retrouvez moi aussi sur le @Tipster_pronos et le pass 🏒
+  Location:    (none)
+  Tweets:      18
+  Z-score:     -0.43088867341043796
+
+  ID:          30773b99-067e-aad6-8176-209f29be6900
+  Username:    Shocklobster99
+  Name:        Stellar Arcades
+  Description: political insight, Technology, Arcades, Video games, Virtual Reality, Micro Computing
+  Location:    North Carolina, USA
+  Tweets:      6
+  Z-score:     -1.0889678270792296
+
+  ID:          308b3abd-ec13-8f9a-96b4-abdad15a6bd8
+  Username:    laystiia
+  Name:        Laystiia ✡️
+  Description: Indépendante Financièrement 🌴 Ancienne Sportive. 🏃‍♀️ Parieuse Experte en indépendant. 📊  Sport de Niche Xpert ! ✡️ Groupe Paris + ⬇️
+  Location:    (none)
+  Tweets:      22
+  Z-score:     -0.16053094370203405
+
+  ID:          311ca08b-9c54-b5ba-8318-202150208a06
+  Username:    FlashxDuel
+  Name:        2019
+  Description: Take Yo Dumbass back to the Comments
+  Location:    (none)
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          3142e356-4972-8a44-9afe-1be64c88c338
+  Username:    LawalAyo20
+  Name:        |HãŸ WhŸ 🦁
+  Description: YBNLMafia4LF💯||Love you mom❤️||CR7⚽️🐐||Chelsea Fc||RR🥶
+  Location:    +234
+  Tweets:      28
+  Z-score:     -0.10690366355686273
+
+  ID:          376880bc-b22a-aafc-9c89-8a6bfc4fab13
+  Username:    CharlesPelayo9
+  Name:        charasava
+  Description: citoyen libre qui refuse d'obéir 💪 zéro💉zéro test 👍 Frexit vite 🇨🇵
+le meilleur est à venir 🍿
+  Location:    TRUMPOUTINISTAN
+  Tweets:      14
+  Z-score:     -0.6192131798722523
+
+  ID:          3d31f375-fdd8-9154-bef2-c44513b54e15
+  Username:    lou_pronos_
+  Name:        Loup pronos
+  Description: 🐺 Loup Prono – L’instinct du gagnant. Votre meute de pronostics ⚽️football🎾tennis🏀basket Rejoignez la traque et devient parieur rentable💰 #ParisSportifs📈
+  Location:    (none)
+  Tweets:      27
+  Z-score:     0.07873528087985371
+
+  ID:          40c424b2-5292-b21a-a3b2-dad9165fe4ec
+  Username:    lugyney
+  Name:        Hustle ⚔️
+  Description: (none)
+  Location:    (none)
+  Tweets:      83
+  Z-score:     2.629384556594046
+
+  ID:          4508fe17-149c-bd3a-8e0a-cf18c9894622
+  Username:    franckyprono
+  Name:        Francky Prono
+  Description: Parieur, pronostiqueur expérimenté, gestion de bankroll. ⚽🏒🎾
+
+suivi de BK ⬇️⬇️
+  Location:    (none)
+  Tweets:      25
+  Z-score:     -0.01697120895290139
+
+  ID:          4c155ffc-97e5-bdd5-aca9-1f7ccc713ae3
+  Username:    MoneyLineGuy
+  Name:        Moneyline Guy
+  Description: Free Daily MoneyLine Picks!! LETS GET PAID😎
+  Location:    New York
+  Tweets:      8
+  Z-score:     -0.9996892667590143
+
+  ID:          4c732627-012b-acff-866a-ce87f5d0020f
+  Username:    AdisaKabir1
+  Name:        ❄️💐KbrightX🍀🐍
+  Description: BRIGHTNESS of God is the best . 🏀Basketballer🏀 #netsworld BROOKLYN NETS🤍..BARCELONA💙♥️……… let’s go nets👀❤️!!!! …. I 🤍❤️ #chiefskingdom
+  Location:    (none)
+  Tweets:      11
+  Z-score:     -0.8657714262786915
+
+  ID:          4dce38d6-6203-a825-b7ef-5b597d130672
+  Username:    DpopsShadow
+  Name:        Shadow Fella ⭐
+  Description: 🫵👁️👁️👇
+🇷🇺 🇨🇳 🇮🇷 #Genocide Wars
+🇺🇦☦ a time to be silent and a time to speak, a time to love and a time to hate, a time for war and a time for peace.
+  Location:    Elk Island, 'Berta🏔️🌾CDN🍁
+  Tweets:      39
+  Z-score:     0.38412841820432064
+
+  ID:          5fef3628-ba50-881f-bffd-4c150bb1720d
+  Username:    justnecha
+  Name:        Necha
+  Description: Graphic Designer | Photo Editor | Video Animator.
+  Location:    Lagos
+  Tweets:      43
+  Z-score:     0.5626855388447509
+
+  ID:          6094f8da-117d-8eca-8b81-44de418d2dad
+  Username:    RaleighRul4811
+  Name:        Raleigh Rule
+  Description: (none)
+  Location:    (none)
+  Tweets:      100
+  Z-score:     3.107124507970883
+
+  ID:          62133642-6cc5-9128-b9dd-4ef5e9ac11cb
+  Username:    MyMovieHQ
+  Name:        My Movie HQ
+  Description: Your movie retail shop.. Copyrights belong to their respective owners. DM for credits/removal/submission.
+  Location:    DM for PROMO
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          641169b8-ca4e-9121-b2fa-acfaccb27518
+  Username:    LELEVE_
+  Name:        L'ÉLÈVE
+  Description: Sorry, but my father and mother left me an orphan so I have to face life alone ✊💔
+  Location:    Pays trop mignon 
+  Tweets:      71
+  Z-score:     2.1842780572004656
+
+  ID:          6e031903-6a20-ba3b-8fd9-1f93c01a6319
+  Username:    lisashannon1776
+  Name:        Lisa Shannon
+  Description: (none)
+  Location:    (none)
+  Tweets:      6
+  Z-score:     -1.0889678270792296
+
+  ID:          6e82689a-30d1-be51-86a3-6f51e9008bd6
+  Username:    fatboner1
+  Name:        fatboner
+  Description: intelligent like Scottie Barnes
+
+the world's only slovenian-african
+  Location:    (none)
+  Tweets:      89
+  Z-score:     2.932618553546676
+
+  ID:          6eb58a82-d88d-a580-be4c-89f70bb27148
+  Username:    EdgeSportsApp
+  Name:        EdgeSports
+  Description: FREE AI-generated Sports Betting Predictions! Download the app today on the Apple App Store to get an Edge on your bets.
+  Location:    (none)
+  Tweets:      21
+  Z-score:     -0.30335046464668225
+
+  ID:          72ddef9d-27e7-926a-9aa6-cad2a98ccfbf
+  Username:    PierreNon184173
+  Name:        Pierrot l'effronté
+  Description: Mettez vos strings de côté, jvais bientôt chanter des poèmes sur scène.
+  Location:    78 boisé
+  Tweets:      11
+  Z-score:     -0.686916637782187
+
+  ID:          72e54cf7-ee55-b622-8c99-de93aad5f22f
+  Username:    Jozayyy__
+  Name:        GmJo 🦦
+  Description: The most versatile streamer you will ever witness💆🏽‍♂️The person you should have tailed from the start😈|+1K profit in 2024🔥| Free discord click the link🤝
+  Location:    (none)
+  Tweets:      15
+  Z-score:     -0.6872143056382612
+
+  ID:          7337bf24-ed71-a998-adac-c0ae18539e6e
+  Username:    lienmatch_24
+  Name:        lien match
+  Description: Free STREAM: Premier League, liga, Serie A, Ligue 1, Bundesliga, efl, ufc, mma, boxing, f1, nfl, cricket, live tv, super League, Primeira Liga, Ligue 2,
+  Location:    (none)
+  Tweets:      16
+  Z-score:     -0.44765041320029936
+
+  ID:          740078fc-9cff-928e-a63e-8fce5405d06f
+  Username:    s__wayne
+  Name:        BITW
+  Description: (none)
+  Location:     
+  Tweets:      4
+  Z-score:     -1.02188935219683
+
+  ID:          76759041-d4eb-b6f1-b3a5-a57bd35ee765
+  Username:    CLIPS82WIN
+  Name:        PGbetting
+  Description: Étudiant passionné de paris sportifs. Je tente une nouvelle expérience en me lançant en tant que Tipster. https://t.co/twitter_link
+  Location:    (none)
+  Tweets:      43
+  Z-score:     0.8443871995418945
+
+  ID:          77163f12-9b3b-8a23-968f-6da6c7302794
+  Username:    JenniferRi19215
+  Name:        乐投体育博源体育开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞JJ棋牌Y1体育同城乐亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          7948d610-08e4-9e5d-ad5d-964f1f30dc36
+  Username:    Genybet_Sport
+  Name:        Genybet Sport 🔞
+  Description: Pariez en ligne avec @Genybet_Sport  !
+🐴 @Genybet_Turf
+ℹ️ serviceclient@genybet.fr
+🔞 Jeu responsable : https://t.co/twitter_link
+  Location:    France
+  Tweets:      10
+  Z-score:     -0.7347698826985646
+
+  ID:          8097b55b-a1cd-81fa-b6e6-ec234d956d86
+  Username:    ParlayJames
+  Name:        Parlay James💎
+  Description: I do the work so you don’t have to. Easy winners found here. Let’s cash 💰
+  Location:    The Bank
+  Tweets:      10
+  Z-score:     -0.8268160411191373
+
+  ID:          82abb843-6734-baec-a052-13e2cbe64c34
+  Username:    LinaBrown96949
+  Name:        书中自有黄金屋蜂蜜宝石开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞火焰4恶魔狂涌太阳神亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          865ea40e-92f1-b149-8b07-b00be16e7df6
+  Username:    4MEDLEN
+  Name:        Matt Hartley Jr.
+  Description: I am a 30 year old gay Dem Liberal & a fan of @ToledoWalleye & @DetroitRedWings Hockey but also ready for some baseball as well some madness people | He/Him/His
+  Location:    Toledo, OH
+  Tweets:      59
+  Z-score:     1.5049851631672535
+
+  ID:          89dc5c26-45bf-8689-b0dc-8290b4793256
+  Username:    jibolasq
+  Name:        Jibola❤️😈
+  Description: What a life 🙁
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.231267825873149
+
+  ID:          8adb0520-f9e2-b91d-ae89-ebd128c547e1
+  Username:    USA1LandofFree
+  Name:        Mike Bartlett
+  Description: (none)
+  Location:    (none)
+  Tweets:      26
+  Z-score:     -0.06541156625011176
+
+  ID:          8e31c6a2-9710-b993-b306-d3a21a8083a4
+  Username:    kthesportspicks
+  Name:        K-Dizzle
+  Description: (none)
+  Location:    Earth
+  Tweets:      1
+  Z-score:     -1.1654490869459626
+
+  ID:          8e45cd0a-49de-b72a-8544-7a117a1ac2d6
+  Username:    intelFromBrian
+  Name:        Brian’s Breaking News and Intel
+  Description: Account specializing in international breaking news.
+  Location:    United States
+  Tweets:      32
+  Z-score:     0.07165345708356759
+
+  ID:          94ab6deb-d359-8353-be40-0ffa1113abfe
+  Username:    opaxprime020
+  Name:        @BallOut
+  Description: NBA fan, DallasMavs fan, Kyrie fan. Loves to watch the Prem. MMA lover. Art creator. #NBAtwitter #Premierleague
+  Location:    (none)
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          9737641a-8588-953e-a132-7f249ddb0bf7
+  Username:    pastorpickss
+  Name:        Swanko 2x
+  Description: please dont tail me #bringthegold #lakernation
+  Location:    (none)
+  Tweets:      15
+  Z-score:     -0.6872143056382612
+
+  ID:          983af1b7-6870-a9ba-b036-ca05d8ddbd1a
+  Username:    gl0balpopstarjk
+  Name:        Jungkook 정국 👑 Golden✨
+  Description: #JUNGKOOK Main Vocalist, Sub Rapper, Lead Dancer, Center/Face of BTS • The Ace & King Of Kpop • Global Pop Star • “The Biggest Pop Icon of the Century”
+  Location:    (none)
+  Tweets:      27
+  Z-score:     -0.1515429437169703
+
+  ID:          98a6d27e-8133-8ff6-89d7-927627c865d0
+  Username:    milou7577
+  Name:        milou
+  Description: (none)
+  Location:    (none)
+  Tweets:      87
+  Z-score:     2.9499299758625064
+
+  ID:          9a85e9f0-eb73-b134-8d50-7d9fbf60d366
+  Username:    FrancoisSan5807
+  Name:        François Sandro 🇭🇹🇨🇦
+  Description: Cubarsí est Le Goat Qu'il pense être 🤙🐐
+
+Barça 💙❤️Lakers💜💛 OM 💙🤍
+  Location:    (none)
+  Tweets:      7
+  Z-score:     -0.8783296174476972
+
+  ID:          a0299838-ddfa-b9cc-82b0-e334e8b033cc
+  Username:    T2_Free2
+  Name:        Tyler Free
+  Description: Helping people use their influence to EARN cash 🖊️  | Amateur boxing trainee🥊 |  
+ Entrepreneur 💰 | Soldier of God ✝️ | Based in Florida |
+  Location:    Florida, USA
+  Tweets:      29
+  Z-score:     0.07735177278783054
+
+  ID:          a3cde073-24c0-b538-9e61-a1c68f2eb25f
+  Username:    b_tella
+  Name:        Marked safe from Western Propaganda
+  Description: lover of humanity, animals and planet.
+  Location:    (none)
+  Tweets:      11
+  Z-score:     -0.7792282614398233
+
+  ID:          a7d17421-8e5d-9667-9231-36947ba69976
+  Username:    OCollins32288
+  Name:        Onah Collins
+  Description: (none)
+  Location:    (none)
+  Tweets:      26
+  Z-score:     -0.06541156625011176
+
+  ID:          abbe2341-af30-94fa-ae69-c3a35a36a6ee
+  Username:    LeFloater
+  Name:        Le Floater
+  Description: Bienvenue sur le Floater ! Ici tu trouveras toutes les informations sur la NBA et le basket en général : news, analyses, transferts... 🏀🏅
+  Location:    (none)
+  Tweets:      20
+  Z-score:     -0.2562374335347891
+
+  ID:          ac912644-c450-bfec-aebb-cfacd5f0c8ec
+  Username:    syedmowla
+  Name:        Mowla
+  Description: gwapanese
+  Location:    London
+  Tweets:      7
+  Z-score:     -0.9695793801570796
+
+  ID:          ae025c49-92d8-902b-bc5d-d0c2f8aa073b
+  Username:    Photo_B_ello
+  Name:        PhotoBello
+  Description: Chaque image raconte une histoire. 📸
+  Location:    (none)
+  Tweets:      33
+  Z-score:     0.365854750378119
+
+  ID:          b01693c8-904c-9403-9faf-4dedcf6e3d13
+  Username:    Beastprs
+  Name:        Beast Sport
+  Description: 🎖️ICI #NHL  #NFL #MLB #NBA #NPB #KBO #Sporthiver 😄⛷️⚾🏀🏈🎖️je propose mes avis
+  Location:    (none)
+  Tweets:      13
+  Z-score:     -0.5912101479494319
+
+  ID:          b3b3ef9d-8537-9d0b-b99e-fe245874804c
+  Username:    NEXENPRONOS
+  Name:        🥷🏿Nexen Pronos💰
+  Description: 🎯 RABONA 1ER DÉPÔT DOUBLÉ EN CASH 💰 : https://t.co/twitter_link
+  Location:    Marseille, France
+  Tweets:      12
+  Z-score:     -0.6390633928658095
+
+  ID:          b5c4e424-95d8-8e8d-aadd-c28f7d8a2f36
+  Username:    PhotoIsaIso
+  Name:        Isa Iso
+  Description: (none)
+  Location:    (none)
+  Tweets:      29
+  Z-score:     0.08700371935955165
+
+  ID:          ba4818e8-4b94-9a52-9310-393da114728f
+  Username:    tifnyblinxx
+  Name:        Tifnyblinx
+  Description: soon as they think they see the light I turn the picture Black 💋.
+  Location:     ✨✨
+  Tweets:      33
+  Z-score:     0.2677028915050869
+
+  ID:          babb6419-5aef-8dc4-bd6b-8914e4e04e32
+  Username:    Santos1100011
+  Name:        Santos
+  Description: MAN U✖️RASMUS✖️REAL MADRID✖️VINI JR✖️BARCA✖️YAMAL✖️RONALDO🐐
+  Location:    Idk
+  Tweets:      86
+  Z-score:     2.789855214508734
+
+  ID:          bb2e3c59-c16f-b620-b01b-52800e6edd4e
+  Username:    MaryQuinon21669
+  Name:        炸金花二十一点开云体育百家乐鱼bg捕鱼AG真人
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          bfd98eba-af97-bcb8-b872-e0ac38ed2c8e
+  Username:    NYTigers_
+  Name:        New York Tigers 🌐
+  Description: 31st #NBA franchise. Roaring onto the scene in NYC 🐯🏀🗽
+
+#KeepTheClaw
+  Location:    (none)
+  Tweets:      21
+  Z-score:     -0.4193786246776158
+
+  ID:          c180edd7-1ca9-b363-9f0f-dd40e7bbc0ce
+  Username:    WAVECULTURE2
+  Name:        W(E)AVECULTURE
+  Description: Synthwave promoter.
+&
+Fantasy lover.
+  Location:    An endless purple road.
+  Tweets:      1
+  Z-score:     -1.1654490869459626
+
+  ID:          c18b9f02-0735-bd73-a9fd-74c057ff7c8c
+  Username:    starfoxx0521
+  Name:        JC 💗💛💙🔞
+  Description: Better be 18+. I'm 6ft4 and around 260lbs 
+
+Working at Enterprise Holdings, working as a detailer
+
+Single/poly relationship
+  Location:    Lancaster, OH
+  Tweets:      9
+  Z-score:     -0.9550499865989067
+
+  ID:          c61dd021-26f9-adab-ac9d-a54f90543704
+  Username:    SarahCosgr12020
+  Name:        大象踩踏事件非洲狮开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞足球杯狂欢节被施咒的王子亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          c663eaa7-87b6-b756-8498-8650a5c8d73b
+  Username:    CraftyCelt
+  Name:        Pól deNógla 🇮🇪🌍🌎🌏🇺🇳 #COYG
+  Description: Master of Stagecraft, lawyer & human rights advocate in Pattaya, Thailand.
+
+do the Porn it's a Human Rights issue.
+  Location:    เมืองพัทยา, ประเทศไทย
+  Tweets:      93
+  Z-score:     2.79464954685013
+
+  ID:          c68fd3b5-5a3c-a4c0-a5f3-67756757ac9e
+  Username:    cleophasnyasimi
+  Name:        cleophas
+  Description: Post design ✨️ advertising at cheap price, a chemistry physics teacher,forex marketing.
+  Location:    Kisii, Kenya
+  Tweets:      39
+  Z-score:     0.5532295695809715
+
+  ID:          ca371a0e-d4fe-aeeb-ab02-e706d2460403
+  Username:    LucieLou08
+  Name:        Lucie Lachance
+  Description: Born in Montreal and I ❤️ music, HABS and BSB!! GO Gally, Suzuki, Caufield, Harris and Pezzetta!! #gohabsgo
+  Location:    Gatineau
+  Tweets:      2
+  Z-score:     -1.1841866992576955
+
+  ID:          cb5fbf22-b724-b8b7-aa64-990907d84fc6
+  Username:    upwegonow
+  Name:        Upwegonow
+  Description: (none)
+  Location:    (none)
+  Tweets:      7
+  Z-score:     -0.9695793801570796
+
+  ID:          d09e7861-837a-b182-8f02-7961c5ff69dc
+  Username:    StefanieGa10005
+  Name:        万豪娱乐博狗开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞新威尼斯人奇趣游艺KOK体育亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.3121642278797674
+
+  ID:          d207d0e3-1cd6-9f37-bad3-9b8be102f128
+  Username:    YennySports
+  Name:        Yenny Sports - FREE sharp bets in real time
+  Description: I share what sharps play across NFL, CFB, NBA, NCAAB, NHL, MLB, Soccer 🔪 I don't handicap 💰 All plays are 1 unit, -110 juice unless specified #GamblingTwitter
+  Location:    New York, NY
+  Tweets:      37
+  Z-score:     0.4580540102223433
+
+  ID:          d4ffa333-e09d-a0ad-8422-28baea36bc1c
+  Username:    MyBetBoost
+  Name:        Bet Boost
+  Description: 🚀 Boostez vos paris avec BetBoost !
+📈 Partage en temps réel des cotes boostées pour Winamax, Unibet, Betclic, Parions Sport en Ligne, ZeBet et PMU.
+  Location:    Alertes Discord 👉
+  Tweets:      15
+  Z-score:     -0.4955036581166769
+
+  ID:          d5d83682-41d5-abea-a6d4-82bec5e1f6e2
+  Username:    marteatides
+  Name:        payton
+  Description: @martitides on I n s t A gram
+  Location:    United States
+  Tweets:      83
+  Z-score:     2.348256745249054
+
+  ID:          d6eff8de-093d-bfd3-ab14-415c58111e4e
+  Username:    LaBamance
+  Name:        #MESS8 #305 #22
+  Description: #HEATCULTURE
+
+#JimmyBetter
+
+#MESS8
+  Location:    (none)
+  Tweets:      6
+  Z-score:     -0.9261828623640748
+
+  ID:          dc7a1892-6148-9565-94a7-96325cec9cff
+  Username:    _NBAX_
+  Name:        | NBAX | 🇺🇸🏀
+  Description: (none)
+  Location:    (none)
+  Tweets:      28
+  Z-score:     0.12658852579623125
+
+  ID:          e04c053c-0ce1-a629-87fc-bb937ac281bb
+  Username:    JocelynGuay3
+  Name:        eroldi Layton adam sorg vw bat sod poloz
+  Description: https://t.co/twitter_link algorithme insimination structube lumenpulse Landry mecafab Harrison porter algorithme corpus Adirondack cetam infotec https://t.co/twitter_link iPhone 15 35$/moi$
+  Location:    Longueuil, Québec
+  Tweets:      58
+  Z-score:     1.452356391207706
+
+  ID:          e53259b7-bedf-8fa6-b0dd-62c9fc7e1370
+  Username:    sk1nnyc1gg1es
+  Name:        ollie (they/them)
+  Description: skinny bodies get more attention 🧚🏽‍♂️
+  Location:    19
+  Tweets:      5
+  Z-score:     -1.133607107239337
+
+  ID:          ea9fd9d8-9371-9af1-8ad5-e583e445ae2f
+  Username:    lihukoamr56
+  Name:        Bokep xxx
+  Description: 🌟 Manifesting dreams into reality | Positive vibes only | Gratitude in every step | #ManifestingMagic
+  Location:    (none)
+  Tweets:      43
+  Z-score:     0.7435806882982279
+
+  ID:          eb8848c0-a8f2-8f39-bfd7-330c6fbf6947
+  Username:    swtcaroIina
+  Name:        #1 pink birthday stan
+  Description: God first. block= i own u. spreading kindness one tweet at a time.💕 nickis son(face car declinded B) blocked me
+  Location:    (none)
+  Tweets:      11
+  Z-score:     -0.7792282614398233
+
+  ID:          ed8fca1a-a49e-86bf-a4d9-5cac89a9d2c7
+  Username:    Prono17170
+  Name:        Denim Star
+  Description: Passionné de sport.               Vous tenir informés sportivement et PARIER sont mes priorités                             Aller l'OL 🦁
+  Location:    (none)
+  Tweets:      14
+  Z-score:     -0.6192131798722523
+
+  ID:          efd91b1d-5eea-9dd1-abfd-284445235cb9
+  Username:    res_risk
+  Name:        Responsible Risk
+  Description: Increase the Overall Odds of Success through Winning Decisions https://t.co/twitter_link
+  Location:    (none)
+  Tweets:      15
+  Z-score:     -0.6872143056382612
+
+  ID:          f05a51d8-2ff8-975d-862a-bf27e2f96303
+  Username:    JChase28109
+  Name:        粤彩票真人发牌开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞真金拉霸六合至尊98体育亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          f14283c0-9d18-a224-a83d-338eaf1e7dfa
+  Username:    Ilias7949613791
+  Name:        BRAHIMINIHO🇲🇦
+  Description: Compte News de BRAHIM DIAZ et du Maroc 🇲🇦
+  Location:    (none)
+  Tweets:      13
+  Z-score:     -0.5912101479494319
+
+  ID:          f1e0fd30-8e5d-9e6c-8228-e760e5d3e5be
+  Username:    captsingh
+  Name:        Captain Singh, FICArb, 73K
+  Description: 🌎 World-traveled cosmopolitan ■ UK Class.1 Master Mariner  ■ Maritime expert ⚓  ➡️ Stay informed with maritime updates, shipping research and mirthful musings
+  Location:    Singapore 🇸🇬
+  Tweets:      22
+  Z-score:     -0.3747393445175082
+
+  ID:          f2040a3f-66fd-bffd-8489-58b350813084
+  Username:    williams_m15246
+  Name:        野性斗牛金猪呈祥开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞赤炎烈虎女巫宙斯直击狂热亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          f584c909-736e-beb0-8ee8-10712fbbf75a
+  Username:    ClydeDager59747
+  Name:        Dager Clyde
+  Description: (none)
+  Location:    (none)
+  Tweets:      42
+  Z-score:     0.5180462586846434
+
+  ID:          f5b93516-f4d0-9719-911c-9f732084cc7c
+  Username:    ChrisDPOMAY
+  Name:        Chris Pomay
+  Description: Radio Host of Live With CDP Sports Talk on WQEE 99.1 FM in Georgia,  CKRT (Border City Radio) in Windsor, Ontario.
+https://t.co/twitter_link
+  Location:    Southern Ontario 
+  Tweets:      17
+  Z-score:     -0.597935745318046
+
+  ID:          fedda993-5b5f-9bdd-a551-0e86c59817f6
+  Username:    FastBreakPhenom
+  Name:        FastBreakPhenom
+  Description: i love this game!
+  Location:    29.9792458 31.1339
+  Tweets:      46
+  Z-score:     0.6966033793250737
+
+  ID:          fef835c0-4163-ad70-8e8d-b1f974ea3a84
+  Username:    RDSca
+  Name:        RDS
+  Description: Le sport sans limites! Retrouvez toutes les nouvelles du sport sur https://t.co/twitter_link
+  Location:    Québec
+  Tweets:      82
+  Z-score:     2.5823034299785923
+
+------------------------------------------------------------
+FALSE NEGATIVES — 18 bot(s) missed
+------------------------------------------------------------
+
+  ID:          0a64309f-3f7b-45e3-a5b5-922694e229f1
+  Username:    claude912
+  Name:        Claude
+  Description: Découvrir la beauté du monde un pas à la time
+  Location:    Paris, France
+  Tweets:      25
+  Z-score:     -0.10132078710226275
+
+  ID:          0c9428cd-0448-4977-8793-368d762dda26
+  Username:    fruitgiggles
+  Name:        polarfitztab
+  Description: adventure awaits
+  Location:    10
+  Tweets:      15
+  Z-score:     -0.6872143056382612
+
+  ID:          151ee06b-e60d-41a8-83bd-024f312044fe
+  Username:    SirReginald73
+  Name:        Sir Reginald Featherstone
+  Description: A seasoned gentleman, lover of tea and classic literature. Proudly British. 🇬🇧
+  Location:    Bath, England
+  Tweets:      10
+  Z-score:     -0.9104107064387992
+
+  ID:          1b9847e8-cf5d-431a-9e96-9cbb70c2c5eb
+  Username:    CosmicDreamer12
+  Name:        Lena Dupuis
+  Description: garde la tête haute et les rêves grands
+  Location:    Montréal, Québec
+  Tweets:      24
+  Z-score:     -0.14840191371771635
+
+  ID:          209b5461-5b48-4d1e-9b6a-7a7824e1c523
+  Username:    Tiff-Tiff
+  Name:        Tiff-Tiff
+  Description: #NUCvolleyball 🧡🖤 | #HCAjoie 💛🖤 | #FCBayern ❤️🤍 |  #NJDevils | #ScuderiaFerrari 🐎
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.546518644438613
+
+  ID:          58983bd7-8269-44ee-993b-2e5901e0ebc1
+  Username:    pixelgeek12
+  Name:        Nate
+  Description: Living in the world of pixels and code. Web designer extraordinaire!
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          645c04e9-8c52-455b-b230-8fd061ff1b69
+  Username:    JoJo5
+  Name:        Joseph
+  Description: Un p'tit pouvoir implique de grandes irresponsabilitées!
+
+Insta: @affreuxjosh
+  Location:    (none)
+  Tweets:      94
+  Z-score:     3.147276949364035
+
+  ID:          8442f5ef-7b34-43a3-955e-9a7f46889707
+  Username:    Pat
+  Name:        Patricia
+  Description: 🛰🇨🇩🇦🇴🇫🇷
+Le Héros du Siècle, Le Dernier Dinosaure, la Heat, Nucléaire, Météorite, Monument Mondial, Incontesté Incontestable... Bo ko lala na bio 🤣🤣
+  Location:    (none)
+  Tweets:      67
+  Z-score:     1.8760865307467882
+
+  ID:          8c5f8a42-43aa-4421-8bd8-435fdb3f16f8
+  Username:    ChasingSunsets
+  Name:        🌅 SunsetLover
+  Description: Chasing sunsets, one beach at a time 🌊 #SunsetChaser #BeachVibes
+  Location:    currently in Malibu, originally from Miami
+  Tweets:      80
+  Z-score:     2.214338904768731
+
+  ID:          8e229365-e29a-4321-b70a-401c14b12139
+  Username:    th3tru3king
+  Name:        El Baby 🌍
+  Description: music discussions and random rants
+
+unapologetically black
+  Location:    EARTH
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          a0130db3-2b57-4093-ac1e-06b6bd12fd0a
+  Username:    FashionableQueen
+  Name:        Claire
+  Description: Claire | secretly obsessed with indie
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          a72605f1-5b9a-482b-a11f-fd5c5f3ca76e
+  Username:    KatieXO
+  Name:        Kate James
+  Description: After-hours box scores, headlines, and GOAT debates — keeping the love for the game alive.
+  Location:    Lakers HQ
+  Tweets:      14
+  Z-score:     -0.7318535857983688
+
+  ID:          b6d1ae84-f5d2-4c27-9c0e-86f4c719a724
+  Username:    KKBello__
+  Name:        AYOOLAMI😘😍
+  Description: Love n Respect ✊🏿 ❤️
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          c2a803a7-af82-4de9-b4ac-4643d6404e37
+  Username:    JordanAlways_
+  Name:        Bray Wyatt Forever 🪑⭕️ ❤️ • Nets (26-42)
+  Description: @windham6 fan for life ❤️ • #netsworld • #RingTheBell • #ForeverNe • Michigan State • Horror Movies
+  Location:    Firefly Funhouse 
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          c5050746-b806-4bb2-96e1-432cce9311f3
+  Username:    codeGenie905
+  Name:        Samuel Johnson
+  Description: I turn coffee into software, one line at a time.
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          dcf22af4-2648-458a-9f20-da15f2170069
+  Username:    IronFist7777
+  Name:        Hellhammer
+  Description: Independent Hockey Raconteur. Goalie Enjoyerer. Stand Up Comedian/Former Talk Radio Personality. Proudly indigenous Sámi🦌🪶 & 🇺🇦! Let's Puck 🏒! 🦩native.
+  Location:    Boston, MA
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          ef97d042-0ba1-4c45-aa67-c6c2d0a72689
+  Username:    topazfire22
+  Name:        Topaz
+  Description: Finding gems in everyday life
+  Location:    New York, NY
+  Tweets:      11
+  Z-score:     -0.8657714262786915
+
+  ID:          f03e66fe-9cec-49ea-9150-7b992ab9a75e
+  Username:    Momo
+  Name:        Momo
+  Description: well,well,well...
+  Location:    (none)
+  Tweets:      68
+  Z-score:     1.9231676573622418
