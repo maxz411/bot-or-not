@@ -8,7 +8,11 @@ Batch size:  1
 Datasets:    [30]
 Total users: 275  (bots: 66, humans: 209)
 
-COUNTS:
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=60 TN=191 FP=18 FN=6 | acc=91.27% | score=198/264 (75.0%)
+  Combined: users=275 bots=66 humans=209 | TP=60 TN=191 FP=18 FN=6 | acc=91.27% | score=198/264 (75.0%)
+
+COUNTS (COMBINED):
   True Positives:    60
   True Negatives:    191
   False Positives:   18  (6.55%)

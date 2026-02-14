@@ -11,10 +11,11 @@ wheels/
 
 .env
 
-# Detector run cache (resumable runs)
-cache/
+# Fine-tuning artifacts
+python/artifacts/
+python/.uv-cache/
 
-# LLM prompt response cache
-llm-cache.db
+# Detector run cache (resumable runs)
+js/cache/*.json
 
 node_modules/

@@ -9,7 +9,14 @@ Rec. depth:  8
 Datasets:    [30, 31, 32, 33]
 Total users: 889  (bots: 184, humans: 705)
 
-COUNTS:
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=64 TN=189 FP=20 FN=2 | acc=92.00% | score=214/264 (81.1%)
+  Dataset 31: users=171 bots=27 humans=144 | TP=25 TN=137 FP=7 FN=2 | acc=94.74% | score=84/108 (77.8%)
+  Dataset 32: users=271 bots=63 humans=208 | TP=60 TN=191 FP=17 FN=3 | acc=92.62% | score=203/252 (80.6%)
+  Dataset 33: users=172 bots=28 humans=144 | TP=28 TN=128 FP=16 FN=0 | acc=90.70% | score=80/112 (71.4%)
+  Combined: users=889 bots=184 humans=705 | TP=177 TN=645 FP=60 FN=7 | acc=92.46% | score=581/736 (78.9%)
+
+COUNTS (COMBINED):
   True Positives:    177
   True Negatives:    645
   False Positives:   60  (6.75%)

@@ -1,0 +1,440 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    v4-30-2026-02-14T04-35-33-308Z.txt
+Detector:    v4
+Model:       openai/gpt-4.1-2025-04-14
+Batch size:  1
+Datasets:    [30]
+Total users: 275  (bots: 66, humans: 209)
+
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=29 TN=195 FP=14 FN=37 | acc=81.45% | score=51/264 (19.3%)
+  Combined: users=275 bots=66 humans=209 | TP=29 TN=195 FP=14 FN=37 | acc=81.45% | score=51/264 (19.3%)
+
+COUNTS (COMBINED):
+  True Positives:    29
+  True Negatives:    195
+  False Positives:   14  (5.09%)
+  False Negatives:   37  (13.45%)
+  Correct:           224  (81.45%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 51 / 264  (19.3%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 14 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          048effad-81bc-8531-b08a-396d930f6008
+  Username:    eva_waters10683
+  Name:        乐动21点开云体育百家乐鱼mw电子亚博
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          097b70d6-1748-800e-b218-834c439133de
+  Username:    unitedsportsgam
+  Name:        United Sports Gamblers
+  Description: 5 Whales. Including @adjnamedroach Discord Community featuring premium picks from pro handicappers for free! Telegram Pick Service.
+  Location:    (none)
+  Tweets:      24
+  Z-score:     -0.16058712560873994
+
+  ID:          1d48c18e-b7e8-8de8-ab42-150a356e0b71
+  Username:    babysquirrels2
+  Name:        babysquirrels
+  Description: i like squirrels
+  Location:    (none)
+  Tweets:      30
+  Z-score:     0.12493955246714462
+
+  ID:          23b67b93-d6f6-891c-b5c1-e46ea8a05ff6
+  Username:    SandraJohn44916
+  Name:        足球比分佳博开云体育百家乐鱼mg电子亚博
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          62133642-6cc5-9128-b9dd-4ef5e9ac11cb
+  Username:    MyMovieHQ
+  Name:        My Movie HQ
+  Description: Your movie retail shop.. Copyrights belong to their respective owners. DM for credits/removal/submission.
+  Location:    DM for PROMO
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          6eb58a82-d88d-a580-be4c-89f70bb27148
+  Username:    EdgeSportsApp
+  Name:        EdgeSports
+  Description: FREE AI-generated Sports Betting Predictions! Download the app today on the Apple App Store to get an Edge on your bets.
+  Location:    (none)
+  Tweets:      21
+  Z-score:     -0.30335046464668225
+
+  ID:          82abb843-6734-baec-a052-13e2cbe64c34
+  Username:    LinaBrown96949
+  Name:        书中自有黄金屋蜂蜜宝石开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞火焰4恶魔狂涌太阳神亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          865ea40e-92f1-b149-8b07-b00be16e7df6
+  Username:    4MEDLEN
+  Name:        Matt Hartley Jr.
+  Description: I am a 30 year old gay Dem Liberal & a fan of @ToledoWalleye & @DetroitRedWings Hockey but also ready for some baseball as well some madness people | He/Him/His
+  Location:    Toledo, OH
+  Tweets:      59
+  Z-score:     1.5049851631672535
+
+  ID:          8adb0520-f9e2-b91d-ae89-ebd128c547e1
+  Username:    USA1LandofFree
+  Name:        Mike Bartlett
+  Description: (none)
+  Location:    (none)
+  Tweets:      26
+  Z-score:     -0.06541156625011176
+
+  ID:          babb6419-5aef-8dc4-bd6b-8914e4e04e32
+  Username:    Santos1100011
+  Name:        Santos
+  Description: MAN U✖️RASMUS✖️REAL MADRID✖️VINI JR✖️BARCA✖️YAMAL✖️RONALDO🐐
+  Location:    Idk
+  Tweets:      86
+  Z-score:     2.789855214508734
+
+  ID:          d207d0e3-1cd6-9f37-bad3-9b8be102f128
+  Username:    YennySports
+  Name:        Yenny Sports - FREE sharp bets in real time
+  Description: I share what sharps play across NFL, CFB, NBA, NCAAB, NHL, MLB, Soccer 🔪 I don't handicap 💰 All plays are 1 unit, -110 juice unless specified #GamblingTwitter
+  Location:    New York, NY
+  Tweets:      37
+  Z-score:     0.4580540102223433
+
+  ID:          ea9fd9d8-9371-9af1-8ad5-e583e445ae2f
+  Username:    lihukoamr56
+  Name:        Bokep xxx
+  Description: 🌟 Manifesting dreams into reality | Positive vibes only | Gratitude in every step | #ManifestingMagic
+  Location:    (none)
+  Tweets:      43
+  Z-score:     0.7435806882982279
+
+  ID:          f05a51d8-2ff8-975d-862a-bf27e2f96303
+  Username:    JChase28109
+  Name:        粤彩票真人发牌开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞真金拉霸六合至尊98体育亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+  ID:          f2040a3f-66fd-bffd-8489-58b350813084
+  Username:    williams_m15246
+  Name:        野性斗牛金猪呈祥开云体育百家乐棋牌彩票PG电子足球篮球雷火电竞赤炎烈虎女巫宙斯直击狂热亚博体育
+  Description: (none)
+  Location:    (none)
+  Tweets:      1
+  Z-score:     -1.2551060582329643
+
+------------------------------------------------------------
+FALSE NEGATIVES — 37 bot(s) missed
+------------------------------------------------------------
+
+  ID:          0080165a-4276-4f48-83bb-6b0fa82f50fd
+  Username:    YummyAnime44
+  Name:        Sweet Tooth36c
+  Description: Anime bingewatcher, onigiri lover, and professional snack eater. #AnimeLife
+  Location:    Tokyo Dreams
+  Tweets:      37
+  Z-score:     0.4580540102223433
+
+  ID:          0339b1ed-b630-407a-b4c9-f0f577b05518
+  Username:    LukaLast44782
+  Name:        4ac4ab62e49c4aa
+  Description: (none)
+  Location:    ...
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          159bddb1-f6d4-481d-8ffd-777b05ecf129
+  Username:    Starly
+  Name:        Juliette
+  Description: Juliette, baking sourdough and telling stories
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          2dfdd1ec-4ec6-4e52-ad7b-46787ccd8708
+  Username:    ChloeHeart19684
+  Name:        4934ab4994aa
+  Description: (none)
+  Location:    .:HOME:.
+  Tweets:      17
+  Z-score:     -0.49370158336393866
+
+  ID:          405158e7-6f21-4c8a-b7d0-9a7018f3c1d9
+  Username:    SunnyWarFan
+  Name:        Sunny Bunny 31e",
+  Description: Love astronomy, war history buff, casual chess player. Setting course to a better tomorrow. #SunWarriors
+  Location:    HeavenlyPlace
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          57ecd89d-5bca-4a39-ae8d-bc02663c21d2
+  Username:    chessmaster66
+  Name:        Robert Lang
+  Description: strategizing life one move at a time
+  Location:    Checkmate City
+  Tweets:      37
+  Z-score:     0.4580540102223433
+
+  ID:          58983bd7-8269-44ee-993b-2e5901e0ebc1
+  Username:    pixelgeek12
+  Name:        Nate
+  Description: Living in the world of pixels and code. Web designer extraordinaire!
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          595e7e6a-a2f9-46d2-9239-3b62e052d442
+  Username:    trendyteen112
+  Name:        emily 🌸
+  Description: just a girl navigating life in the city ✨ | obsessed with fashion, music, and the latest trends | #girlboss | 🦄
+  Location:    los angeles, ca
+  Tweets:      20
+  Z-score:     -0.35093824432599635
+
+  ID:          6054b9db-e01a-4f41-a909-b3d80a62006a
+  Username:    @Dougiewise
+  Name:        Doug
+  Description: 🇸🇻🇺🇸MOVIES 49ERS USC TROJANS LA DODGERS REAL MADRID. Savant Film critic. A man of Culture. Here to eliminate the bad films and fade the clichés.
+  Location:    Los Angeles, CA
+  Tweets:      16
+  Z-score:     -0.5412893630432527
+
+  ID:          6a62ada9-d4f0-4091-b3de-8637b548e2fd
+  Username:    Fresh_Tunes888
+  Name:        Melody Maker 3b6
+  Description: Tune #freshtracks daily. Keeping beats alive, rhythm in my stride. Heart with da groove. 3a43b6 #MusicMadness
+  Location:    SoundCity
+  Tweets:      35
+  Z-score:     0.3628784508637151
+
+  ID:          6f8d80c7-0f27-4cd5-9275-5912ae8b0872
+  Username:    carrieK45672
+  Name:        3af4af6014b87
+  Description: (none)
+  Location:    :null:
+  Tweets:      20
+  Z-score:     -0.35093824432599635
+
+  ID:          76328515-ec21-4c4d-a784-25efcc47d271
+  Username:    @HockeyMaster33
+  Name:        Daniel Offerdahl
+  Description: You won't find a bigger fan of movies than me. 
+
+I know more than you.
+  Location:    Here, There, Everywhere
+  Tweets:      16
+  Z-score:     -0.5412893630432527
+
+  ID:          7b4e8c84-af09-4854-af59-4b3ee78d2241
+  Username:    geeky_writer21
+  Name:        Daniel
+  Description: I'm just a guy who loves to code and play video games. Let's connect!
+  Location:    Austin, TX
+  Tweets:      22
+  Z-score:     -0.25576268496736815
+
+  ID:          7bf9d921-e407-4da3-b1bb-7de1175271e3
+  Username:    YourDreamCoach
+  Name:        Kime
+  Description: Kime | building tiny indie web
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          8a2a7c48-23b1-4eef-9ebe-ce48a8a34361
+  Username:    MovieStar
+  Name:        Holly
+  Description: Tracking the latest releases and weighing in on directors and actors.
+  Location:    Hollywood
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          8b02b826-fdda-400f-90ad-8ff07c57b89b
+  Username:    AlexSmith3
+  Name:        Jason Ratcliff
+  Description: ARMY Vet, WV Native, love NASCAR, Simracing,Basketball,Football, Bow Hunting, Fishing, JETS &CELTICS FAN Have 4 WONDERFUL SONS, 2 AWESOME DAUGHTERS!!!
+  Location:    Petersburg, WV
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          962cbe6b-cbb6-467d-b587-5ce2c90a7c22
+  Username:    CareerQueenCEO
+  Name:        Olivia Hartman
+  Description: CEO @GlobalInnovate | Empowering women in business | Passionate about leadership, sustainability, and equity | Coffee enthusiast ☕️ | #WomenInCharge
+  Location:    New York, NY
+  Tweets:      20
+  Z-score:     -0.35093824432599635
+
+  ID:          97455c20-c7c0-4345-aa82-7b382be4fd73
+  Username:    word_slinger101
+  Name:        Scribe315 4dd
+  Description: Writer of webs and tales untold, prose and poetry interfold. Welcome to my world #WritersOfInstagram
+  Location:    None
+  Tweets:      33
+  Z-score:     0.2677028915050869
+
+  ID:          9d8de2c4-3095-4fad-b706-8ce6ae3dd7bf
+  Username:    BabyKiki7
+  Name:        Kiki
+  Description: ✰ founder of jesslee
+  Location:    (none)
+  Tweets:      32
+  Z-score:     0.2201151118257728
+
+  ID:          a0474f6e-9a0e-40a8-a87c-cce02835e7bb
+  Username:    Blue_Mtns_Lover
+  Name:        Sky Walker596
+  Description: Nature enthusiast and chronic music lover. Hate Mondays but go on adventures every chance I get. 333 #LiveLoveHike
+  Location:    Blue Mountains
+  Tweets:      17
+  Z-score:     -0.49370158336393866
+
+  ID:          a191543e-d61e-4b44-b5ca-0ebb4b247fe7
+  Username:    @sunnyreynoldss
+  Name:        julia
+  Description: 21 | she/her | movie enthusiast
+  Location:    Unknown
+  Tweets:      16
+  Z-score:     -0.5412893630432527
+
+  ID:          a2eba85e-7413-4a23-bd38-8c3fa2c13eda
+  Username:    lakewoodJoe90
+  Name:        Joe Anderson
+  Description: Lover of life, adventure seeker, and coffee enthusiast. Making the most of every moment!
+  Location:    Lakewood, CO
+  Tweets:      22
+  Z-score:     -0.25576268496736815
+
+  ID:          a7c5380d-0e53-4f11-8e83-f6ba27a28303
+  Username:    MassiveLindy3
+  Name:        Linda
+  Description: ✰ any pronouns, autistic and aro genderfluid
+  Location:    (none)
+  Tweets:      54
+  Z-score:     1.267046264770683
+
+  ID:          a9faacc6-66ce-438d-99fa-fcbedba108fb
+  Username:    creative_vibes
+  Name:        Artistic Mind
+  Description: Graphic designer & doodler 🖌️ | Turning ideas into visuals 🖼️ | Let's collaborate! DM me!
+  Location:    Chicago, IL
+  Tweets:      30
+  Z-score:     0.12493955246714462
+
+  ID:          b14b09a3-283d-4a75-8e57-22d34d68c4c8
+  Username:    KatieXO
+  Name:        Kate James
+  Description: Hoops fan chasing late-night NBA news and spicy takes after work.
+  Location:    Lakers HQ
+  Tweets:      14
+  Z-score:     -0.6364649224018809
+
+  ID:          b6d1ae84-f5d2-4c27-9c0e-86f4c719a724
+  Username:    KKBello__
+  Name:        AYOOLAMI😘😍
+  Description: Love n Respect ✊🏿 ❤️
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          c2a803a7-af82-4de9-b4ac-4643d6404e37
+  Username:    JordanAlways_
+  Name:        Bray Wyatt Forever 🪑⭕️ ❤️ • Nets (26-42)
+  Description: @windham6 fan for life ❤️ • #netsworld • #RingTheBell • #ForeverNe • Michigan State • Horror Movies
+  Location:    Firefly Funhouse 
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          c5050746-b806-4bb2-96e1-432cce9311f3
+  Username:    codeGenie905
+  Name:        Samuel Johnson
+  Description: I turn coffee into software, one line at a time.
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          c620f77b-d71c-4304-b0f9-deaf769eae26
+  Username:    fandomrobot
+  Name:        maya!! | seeing conan 05/11!!
+  Description: nerdy prudes (the voices and me) must die ⭐️ | i probably spelled my last tweet wrong
+  Location:    mckinley
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          ca6e30fe-e008-4df9-bafe-e5943451d616
+  Username:    SimplyMe
+  Name:        Henri
+  Description: Henri | weekend guitarist and coffee
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          d37863ac-9df1-4c79-bea7-132074c4d9ee
+  Username:    gadgetwhiz
+  Name:        TechGuru🎮
+  Description: Gamer & Tech enthusiast 💻| Sharing reviews & tips for the latest gadgets 🔧| Leveling up your tech knowledge!
+  Location:    San Francisco, CA
+  Tweets:      27
+  Z-score:     -0.017823786570797664
+
+  ID:          d661fe96-ddf5-41e9-a74f-43b7064ea069
+  Username:    orealways3
+  Name:        John Danaher
+  Description: Im just a chill guy
+  Location:    (none)
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          d78905cd-28d0-40f7-9b00-79c13ec506d1
+  Username:    ArtyMax_29
+  Name:        Artistic :)
+  Description: Aspiring artist and storyteller. Dreamer by night, realist by day. 32a
+  Location:    Artland
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          d8589b87-2db7-4e7a-85f0-e7235cd8e1d9
+  Username:    geekygirl90
+  Name:        Suzanne
+  Description: Computer Science in AI learner
+  Location:    Mountain View, CA
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          d9bf4aff-69e8-4f3a-9d54-e997658c3b1b
+  Username:    aethersprite
+  Name:        Danny
+  Description: Pop scene aficionado chasing the early era bangers; loud about the chorus, quick to defend the classics.
+  Location:    Swiftie heaven
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          f346444a-3bd4-432b-87d4-5744a126e94d
+  Username:    bookwormAdam87
+  Name:        Adam
+  Description: Fuelled by coffee and classic novels
+  Location:    London, UK
+  Tweets:      27
+  Z-score:     -0.017823786570797664
+
+  ID:          fc4403ca-8464-497f-b683-8089e3b86735
+  Username:    OldEnglishGent
+  Name:        Sir Reginald Thistleton
+  Description: A retired schoolmaster with a penchant for tea, classic literature, and tennis. Proud grandfather and lover of gardens. Opinions may vary, but my love for Earl Grey remains steadfast.
+  Location:    Surrey, England
+  Tweets:      10
+  Z-score:     -0.8268160411191373

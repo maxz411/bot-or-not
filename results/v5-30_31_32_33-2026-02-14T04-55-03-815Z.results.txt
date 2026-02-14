@@ -1,0 +1,73 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    v5-30_31_32_33-2026-02-14T04-55-03-815Z.txt
+Detector:    v5
+Model:       openai/ft:gpt-4.1-mini-2025-04-14:personal:test:D91ewpzh
+Batch size:  1
+Datasets:    [30, 31, 32, 33]
+Total users: 889  (bots: 184, humans: 705)
+
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=66 TN=207 FP=2 FN=0 | acc=99.27% | score=260/264 (98.5%)
+  Dataset 31: users=171 bots=27 humans=144 | TP=27 TN=144 FP=0 FN=0 | acc=100.00% | score=108/108 (100.0%)
+  Dataset 32: users=271 bots=63 humans=208 | TP=62 TN=207 FP=1 FN=1 | acc=99.26% | score=245/252 (97.2%)
+  Dataset 33: users=172 bots=28 humans=144 | TP=28 TN=143 FP=1 FN=0 | acc=99.42% | score=110/112 (98.2%)
+  Combined: users=889 bots=184 humans=705 | TP=183 TN=701 FP=4 FN=1 | acc=99.44% | score=723/736 (98.2%)
+
+COUNTS (COMBINED):
+  True Positives:    183
+  True Negatives:    701
+  False Positives:   4  (0.45%)
+  False Negatives:   1  (0.11%)
+  Correct:           884  (99.44%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 723 / 736  (98.2%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 4 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          ae025c49-92d8-902b-bc5d-d0c2f8aa073b
+  Username:    Photo_B_ello
+  Name:        PhotoBello
+  Description: Chaque image raconte une histoire. 📸
+  Location:    (none)
+  Tweets:      33
+  Z-score:     0.365854750378119
+
+  ID:          ea9fd9d8-9371-9af1-8ad5-e583e445ae2f
+  Username:    lihukoamr56
+  Name:        Bokep xxx
+  Description: 🌟 Manifesting dreams into reality | Positive vibes only | Gratitude in every step | #ManifestingMagic
+  Location:    (none)
+  Tweets:      43
+  Z-score:     0.7435806882982279
+
+  ID:          f1e0fd30-8e5d-9e6c-8228-e760e5d3e5be
+  Username:    captsingh
+  Name:        Captain Singh, FICArb, 73K
+  Description: 🌎 World-traveled cosmopolitan ■ UK Class.1 Master Mariner  ■ Maritime expert ⚓  ➡️ Stay informed with maritime updates, shipping research and mirthful musings
+  Location:    Singapore 🇸🇬
+  Tweets:      22
+  Z-score:     -0.3747393445175082
+
+  ID:          f4fb2849-7d6f-8476-ad56-42d6cd867ed1
+  Username:    sadwinnipegfan
+  Name:        Gary
+  Description: 🐺🐺🐺🐺🐺🐺
+  Location:    (none)
+  Tweets:      28
+  Z-score:     0.029763993108516434
+
+------------------------------------------------------------
+FALSE NEGATIVES — 1 bot(s) missed
+------------------------------------------------------------
+
+  ID:          ef97d042-0ba1-4c45-aa67-c6c2d0a72689
+  Username:    topazfire22
+  Name:        Topaz
+  Description: Finding gems in everyday life
+  Location:    New York, NY
+  Tweets:      11
+  Z-score:     -0.8657714262786915

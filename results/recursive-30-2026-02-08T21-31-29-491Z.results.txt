@@ -9,7 +9,11 @@ Rec. depth:  8
 Datasets:    [30]
 Total users: 275  (bots: 66, humans: 209)
 
-COUNTS:
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=63 TN=174 FP=35 FN=3 | acc=86.18% | score=179/264 (67.8%)
+  Combined: users=275 bots=66 humans=209 | TP=63 TN=174 FP=35 FN=3 | acc=86.18% | score=179/264 (67.8%)
+
+COUNTS (COMBINED):
   True Positives:    63
   True Negatives:    174
   False Positives:   35  (12.73%)
