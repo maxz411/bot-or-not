@@ -1,0 +1,90 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    v5-31_33-2026-02-14T17-55-14-002Z.txt
+Detector:    v5
+Model:       openai/ft:gpt-4.1-mini-2025-04-14:personal:fold-a-final-test:D9DjeW1a
+Batch size:  1
+Datasets:    [31, 33]
+Total users: 343  (bots: 55, humans: 288)
+
+DATASET BREAKDOWN:
+  Dataset 31: users=171 bots=27 humans=144 | TP=22 TN=144 FP=0 FN=5 | acc=97.08% | score=83/108 (76.9%)
+  Dataset 33: users=172 bots=28 humans=144 | TP=27 TN=143 FP=1 FN=1 | acc=98.84% | score=105/112 (93.8%)
+  Combined: users=343 bots=55 humans=288 | TP=49 TN=287 FP=1 FN=6 | acc=97.96% | score=188/220 (85.5%)
+
+COUNTS (COMBINED):
+  True Positives:    49
+  True Negatives:    287
+  False Positives:   1  (0.29%)
+  False Negatives:   6  (1.75%)
+  Correct:           336  (97.96%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 188 / 220  (85.5%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 1 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          ae025c49-92d8-902b-bc5d-d0c2f8aa073b
+  Username:    Photo_B_ello
+  Name:        PhotoBello
+  Description: Chaque image raconte une histoire. 📸
+  Location:    (none)
+  Tweets:      33
+  Z-score:     0.365854750378119
+
+------------------------------------------------------------
+FALSE NEGATIVES — 6 bot(s) missed
+------------------------------------------------------------
+
+  ID:          0a64309f-3f7b-45e3-a5b5-922694e229f1
+  Username:    claude912
+  Name:        Claude
+  Description: Découvrir la beauté du monde un pas à la time
+  Location:    Paris, France
+  Tweets:      25
+  Z-score:     -0.10132078710226275
+
+  ID:          209b5461-5b48-4d1e-9b6a-7a7824e1c523
+  Username:    Tiff-Tiff
+  Name:        Tiff-Tiff
+  Description: #NUCvolleyball 🧡🖤 | #HCAjoie 💛🖤 | #FCBayern ❤️🤍 |  #NJDevils | #ScuderiaFerrari 🐎
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.546518644438613
+
+  ID:          645c04e9-8c52-455b-b230-8fd061ff1b69
+  Username:    JoJo5
+  Name:        Joseph
+  Description: Un p'tit pouvoir implique de grandes irresponsabilitées!
+
+Insta: @affreuxjosh
+  Location:    (none)
+  Tweets:      94
+  Z-score:     3.147276949364035
+
+  ID:          8442f5ef-7b34-43a3-955e-9a7f46889707
+  Username:    Pat
+  Name:        Patricia
+  Description: 🛰🇨🇩🇦🇴🇫🇷
+Le Héros du Siècle, Le Dernier Dinosaure, la Heat, Nucléaire, Météorite, Monument Mondial, Incontesté Incontestable... Bo ko lala na bio 🤣🤣
+  Location:    (none)
+  Tweets:      67
+  Z-score:     1.8760865307467882
+
+  ID:          b4b38a5d-9046-4d4a-ba80-9125ecbaf0f2
+  Username:    lilie_paris
+  Name:        lilie 🌸
+  Description: adolescente passionnée par la mode et le cinéma 🎥✨ | toujours à la recherche de nouvelles aventures | parisienne dans l'âme 🇫🇷
+  Location:    paris, france
+  Tweets:      18
+  Z-score:     -0.3519439233675442
+
+  ID:          f03e66fe-9cec-49ea-9150-7b992ab9a75e
+  Username:    Momo
+  Name:        Momo
+  Description: well,well,well...
+  Location:    (none)
+  Tweets:      68
+  Z-score:     1.9231676573622418
