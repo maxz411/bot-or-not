@@ -1,0 +1,40 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    v5-30_32-2026-02-14T16-08-48-465Z.txt
+Detector:    v5
+Model:       openai/ft:gpt-4.1-mini-2025-04-14:personal:bot-or-not-all:D91Q96GR
+Batch size:  1
+Datasets:    [30, 32]
+Total users: 546  (bots: 129, humans: 417)
+
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=66 TN=209 FP=0 FN=0 | acc=100.00% | score=264/264 (100.0%)
+  Dataset 32: users=271 bots=63 humans=208 | TP=63 TN=207 FP=1 FN=0 | acc=99.63% | score=250/252 (99.2%)
+  Combined: users=546 bots=129 humans=417 | TP=129 TN=416 FP=1 FN=0 | acc=99.82% | score=514/516 (99.6%)
+
+COUNTS (COMBINED):
+  True Positives:    129
+  True Negatives:    416
+  False Positives:   1  (0.18%)
+  False Negatives:   0  (0.00%)
+  Correct:           545  (99.82%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 514 / 516  (99.6%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 1 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          f1e0fd30-8e5d-9e6c-8228-e760e5d3e5be
+  Username:    captsingh
+  Name:        Captain Singh, FICArb, 73K
+  Description: 🌎 World-traveled cosmopolitan ■ UK Class.1 Master Mariner  ■ Maritime expert ⚓  ➡️ Stay informed with maritime updates, shipping research and mirthful musings
+  Location:    Singapore 🇸🇬
+  Tweets:      22
+  Z-score:     -0.3747393445175082
+
+------------------------------------------------------------
+FALSE NEGATIVES — 0 bot(s) missed
+------------------------------------------------------------
+  (none)

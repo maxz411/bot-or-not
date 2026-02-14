@@ -4,7 +4,7 @@ import { chat, generate, stream } from "./llm.ts";
 import { analyzeRunFile } from "./analysis.ts";
 import { getPostsByUser, getUserMetadata, type Post, type User } from "./data.ts";
 import { runDetector as runBaseline } from "./detectors/baseline.ts";
-import { MODEL_OPENAI, MODEL_OPENAI_4_1, MODEL_OPENAI_FT_ALL, MODEL_OPENAI_FT_TEST, MODEL_OPENAI_V5, MODEL_ANTHROPIC, MODEL_ANTHROPIC_SONNET, MODEL_DEEPSEEK, MODEL_GEMINI, MODEL_ANTHROPIC_OPUS, MODEL_GEMINI_PRO, MODEL_GLM, MODEL_KIMI, MODEL_GROK, MODEL_MISTRAL_LARGE } from "./models.ts";
+import { MODEL_OPENAI, MODEL_OPENAI_4_1, MODEL_OPENAI_FT_ALL, MODEL_OPENAI_FT_TEST, MODEL_OPENAI_FT_FOLD_A, MODEL_OPENAI_FT_FOLD_B, MODEL_OPENAI_FT_NANO_TEST, MODEL_OPENAI_FT_FOLD_A_FINAL, MODEL_OPENAI_V5, MODEL_ANTHROPIC, MODEL_ANTHROPIC_SONNET, MODEL_DEEPSEEK, MODEL_GEMINI, MODEL_ANTHROPIC_OPUS, MODEL_GEMINI_PRO } from "./models.ts";
 import { runDetector as runBatching } from "./detectors/batching.ts";
 import { runDetector as runPRG, MODEL_STAGE1 as PRG_STAGE1, MODEL_STAGE2 as PRG_STAGE2 } from "./detectors/politics-ragebait-grammar.ts";
 import { runDetector as runPRGBatched } from "./detectors/politics-ragebait-grammar-batched.ts";
@@ -14,6 +14,7 @@ import { runDetector as runV2 } from "./detectors/v2.ts";
 import { runDetector as runV3 } from "./detectors/v3.ts";
 import { runDetector as runV4 } from "./detectors/v4.ts";
 import { runDetector as runV5 } from "./detectors/v5.ts";
+import { runDetector as runFinal } from "./detectors/final.ts";
 import { runDetector as runStatsBased } from "./detectors/stats-based.ts";
 import { runDetector as runRecursiveV2, RECURSION_DEPTH as RV2_RECURSION_DEPTH, TOTAL_ROUNDS as RV2_TOTAL_ROUNDS } from "./detectors/recursive-v2.ts";
 import { listIncompleteCaches, deleteAllIncompleteCaches, type IncompleteCache } from "./detectors/cache.ts";
@@ -26,6 +27,8 @@ type RunDetectorFn = (datasetIds: number[], model: string, onProgress?: (done: n
 
 function getDetectorFn(detector: string): RunDetectorFn {
   switch (detector) {
+    case "final-en": return ((ids: number[], model: string, onProgress?: any, delayMs?: number, cacheFile?: string) => runFinal(ids, model, onProgress, delayMs, cacheFile, "en")) as RunDetectorFn;
+    case "final-fr": return ((ids: number[], model: string, onProgress?: any, delayMs?: number, cacheFile?: string) => runFinal(ids, model, onProgress, delayMs, cacheFile, "fr")) as RunDetectorFn;
     case "v5": return runV5 as RunDetectorFn;
     case "v4": return runV4 as RunDetectorFn;
     case "v3": return runV3 as RunDetectorFn;
@@ -129,7 +132,7 @@ async function getHighScores(limit = 10): Promise<HighScoreEntry[]> {
 
 // ── Menu data ────────────────────────────────────────────────────────
 
-type DetectorType = "baseline" | "prg" | "recursive" | "inv_recursive" | "v2" | "v3" | "v4" | "v5" | "recursive-v2" | "stats-based";
+type DetectorType = "baseline" | "prg" | "recursive" | "inv_recursive" | "v2" | "v3" | "v4" | "v5" | "final-en" | "final-fr" | "recursive-v2" | "stats-based";
 
 type DetectorInfo = {
   name: string;
@@ -140,6 +143,8 @@ type DetectorInfo = {
 };
 
 const DETECTORS: DetectorInfo[] = [
+  { name: "Final (EN)", type: "final-en", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
+  { name: "Final (FR)", type: "final-fr", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "V5", type: "v5", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "V4", type: "v4", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
   { name: "V3", type: "v3", hasBatched: false, hasModelChoice: true, fixedModelDisplay: "" },
@@ -157,21 +162,23 @@ const MODEL_CHOICES = [
   { name: `OpenAI (${MODEL_OPENAI_4_1})`, value: MODEL_OPENAI_4_1 },
   { name: `OpenAI FT bot-or-not-all (${MODEL_OPENAI_FT_ALL})`, value: MODEL_OPENAI_FT_ALL },
   { name: `OpenAI FT test (${MODEL_OPENAI_FT_TEST})`, value: MODEL_OPENAI_FT_TEST },
+  { name: `OpenAI FT fold-a (${MODEL_OPENAI_FT_FOLD_A})`, value: MODEL_OPENAI_FT_FOLD_A },
+  { name: `OpenAI FT fold-b (${MODEL_OPENAI_FT_FOLD_B})`, value: MODEL_OPENAI_FT_FOLD_B },
+  { name: `OpenAI FT nano-test (${MODEL_OPENAI_FT_NANO_TEST})`, value: MODEL_OPENAI_FT_NANO_TEST },
+  { name: `OpenAI FT fold-a-final (${MODEL_OPENAI_FT_FOLD_A_FINAL})`, value: MODEL_OPENAI_FT_FOLD_A_FINAL },
   { name: `Anthropic (${MODEL_ANTHROPIC})`, value: MODEL_ANTHROPIC },
   { name: `Anthropic (${MODEL_ANTHROPIC_SONNET})`, value: MODEL_ANTHROPIC_SONNET },
+  { name: `Anthropic (${MODEL_ANTHROPIC_OPUS})`, value: MODEL_ANTHROPIC_OPUS },
   { name: `DeepSeek (${MODEL_DEEPSEEK})`, value: MODEL_DEEPSEEK },
   { name: `Gemini (${MODEL_GEMINI})`, value: MODEL_GEMINI },
-  { name: `Anthropic (${MODEL_ANTHROPIC_OPUS})`, value: MODEL_ANTHROPIC_OPUS },
   { name: `Gemini Pro (${MODEL_GEMINI_PRO})`, value: MODEL_GEMINI_PRO },
-  { name: `GLM (${MODEL_GLM})`, value: MODEL_GLM },
-  { name: `Kimi (${MODEL_KIMI})`, value: MODEL_KIMI },
-  { name: `Grok (${MODEL_GROK})`, value: MODEL_GROK },
-  { name: `Mistral Large (${MODEL_MISTRAL_LARGE})`, value: MODEL_MISTRAL_LARGE },
 ];
 
 type ListItem = { name: string; action: string; dimDetail?: string };
 
 const MAIN_MENU: ListItem[] = [
+  { name: "Final (EN)", action: "det-final-en", dimDetail: "→ maxilillian.detections.en.txt" },
+  { name: "Final (FR)", action: "det-final-fr", dimDetail: "→ maxilillian.detections.fr.txt" },
   { name: "V5", action: "det-v5", dimDetail: "OpenAI fine-tuned detector" },
   { name: "V4", action: "det-v4", dimDetail: "v3 + scoring incentive" },
   { name: "V3", action: "det-v3", dimDetail: "minimal prompt" },
@@ -204,7 +211,7 @@ const BATCH_MENU: ListItem[] = [
   { name: "Batched", action: "batched" },
 ];
 
-const AVAILABLE_DATASETS = [30, 31, 32, 33];
+const AVAILABLE_DATASETS = [34, 35, 30, 31, 32, 33];
 
 // ── Search items (all possible tasks, flattened) ─────────────────────
 
@@ -273,6 +280,8 @@ function filterSearch(query: string): SearchItem[] {
 
 function resolveDetectorFn(type: DetectorType, batched: boolean): any {
   switch (type) {
+    case "final-en": return (ids: number[], model: string, onProgress?: any, delayMs?: number, cacheFile?: string) => runFinal(ids, model, onProgress, delayMs, cacheFile, "en");
+    case "final-fr": return (ids: number[], model: string, onProgress?: any, delayMs?: number, cacheFile?: string) => runFinal(ids, model, onProgress, delayMs, cacheFile, "fr");
     case "v5": return runV5;
     case "v4": return runV4;
     case "v3": return runV3;
@@ -584,6 +593,7 @@ function App() {
         `Bots detected: ${result.botsDetected}`,
         `Humans detected: ${result.humansDetected}`,
         `Run file: ${result.runFile}`,
+        ...(result.submissionFile ? [`Submission file: ${result.submissionFile}`] : []),
         "", "--- Accuracy ---", "",
       ];
       const accuracyLines = await analyzeRunFile(result.runFile);

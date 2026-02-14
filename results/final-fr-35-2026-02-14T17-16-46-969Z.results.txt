@@ -1,0 +1,253 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    final-fr-35-2026-02-14T17-16-46-969Z.txt
+Detector:    final
+Model:       openai/ft:gpt-4.1-mini-2025-04-14:personal:bot-or-not-all:D91Q96GR
+Batch size:  1
+Datasets:    [35]
+Total users: 283  (bots: 0, humans: 283)
+
+DATASET BREAKDOWN:
+  Dataset 35: users=283 bots=0 humans=283 | TP=0 TN=256 FP=27 FN=0 | acc=90.46% | score=-54/0 (0.0%)
+  Combined: users=283 bots=0 humans=283 | TP=0 TN=256 FP=27 FN=0 | acc=90.46% | score=-54/0 (0.0%)
+
+COUNTS (COMBINED):
+  True Positives:    0
+  True Negatives:    256
+  False Positives:   27  (9.54%)
+  False Negatives:   0  (0.00%)
+  Correct:           256  (90.46%)
+
+SCORE (+4 TP, -1 FN, -2 FP): -54 / 0  (0.0%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 27 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          0392cc0f-9391-4706-90f2-cb7f76a5e960
+  Username:    Vinnie the Pooh
+  Name:        Vinnie the Pooh
+  Description: Pa chokolaté’w, echoing sweetness.
+  Location:    (none)
+  Tweets:      67
+  Z-score:     1.9540394131727599
+
+  ID:          119257b7-0e23-4418-8ec4-31cfbdbfdb7d
+  Username:    Josh
+  Name:        Josh
+  Description: While carrying the @CJ7STROUD's spirit within, pledges allegiance to the #rockets arsenal and personifies Texans' pride #wearetexans.
+  Location:    (none)
+  Tweets:      59
+  Z-score:     1.5432356958895275
+
+  ID:          12c8c5de-f159-4017-a86d-4776d6f2cb9d
+  Username:    JoelLudo
+  Name:        Ludo
+  Description: Les ann1es rock. Regarder en arr1r
+  Location:    La Plaine, France
+  Tweets:      37
+  Z-score:     0.41352547336063883
+
+  ID:          183cf914-38c6-492a-8631-6b22d3b7e188
+  Username:    pierregrim78
+  Name:        Pierre Grimf
+  Description: Passionne du vdbn1s & photographe amateur. Vivre, c'est s'e9vader.
+  Location:    Surleurope, au grd2nd de chez vous,
+  Tweets:      12
+  Z-score:     -0.870236143149462
+
+  ID:          1e63e199-5385-4bd2-b574-6b9ca765b893
+  Username:    CEO_Génie
+  Name:        Sophie Durand
+  Description: PDG dynamique d'une entreprise tech de premier plan. Passionnée de leadership et d'innovation.🌟 #WomenInLeadership #TechForGood
+  Location:    Paris, France
+  Tweets:      21
+  Z-score:     -0.4080819612058257
+
+  ID:          20897756-4c8c-42c2-9371-1b9afe6d2d2c
+  Username:    Pat96
+  Name:        Patricia
+  Description: Guzzler of potential rainbows 🌈, clad in purples, oranges, whites and greens interwoven in a plaster. 🩷💜🧡🤍💚
+  Location:    (none)
+  Tweets:      74
+  Z-score:     2.313492665795588
+
+  ID:          28341cae-655d-4137-977c-6e2569568bdf
+  Username:    Pierre02134
+  Name:        Pierre
+  Description: J'adore le café et la lecture, la vie est belle!
+  Location:    Paris, France
+  Tweets:      25
+  Z-score:     -0.20268010256420954
+
+  ID:          360df40d-2a09-49d0-a596-054a7372f489
+  Username:    jeanpierre271
+  Name:        Jean
+  Description: Pierre
+  Location:    J'aime le café, les livres et la joie de vivre!
+  Tweets:      18
+  Z-score:     -0.5621333551870378
+
+  ID:          4039b677-6131-450f-be3f-b7df8a0b111d
+  Username:    G-Money
+  Name:        Gerald
+  Description: MashAllah, Il écrit beaucoup @bad_sociologist Gwadloupéyen. Abolition. Reparations. Afromarxism.
+  Location:    (none)
+  Tweets:      74
+  Z-score:     2.313492665795588
+
+  ID:          49187cc9-7fd3-4c56-ba0e-1b07f07d610d
+  Username:    SirOldEnglish
+  Name:        Monsieur William
+  Description: Un vieux monsieur britannique dans la soixantaine, passionné de thé et de littérature. Toujours prêt pour une bonne conversation.
+  Location:    Londres, Royaume-Uni
+  Tweets:      10
+  Z-score:     -0.9729370724702701
+
+  ID:          62130ef4-7481-4e2a-a7d8-88e964d433a0
+  Username:    orealways3
+  Name:        John Danaher
+  Description: Im just a chill guy
+  Location:    (none)
+  Tweets:      20
+  Z-score:     -0.4594324258662297
+
+  ID:          6855187d-082d-4834-9459-51fe190585d3
+  Username:    chic_parisienne
+  Name:        mélanie
+  Description: fille branchée 💁‍♀️ | passionnée de mode et de musique 🎶 | explore la vie à paris | rêve d'un monde meilleur ✨
+  Location:    paris, france
+  Tweets:      29
+  Z-score:     0.0027217560774065934
+
+  ID:          7d970ae8-08fa-46e7-8481-a2a991e03b7e
+  Username:    Mike31
+  Name:        Mike
+  Description: 🎟️🎥🎾⚽🏀 Cinéma enthusiast, primarily US films, chatty about anything & everything. Publicly decries right-wing politics. 🤮 #Pblv #antiRN
+  Location:    (none)
+  Tweets:      38
+  Z-score:     0.4648759380210429
+
+  ID:          7feab719-1631-4135-8881-d1ba882a3bc5
+  Username:    coolPanda92
+  Name:        Panda Cool
+  Description: Panda forever 1 and gamer at heart. Open for collabs! 3d1
+  Location:    Planet Panda
+  Tweets:      16
+  Z-score:     -0.6648342845078459
+
+  ID:          88769079-9351-40fb-9cd6-19ae7fc45544
+  Username:    Richardinosaur
+  Name:        Richardinosaur
+  Description: Liverpool & Miami Heat 🔴
+  Location:    (none)
+  Tweets:      41
+  Z-score:     0.618927332002255
+
+  ID:          a058d150-5364-47e9-b9a8-305abf1cc4ea
+  Username:    UrbanGrooves92
+  Name:        Chloé Martin
+  Description: musique tous les jours
+  Location:    Montréal, Canada
+  Tweets:      41
+  Z-score:     0.618927332002255
+
+  ID:          a9888e2c-c4da-425b-b945-0df478ed7d89
+  Username:    SportySyd
+  Name:        Sydonie Lefebvre
+  Description: Suiveuse de tennis et de foot | Aime la cuisine provençale
+  Location:    Aix-en-Provence, France
+  Tweets:      30
+  Z-score:     0.05407222073781063
+
+  ID:          ac2d9da8-e038-42f6-ab3c-976f9f67dec1
+  Username:    Marc30
+  Name:        Mark
+  Description: In The Name of Jesus 🙏🏾
+I love this game 🏀
+RIP Dad❤️
+Cameroun 🇨🇲 ma Terre 🙌🏾
+Psaume 91 ✝️
+1m78 de réflexion...
+Fuck Poutine!!!
+  Location:    (none)
+  Tweets:      49
+  Z-score:     1.0297310492854872
+
+  ID:          c170afe7-7fc3-4874-87a7-42a76fd92874
+  Username:    SkyCinemaMan
+  Name:        Sky
+  Description: Prod1cteur et rdalisateur. Film-maker dans les ndit
+  Location:    Sur un nuage
+  Tweets:      35
+  Z-score:     0.3108245440398308
+
+  ID:          c8c56582-a48c-48fc-9f8a-a8f54816be41
+  Username:    sylvie_98765
+  Name:        Sylvie
+  Description: Je trouve du bonheur dans les petites choses.
+  Location:    Paris, France
+  Tweets:      16
+  Z-score:     -0.6648342845078459
+
+  ID:          d2c6d4ff-f391-42a8-8e0e-171a84245241
+  Username:    Kim7
+  Name:        Kimberly
+  Description: Graphic Textile/Streetwear Designer - CEO of Home Clothing Unltd Gear/Per-aa. Winner of Spain's Embassy design 2014/Touted as FCC2015's Best Next Designer.
+  Location:    (none)
+  Tweets:      46
+  Z-score:     0.8756796553042752
+
+  ID:          da1ba646-1d62-4c03-b2a4-6f8caa5459d2
+  Username:    AlpyDreams
+  Name:        Léo Cormier
+  Description: Passionné de randonnée dans les Alpes | Adepte de la photographie en plein air
+  Location:    Paris, France
+  Tweets:      39
+  Z-score:     0.5162264026814469
+
+  ID:          db709b53-a468-4611-8d1d-983636387280
+  Username:    JeanDupont30
+  Name:        Jean Dupont
+  Description: Passionné de cinéma et de musique, amateur de randonnée 🚶‍♂️🎶
+  Location:    Banlieue de Paris
+  Tweets:      35
+  Z-score:     0.3108245440398308
+
+  ID:          dd36131c-9492-41ac-9036-9fe8879fb770
+  Username:    Josie_Kolcada
+  Name:        Josie Kolcada
+  Description: Amoureux de la nature et de la gastronomie locale. Philosophies de la vie et rd1verend du bien-etre.
+  Location:    Sous le ciel, Lyon
+  Tweets:      19
+  Z-score:     -0.5107828905266337
+
+  ID:          ef9967c1-445a-4b1d-bf98-ef1a7aa24ce7
+  Username:    __.Georgie54
+  Name:        George
+  Description: photographe détruit par la nostalgie
+  Location:    (none)
+  Tweets:      44
+  Z-score:     0.7729787259834671
+
+  ID:          f710075b-5a9d-4080-ae63-020a63837909
+  Username:    lilSu
+  Name:        Susan
+  Description: KDsexuel Inter PSG Nets McLaren Wrestling
+  Location:    (none)
+  Tweets:      83
+  Z-score:     2.775646847739224
+
+  ID:          fded7528-aa2e-466c-b884-67ed55ccb3f9
+  Username:    RunnyJackPot
+  Name:        Jack Pot 601
+  Description: L'1nergie de la course et du jeu. Coureur et joueur professio1nel.
+  Location:    La terre des circuits
+  Tweets:      22
+  Z-score:     -0.35673149654542163
+
+------------------------------------------------------------
+FALSE NEGATIVES — 0 bot(s) missed
+------------------------------------------------------------
+  (none)

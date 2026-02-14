@@ -1,0 +1,703 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    v5-30_31_32_33-2026-02-14T17-11-01-307Z.txt
+Detector:    v5
+Model:       openai/ft:gpt-4.1-nano-2025-04-14:personal:test:D927YdnP
+Batch size:  1
+Datasets:    [30, 31, 32, 33]
+Total users: 889  (bots: 184, humans: 705)
+
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=43 TN=209 FP=0 FN=23 | acc=91.64% | score=149/264 (56.4%)
+  Dataset 31: users=171 bots=27 humans=144 | TP=12 TN=144 FP=0 FN=15 | acc=91.23% | score=33/108 (30.6%)
+  Dataset 32: users=271 bots=63 humans=208 | TP=31 TN=208 FP=0 FN=32 | acc=88.19% | score=92/252 (36.5%)
+  Dataset 33: users=172 bots=28 humans=144 | TP=15 TN=144 FP=0 FN=13 | acc=92.44% | score=47/112 (42.0%)
+  Combined: users=889 bots=184 humans=705 | TP=101 TN=705 FP=0 FN=83 | acc=90.66% | score=321/736 (43.6%)
+
+COUNTS (COMBINED):
+  True Positives:    101
+  True Negatives:    705
+  False Positives:   0  (0.00%)
+  False Negatives:   83  (9.34%)
+  Correct:           806  (90.66%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 321 / 736  (43.6%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 0 human(s) wrongly flagged as bot
+------------------------------------------------------------
+  (none)
+
+------------------------------------------------------------
+FALSE NEGATIVES — 83 bot(s) missed
+------------------------------------------------------------
+
+  ID:          0169a3ed-65c3-440c-b5e9-1e8b810037f6
+  Username:    LyriStyler9
+  Name:        Lyri Lotus 97
+  Description: Poetry is the brew of my soul. 7 Seeking harmony.
+  Location:    :@HeartBeat
+  Tweets:      12
+  Z-score:     -0.6390633928658095
+
+  ID:          029b4792-e207-4a81-95af-347e37aae0b4
+  Username:    RaccoonTrekker
+  Name:        4TrailBlazeRac4
+  Description: Raccoon wanderer, financier, and nature trekker. 4
+  Location:    Trail Hills
+  Tweets:      13
+  Z-score:     -0.5912101479494319
+
+  ID:          0a64309f-3f7b-45e3-a5b5-922694e229f1
+  Username:    claude912
+  Name:        Claude
+  Description: Découvrir la beauté du monde un pas à la time
+  Location:    Paris, France
+  Tweets:      25
+  Z-score:     -0.10132078710226275
+
+  ID:          0f52839a-d551-42b2-a4ad-b5c2ee930490
+  Username:    @YennySports
+  Name:        Yenny Sports - FREE sharp bets in real t
+  Description: I share what sharps play across NFL, CFB, NBA, NCAAB, NHL, MLB, Soccer 🔪 I don't handicap 💰 All plays are 1 unit, -110 juice unless specified #GamblingTwitter
+  Location:    New York, NY
+  Tweets:      18
+  Z-score:     -0.5532964651579385
+
+  ID:          10c39255-c132-4a1b-b898-e304da85e166
+  Username:    aethersprite
+  Name:        Danny
+  Description: Pop music devotee chasing the early-era spark, always ready to defend the classics in the replies.
+  Location:    Swiftie heaven
+  Tweets:      12
+  Z-score:     -0.821132146118584
+
+  ID:          13090a07-35be-4321-aaca-523badddfab4
+  Username:    RapidMoon
+  Name:        Claire
+  Description: on the moon
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          151ee06b-e60d-41a8-83bd-024f312044fe
+  Username:    SirReginald73
+  Name:        Sir Reginald Featherstone
+  Description: A seasoned gentleman, lover of tea and classic literature. Proudly British. 🇬🇧
+  Location:    Bath, England
+  Tweets:      10
+  Z-score:     -0.9104107064387992
+
+  ID:          194ac85e-324b-4e5b-ba15-a089d8ff8b8f
+  Username:    JeanDupont
+  Name:        Jean Dupont
+  Description: Passionné de sport et de cuisine 🍳 | Amateur de voyages 🌍 | Transparence totale sur mes opinions.
+  Location:    Banlieue de Paris, France
+  Tweets:      17
+  Z-score:     -0.4779698000258915
+
+  ID:          209b5461-5b48-4d1e-9b6a-7a7824e1c523
+  Username:    Tiff-Tiff
+  Name:        Tiff-Tiff
+  Description: #NUCvolleyball 🧡🖤 | #HCAjoie 💛🖤 | #FCBayern ❤️🤍 |  #NJDevils | #ScuderiaFerrari 🐎
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.546518644438613
+
+  ID:          2b92f8dc-4a32-43d6-bc70-eff03df6a69d
+  Username:    pierre302
+  Name:        Pierre
+  Description: J'adore la vie et les croissants! Toujours prêt pour une nouvelle aventure!
+  Location:    Paris, France
+  Tweets:      21
+  Z-score:     -0.28964529356407714
+
+  ID:          2d90fa97-7137-479e-bcd5-cc231dd0a978
+  Username:    writinglovers45
+  Name:        Samantha
+  Description: Life is a book and every day is a new page. Passionate writer and book lover.
+  Location:    Seattle, WA
+  Tweets:      12
+  Z-score:     -0.821132146118584
+
+  ID:          2dfc9297-c557-4dd1-ad07-38159fd713bb
+  Username:    MovieStar
+  Name:        Holly
+  Description: Chasing the latest cinema releases and debating the greatest directors and actors.
+  Location:    Hollywood
+  Tweets:      15
+  Z-score:     -0.6872143056382612
+
+  ID:          339a308e-8386-46ed-b251-ecd93238ee3c
+  Username:    marcelpagnol42
+  Name:        Marcel
+  Description: Probablement en train de lire un livre ou de boire du vin
+  Location:    Toulouse, France
+  Tweets:      18
+  Z-score:     -0.43088867341043796
+
+  ID:          3a8cba38-75bf-4122-ab4c-725fc3c19227
+  Username:    JeanDupont31
+  Name:        Jean Dupont
+  Description: Homme de 32 ans, passionné par la technologie et les jeux vidéo. Toujours à la recherche de bonnes discussions ! #Tech #Gamer
+  Location:    Banlieue de Lyon, France
+  Tweets:      19
+  Z-score:     -0.30409067845116666
+
+  ID:          3ae0c398-aaa7-4d13-a1d4-2e958e649f92
+  Username:    jeanpierre88
+  Name:        Jean Pierre
+  Description: J'aime le café et les matins calmes
+  Location:    Paris, France
+  Tweets:      15
+  Z-score:     -0.4955036581166769
+
+  ID:          405158e7-6f21-4c8a-b7d0-9a7018f3c1d9
+  Username:    SunnyWarFan
+  Name:        Sunny Bunny 31e",
+  Description: Love astronomy, war history buff, casual chess player. Setting course to a better tomorrow. #SunWarriors
+  Location:    HeavenlyPlace
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          4186cb2d-4b34-41d1-af54-be1b0b470de5
+  Username:    Mandy30
+  Name:        Mandy
+  Description: A bad boy, he is. Pronto with his unending stock of F-bombs, filled to the brim with attitude. Mind you, he's also a connoisseur of Rashka Parashka 🇺🇦🇺🇦🇺🇦.
+  Location:    (none)
+  Tweets:      58
+  Z-score:     1.2322747412463646
+
+  ID:          423c6346-434b-4268-8aea-fe3f97515df0
+  Username:    grandpapa_uk
+  Name:        Édouard Smith
+  Description: Amateur de thé et de bons livres. Trop vieux pour les bêtises, mais assez jeune pour les plaisanteries. 🇬🇧
+  Location:    Londres, Royaume-Uni
+  Tweets:      15
+  Z-score:     -0.4955036581166769
+
+  ID:          451e1c55-c0f9-45dd-b384-bd98aa22b5fd
+  Username:    chickadee_vibes
+  Name:        lulu 🌸
+  Description: 🌺 amoureuse de la mode, des chats et de la caféine. toujours à la recherche de bonnes ondes 🌞. #girlpower #style
+  Location:    paris, france 🇫🇷
+  Tweets:      29
+  Z-score:     0.08700371935955165
+
+  ID:          4b3541ae-5cd7-474b-a781-f8a29df03d3d
+  Username:    YogaWithElla
+  Name:        Ella 🧘‍♀️
+  Description: Yoga instructor & wellness advocate. Find your peace within. 🌿 #Mindfulness #YogaLife
+  Location:    Bali, Indonesia
+  Tweets:      80
+  Z-score:     2.214338904768731
+
+  ID:          4c97d4cd-191b-442d-9104-9992bafa9e9b
+  Username:    ChefAnnaCooks
+  Name:        Anna 🍳👩‍🍳
+  Description: Culinary artist | Recipe creator | Host of @Anna'sKitchen | #Foodie | Born in Naples, cooking in San Francisco 🍝🍷
+  Location:    San Francisco, CA
+  Tweets:      80
+  Z-score:     2.5043285364328494
+
+  ID:          4d0d9062-b974-4249-94f3-48bcf5b7cf62
+  Username:    lucien8745
+  Name:        Lucien
+  Description: Je suis le calme avant la tempête.
+  Location:    Paris, France
+  Tweets:      27
+  Z-score:     0.07873528087985371
+
+  ID:          547bc5a7-0a86-405b-8ab5-af51443bb20d
+  Username:    _KarasWin_
+  Name:        ALZ 4 Step
+  Description: 4 spiritual 4 winner 4 enthusiast 4@ peace 4 mind
+  Location:    Serenity Bay 4
+  Tweets:      25
+  Z-score:     -0.01697120895290139
+
+  ID:          55c746f4-086d-46d8-9a35-e775ba356260
+  Username:    darksky466
+  Name:        Mark
+  Description: Skygazing enthusiast and professional coder
+  Location:    San Jose, CA
+  Tweets:      20
+  Z-score:     -0.46401790483772337
+
+  ID:          56a899a1-9400-409e-a044-4c9fd7e6ad39
+  Username:    naturelover452
+  Name:        Samantha
+  Description: Lover of all things green and growing.
+  Location:    Seattle, WA
+  Tweets:      19
+  Z-score:     -0.508657184997831
+
+  ID:          58983bd7-8269-44ee-993b-2e5901e0ebc1
+  Username:    pixelgeek12
+  Name:        Nate
+  Description: Living in the world of pixels and code. Web designer extraordinaire!
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          5b055694-13e2-4233-85bd-ffaf214b6c3e
+  Username:    papycharles
+  Name:        Charles Dupont
+  Description: Retraité de la Royal Navy, passionné de jardinage et d'histoire. Amoureux des chats et de la bonne cuisine.
+  Location:    Londres, Royaume-Uni
+  Tweets:      34
+  Z-score:     0.3224093524368196
+
+  ID:          5be33e55-4dda-4a1a-a9ef-a16f966c8d52
+  Username:    frederic2304
+  Name:        Frédéric
+  Description: J'adore le fromage et le vin rouge, un vrai Français!
+  Location:    Paris, France
+  Tweets:      19
+  Z-score:     -0.38380754679498436
+
+  ID:          5ea583c9-39c3-4498-8daf-66486e0cf53f
+  Username:    ArtisanNomade
+  Name:        Camille Dupuis
+  Description: Vivre d'art et de voyages | Troubadour moderne
+  Location:    London, UK
+  Tweets:      40
+  Z-score:     0.7008274647927618
+
+  ID:          6055a159-4201-4c65-96f1-ebaa95518bf9
+  Username:    @bloodborne52
+  Name:        metal queer solid 2 🇵🇸
+  Description: 36. Drunker than Robert, Bitterer than Stannis, Gayer than Renly, he/him, Bram Stoker's Dracula
+  Location:    Limerick, Irlande
+  Tweets:      18
+  Z-score:     -0.5532964651579385
+
+  ID:          645c04e9-8c52-455b-b230-8fd061ff1b69
+  Username:    JoJo5
+  Name:        Joseph
+  Description: Un p'tit pouvoir implique de grandes irresponsabilitées!
+
+Insta: @affreuxjosh
+  Location:    (none)
+  Tweets:      94
+  Z-score:     3.147276949364035
+
+  ID:          648213cf-6613-496b-bf6c-0d092bbbd75e
+  Username:    RapidMoon
+  Name:        Claire
+  Description: on the moon
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          653f27c6-1001-45f8-8ddb-6d610bfc4740
+  Username:    TechGuru123
+  Name:        Alex the Techie 🤖
+  Description: Tech enthusiast & gadget reviewer. 🖥️📱 #TechReviews @GadgetHub
+  Location:    Silicon Valley, CA
+  Tweets:      80
+  Z-score:     2.214338904768731
+
+  ID:          6542671b-d022-4e50-88fa-c5314805dc28
+  Username:    Fooooodiz
+  Name:        Henri
+  Description: Foodie influencer
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          65d428b9-2661-4965-9e11-aea4e94392d2
+  Username:    jeanpierre_25
+  Name:        Jean
+  Description: Pierre
+  Location:    Adepte de bistro et de vin, vivre la vraie vie française!
+  Tweets:      24
+  Z-score:     -0.06482445386927894
+
+  ID:          6a020a6f-3978-4b9e-b08f-4b8ae1c7e7bc
+  Username:    trendy_babe99
+  Name:        Ava Thompson
+  Description: ✨ just a vibey girl living her best life 🌸💖 | obsessed with fashion, music, and all things aesthetic | hit me up for collabs! | #teenfashion
+  Location:    melrose ave, los angeles
+  Tweets:      18
+  Z-score:     -0.5532964651579385
+
+  ID:          6af877e2-ba66-4f07-8907-d1021a6d4aa5
+  Username:    RabbityFlower
+  Name:        Juliette
+  Description: Discovering Twitter
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          76fe9797-fae4-4ebc-9631-459c0abe5b3a
+  Username:    RabbityFlower
+  Name:        Juliette
+  Description: Discovering Twitter
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          78e523fd-371e-4fda-9827-dc5952b06623
+  Username:    Kenny G74
+  Name:        Kenneth
+  Description: Grand supporter des Girondins de Bordeaux. #Bayern #Milan #Xbox #ParionsSport #Netflix $ETH $SOL $UOS #Sorare
+  Location:    (none)
+  Tweets:      79
+  Z-score:     2.567104016531486
+
+  ID:          7fa0bac1-17ab-4cc8-8eca-0dc888b09ce9
+  Username:    SuburbanSteve83
+  Name:        Steve Johnson
+  Description: Just a guy trying to navigate life in the suburbs. Coffee lover, dad jokes enthusiast, and board game addict. 🏡🎲
+  Location:    Maplewood, NJ
+  Tweets:      21
+  Z-score:     -0.4193786246776158
+
+  ID:          8442f5ef-7b34-43a3-955e-9a7f46889707
+  Username:    Pat
+  Name:        Patricia
+  Description: 🛰🇨🇩🇦🇴🇫🇷
+Le Héros du Siècle, Le Dernier Dinosaure, la Heat, Nucléaire, Météorite, Monument Mondial, Incontesté Incontestable... Bo ko lala na bio 🤣🤣
+  Location:    (none)
+  Tweets:      67
+  Z-score:     1.8760865307467882
+
+  ID:          8a2a7c48-23b1-4eef-9ebe-ce48a8a34361
+  Username:    MovieStar
+  Name:        Holly
+  Description: Tracking the latest releases and weighing in on directors and actors.
+  Location:    Hollywood
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          8b02b826-fdda-400f-90ad-8ff07c57b89b
+  Username:    AlexSmith3
+  Name:        Jason Ratcliff
+  Description: ARMY Vet, WV Native, love NASCAR, Simracing,Basketball,Football, Bow Hunting, Fishing, JETS &CELTICS FAN Have 4 WONDERFUL SONS, 2 AWESOME DAUGHTERS!!!
+  Location:    Petersburg, WV
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          8c5f8a42-43aa-4421-8bd8-435fdb3f16f8
+  Username:    ChasingSunsets
+  Name:        🌅 SunsetLover
+  Description: Chasing sunsets, one beach at a time 🌊 #SunsetChaser #BeachVibes
+  Location:    currently in Malibu, originally from Miami
+  Tweets:      80
+  Z-score:     2.214338904768731
+
+  ID:          8df0f100-bca3-4ce6-878b-72f30e6c2df6
+  Username:    paige9128
+  Name:        PaigeVanity
+  Description: beauty in simplicity
+  Location:    :)
+  Tweets:      10
+  Z-score:     -0.9104107064387992
+
+  ID:          8e229365-e29a-4321-b70a-401c14b12139
+  Username:    th3tru3king
+  Name:        El Baby 🌍
+  Description: music discussions and random rants
+
+unapologetically black
+  Location:    EARTH
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          8fb0b151-2d1b-4f20-b6f4-75b25b599400
+  Username:    TravelWithEm
+  Name:        Emily 🌎✈️
+  Description: Adventurer | Foodie | Sharing my travels ✈️🗺️ | #Wanderlust | @TravelGuide | Formerly in Sydney, now exploring NYC 🍎
+  Location:    New York, NY
+  Tweets:      80
+  Z-score:     2.5043285364328494
+
+  ID:          92e91201-6b8c-4e29-9b7d-146fe2506053
+  Username:    FloweryNolan
+  Name:        Kime
+  Description: movie fan and flowers
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          93fc3c17-2f88-41c1-b62f-8106206bc73a
+  Username:    Lysy
+  Name:        Josh
+  Description: Interests : Flowers ^^
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          a0228a08-5d66-4683-bf8d-1a9970940956
+  Username:    Lizard53
+  Name:        Lizard
+  Description: An INFJ magical girl of petite power who's crossed the level 30 demarcation line! Takes pride in collecting plushies, spinning VGM tunes, and being a chica gamer. Joint-custodian of bunnies, bi and proud, 420 friendly, and an astral Piscean Hobbit.
+  Location:    (none)
+  Tweets:      74
+  Z-score:     1.946503223808086
+
+  ID:          a04b2bbb-608c-4fb1-9426-82fcfd15938b
+  Username:    urFavLeftie
+  Name:        Jas M
+  Description: writer, reader, dreamer
+  Location:    in dreamland
+  Tweets:      20
+  Z-score:     -0.46401790483772337
+
+  ID:          a2eba85e-7413-4a23-bd38-8c3fa2c13eda
+  Username:    lakewoodJoe90
+  Name:        Joe Anderson
+  Description: Lover of life, adventure seeker, and coffee enthusiast. Making the most of every moment!
+  Location:    Lakewood, CO
+  Tweets:      22
+  Z-score:     -0.25576268496736815
+
+  ID:          a72605f1-5b9a-482b-a11f-fd5c5f3ca76e
+  Username:    KatieXO
+  Name:        Kate James
+  Description: After-hours box scores, headlines, and GOAT debates — keeping the love for the game alive.
+  Location:    Lakers HQ
+  Tweets:      14
+  Z-score:     -0.7318535857983688
+
+  ID:          affbdacc-ecce-4e88-b671-2e1ff85f0034
+  Username:    DefinitelyNotLucy
+  Name:        🇲🇽🇩🇴 ␎ʇoN 𝕵𝖔𝖘𝖎𝖊 𝕲𝖗𝖔𝖘𝖘𝖞 𝐵𝐿𝑀 ACAB
+  Description: 🇲🇽🇩🇴 AfroMexicana-Dominicana • Human Rights 𝐙♡𝐌𝐁𝐈𝐄 • she/her/ella • 𝔟𝔯𝔲𝔧𝔢𝔯í𝔞🕯️hoodoo • BLM✊🏾 • Horror🔪•Ace 🖤🩶🤍💜 • ND
+  Location:    Human Rights Activist
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          b0904d5b-08d1-42b9-b195-a7718a9e327b
+  Username:    Fooooodiz
+  Name:        Henri
+  Description: Foodie influencer
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          b14b09a3-283d-4a75-8e57-22d34d68c4c8
+  Username:    KatieXO
+  Name:        Kate James
+  Description: Hoops fan chasing late-night NBA news and spicy takes after work.
+  Location:    Lakers HQ
+  Tweets:      14
+  Z-score:     -0.6364649224018809
+
+  ID:          b4b38a5d-9046-4d4a-ba80-9125ecbaf0f2
+  Username:    lilie_paris
+  Name:        lilie 🌸
+  Description: adolescente passionnée par la mode et le cinéma 🎥✨ | toujours à la recherche de nouvelles aventures | parisienne dans l'âme 🇫🇷
+  Location:    paris, france
+  Tweets:      18
+  Z-score:     -0.3519439233675442
+
+  ID:          b6d1ae84-f5d2-4c27-9c0e-86f4c719a724
+  Username:    KKBello__
+  Name:        AYOOLAMI😘😍
+  Description: Love n Respect ✊🏿 ❤️
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          ba6e4820-bf55-4c54-ac20-96cc271298e3
+  Username:    ZenGardenTalk
+  Name:        CalmScribe333
+  Description: Sharing moments of serenity through words and imagery. Here for peace and nature! Mindful escapism.
+  Location:    Creekside
+  Tweets:      16
+  Z-score:     -0.5250509266413451
+
+  ID:          bd016f7f-603b-4543-b3a8-d18b8269bc4a
+  Username:    MadameCEO
+  Name:        Céline Dufresne
+  Description: PDG d'une entreprise innovante | Femme d'affaires | Passionnée par le leadership et l'autonomisation des femmes
+  Location:    Paris, France
+  Tweets:      10
+  Z-score:     -0.8075376863340668
+
+  ID:          c2a803a7-af82-4de9-b4ac-4643d6404e37
+  Username:    JordanAlways_
+  Name:        Bray Wyatt Forever 🪑⭕️ ❤️ • Nets (26-42)
+  Description: @windham6 fan for life ❤️ • #netsworld • #RingTheBell • #ForeverNe • Michigan State • Horror Movies
+  Location:    Firefly Funhouse 
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          c2af8c73-2bc2-415b-abaa-2fd5083b56e8
+  Username:    PencilArt101
+  Name:        Emily
+  Description: Loving all the scribbles and doodles.
+  Location:    Brooklyn, NY
+  Tweets:      17
+  Z-score:     -0.49370158336393866
+
+  ID:          c4d7c33f-dcf0-4d69-bfb4-f30b6948c11a
+  Username:    SimplyMe
+  Name:        Henri
+  Description: Henri | weekend chef, obsessed with
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          c5050746-b806-4bb2-96e1-432cce9311f3
+  Username:    codeGenie905
+  Name:        Samuel Johnson
+  Description: I turn coffee into software, one line at a time.
+  Location:    San Francisco, CA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          ca6e30fe-e008-4df9-bafe-e5943451d616
+  Username:    SimplyMe
+  Name:        Henri
+  Description: Henri | weekend guitarist and coffee
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856
+
+  ID:          cb73a702-0465-43b1-9671-c5f146d7545b
+  Username:    FloweryNolan
+  Name:        Kime
+  Description: movie fan and flowers
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          d3541d0b-3c78-41c4-8cde-56e9ae100aae
+  Username:    buffhq_sports
+  Name:        Sports Buff HQ
+  Description: Your go-to source for hot takes on all things sports | Engaging debates and unfiltered opinions 🏈🏀⚾️
+  Location:    None
+  Tweets:      37
+  Z-score:     0.2948498578841055
+
+  ID:          d37863ac-9df1-4c79-bea7-132074c4d9ee
+  Username:    gadgetwhiz
+  Name:        TechGuru🎮
+  Description: Gamer & Tech enthusiast 💻| Sharing reviews & tips for the latest gadgets 🔧| Leveling up your tech knowledge!
+  Location:    San Francisco, CA
+  Tweets:      27
+  Z-score:     -0.017823786570797664
+
+  ID:          d3db09e6-fe79-4b4b-8a15-f2fa8b6208af
+  Username:    artisticblues91
+  Name:        Emma
+  Description: Capturing life through the lens, one click at a time.
+  Location:    Chicago, IL
+  Tweets:      22
+  Z-score:     -0.3747393445175082
+
+  ID:          d8589b87-2db7-4e7a-85f0-e7235cd8e1d9
+  Username:    geekygirl90
+  Name:        Suzanne
+  Description: Computer Science in AI learner
+  Location:    Mountain View, CA
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          d9bf4aff-69e8-4f3a-9d54-e997658c3b1b
+  Username:    aethersprite
+  Name:        Danny
+  Description: Pop scene aficionado chasing the early era bangers; loud about the chorus, quick to defend the classics.
+  Location:    Swiftie heaven
+  Tweets:      12
+  Z-score:     -0.7316404817605091
+
+  ID:          dcf22af4-2648-458a-9f20-da15f2170069
+  Username:    IronFist7777
+  Name:        Hellhammer
+  Description: Independent Hockey Raconteur. Goalie Enjoyerer. Stand Up Comedian/Former Talk Radio Personality. Proudly indigenous Sámi🦌🪶 & 🇺🇦! Let's Puck 🏒! 🦩native.
+  Location:    Boston, MA
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          e03e17b4-1781-48a1-aa6e-8dde293ef5f6
+  Username:    TriniMom
+  Name:        MomZen4Trini
+  Description: Mother. Zen enthusiast. Blogger. Always learning!
+  Location:    Island Paradise
+  Tweets:      15
+  Z-score:     -0.4955036581166769
+
+  ID:          e222e02b-6d96-4bc8-9dcf-46a0400c46a6
+  Username:    MotardInsolite
+  Name:        Lucien Lavigne
+  Description: chevaucher la vie sans freins
+  Location:    Windsor, Canada
+  Tweets:      38
+  Z-score:     0.6051209749600067
+
+  ID:          e85edca1-3e22-4d87-bf4c-6b4564cf0b04
+  Username:    RunWhole9Yards
+  Name:        Old Runner John3c3
+  Description: Living to leave tracks on new paths. Running around the town, life is a marathon! 3c3
+  Location:    Sunny Blvd.
+  Tweets:      15
+  Z-score:     -0.5721320532567987
+
+  ID:          ef97d042-0ba1-4c45-aa67-c6c2d0a72689
+  Username:    topazfire22
+  Name:        Topaz
+  Description: Finding gems in everyday life
+  Location:    New York, NY
+  Tweets:      11
+  Z-score:     -0.8657714262786915
+
+  ID:          f03e66fe-9cec-49ea-9150-7b992ab9a75e
+  Username:    Momo
+  Name:        Momo
+  Description: well,well,well...
+  Location:    (none)
+  Tweets:      68
+  Z-score:     1.9231676573622418
+
+  ID:          f04d9c8f-5db8-4424-b338-7d14c11368ab
+  Username:    JohnDoe_83
+  Name:        John Doe
+  Description: Just a guy in my 30s navigating life, coffee enthusiast ☕️ | Proud dad of two 🌟 | Sports fan 🏈 | Love exploring the suburbs
+  Location:    Suburban Paradise, USA
+  Tweets:      15
+  Z-score:     -0.5888771427225669
+
+  ID:          f1331ed6-1bad-4a9f-a946-52962341220e
+  Username:    JazzedLou22
+  Name:        Jazz star
+  Description: Enthusiastic about the Jazz scene, live music is life! Thrilled to be part of the jazz community in New Orleans!
+  Location:    .
+  Tweets:      10
+  Z-score:     -0.8075376863340668
+
+  ID:          f292a550-0a7d-4915-b33b-bb6bf9848830
+  Username:    CraZJohnny
+  Name:        Johnny
+  Description: Host & Director, Leafs Morning Take - The Nation Network | Writer, @TLNdc | Co-host, @NHLFantasy on Ice Podcast | Formerly: @Sportsnet, @FAN590, @SiriusXMNHL
+  Location:    (none)
+  Tweets:      53
+  Z-score:     1.0090783404458268
+
+  ID:          f346444a-3bd4-432b-87d4-5744a126e94d
+  Username:    bookwormAdam87
+  Name:        Adam
+  Description: Fuelled by coffee and classic novels
+  Location:    London, UK
+  Tweets:      27
+  Z-score:     -0.017823786570797664
+
+  ID:          f980d6c8-25d7-4386-9053-b17cbc8c7896
+  Username:    karlthecat33
+  Name:        Karl
+  Description: Gourmet cheese enthusiast and professional nap taker
+  Location:    San Francisco, CA
+  Tweets:      17
+  Z-score:     -0.597935745318046
+
+  ID:          fb26a0c9-c2d9-4ce4-a897-92347a27239f
+  Username:    Lysy
+  Name:        Josh
+  Description: Interests : Flowers ^^
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.6008173492602856

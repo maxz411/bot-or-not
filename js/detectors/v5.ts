@@ -121,17 +121,22 @@ export async function runDetector(
 
   onProgress?.(doneCount, users.length);
 
-  await Promise.all(
-    toClassify.map(async (u, i) => {
-      if (delayMs > 0 && i > 0) await Bun.sleep(delayMs * i);
+  // Process with bounded concurrency to get steady progress updates.
+  const CONCURRENCY = 20;
+  let idx = 0;
+  async function worker() {
+    while (idx < toClassify.length) {
+      const myIdx = idx++;
+      const u = toClassify[myIdx]!;
+      if (delayMs > 0 && myIdx > 0) await Bun.sleep(delayMs);
       const result = await classifyUser(u, datasets, model);
       cacheData.results[result.user.id] = { isBot: result.isBot };
       await writeResult(cachePath, cacheData);
       doneCount++;
       onProgress?.(doneCount, users.length);
-      return result;
-    }),
-  );
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(CONCURRENCY, toClassify.length) }, () => worker()));
 
   const results = users.map((u) => ({
     user: u,

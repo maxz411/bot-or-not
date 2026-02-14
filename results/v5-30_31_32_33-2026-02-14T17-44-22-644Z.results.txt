@@ -1,0 +1,180 @@
+============================================================
+RUN ACCURACY REPORT
+============================================================
+Run file:    v5-30_31_32_33-2026-02-14T17-44-22-644Z.txt
+Detector:    v5
+Model:       openai/ft:gpt-4.1-mini-2025-04-14:personal:fold-a-final-test:D9DjeW1a
+Batch size:  1
+Datasets:    [30, 31, 32, 33]
+Total users: 889  (bots: 184, humans: 705)
+
+DATASET BREAKDOWN:
+  Dataset 30: users=275 bots=66 humans=209 | TP=61 TN=209 FP=0 FN=5 | acc=98.18% | score=239/264 (90.5%)
+  Dataset 31: users=171 bots=27 humans=144 | TP=24 TN=144 FP=0 FN=3 | acc=98.25% | score=93/108 (86.1%)
+  Dataset 32: users=271 bots=63 humans=208 | TP=56 TN=207 FP=1 FN=7 | acc=97.05% | score=215/252 (85.3%)
+  Dataset 33: users=172 bots=28 humans=144 | TP=27 TN=143 FP=1 FN=1 | acc=98.84% | score=105/112 (93.8%)
+  Combined: users=889 bots=184 humans=705 | TP=168 TN=703 FP=2 FN=16 | acc=97.98% | score=652/736 (88.6%)
+
+COUNTS (COMBINED):
+  True Positives:    168
+  True Negatives:    703
+  False Positives:   2  (0.22%)
+  False Negatives:   16  (1.80%)
+  Correct:           871  (97.98%)
+
+SCORE (+4 TP, -1 FN, -2 FP): 652 / 736  (88.6%)
+
+------------------------------------------------------------
+FALSE POSITIVES — 2 human(s) wrongly flagged as bot
+------------------------------------------------------------
+
+  ID:          ae025c49-92d8-902b-bc5d-d0c2f8aa073b
+  Username:    Photo_B_ello
+  Name:        PhotoBello
+  Description: Chaque image raconte une histoire. 📸
+  Location:    (none)
+  Tweets:      33
+  Z-score:     0.365854750378119
+
+  ID:          f1e0fd30-8e5d-9e6c-8228-e760e5d3e5be
+  Username:    captsingh
+  Name:        Captain Singh, FICArb, 73K
+  Description: 🌎 World-traveled cosmopolitan ■ UK Class.1 Master Mariner  ■ Maritime expert ⚓  ➡️ Stay informed with maritime updates, shipping research and mirthful musings
+  Location:    Singapore 🇸🇬
+  Tweets:      22
+  Z-score:     -0.3747393445175082
+
+------------------------------------------------------------
+FALSE NEGATIVES — 16 bot(s) missed
+------------------------------------------------------------
+
+  ID:          209b5461-5b48-4d1e-9b6a-7a7824e1c523
+  Username:    Tiff-Tiff
+  Name:        Tiff-Tiff
+  Description: #NUCvolleyball 🧡🖤 | #HCAjoie 💛🖤 | #FCBayern ❤️🤍 |  #NJDevils | #ScuderiaFerrari 🐎
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.546518644438613
+
+  ID:          2d90fa97-7137-479e-bcd5-cc231dd0a978
+  Username:    writinglovers45
+  Name:        Samantha
+  Description: Life is a book and every day is a new page. Passionate writer and book lover.
+  Location:    Seattle, WA
+  Tweets:      12
+  Z-score:     -0.821132146118584
+
+  ID:          645c04e9-8c52-455b-b230-8fd061ff1b69
+  Username:    JoJo5
+  Name:        Joseph
+  Description: Un p'tit pouvoir implique de grandes irresponsabilitées!
+
+Insta: @affreuxjosh
+  Location:    (none)
+  Tweets:      94
+  Z-score:     3.147276949364035
+
+  ID:          76fe9797-fae4-4ebc-9631-459c0abe5b3a
+  Username:    RabbityFlower
+  Name:        Juliette
+  Description: Discovering Twitter
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          8442f5ef-7b34-43a3-955e-9a7f46889707
+  Username:    Pat
+  Name:        Patricia
+  Description: 🛰🇨🇩🇦🇴🇫🇷
+Le Héros du Siècle, Le Dernier Dinosaure, la Heat, Nucléaire, Météorite, Monument Mondial, Incontesté Incontestable... Bo ko lala na bio 🤣🤣
+  Location:    (none)
+  Tweets:      67
+  Z-score:     1.8760865307467882
+
+  ID:          93fc3c17-2f88-41c1-b62f-8106206bc73a
+  Username:    Lysy
+  Name:        Josh
+  Description: Interests : Flowers ^^
+  Location:    (none)
+  Tweets:      40
+  Z-score:     0.42876769836442824
+
+  ID:          affbdacc-ecce-4e88-b671-2e1ff85f0034
+  Username:    DefinitelyNotLucy
+  Name:        🇲🇽🇩🇴 ␎ʇoN 𝕵𝖔𝖘𝖎𝖊 𝕲𝖗𝖔𝖘𝖘𝖞 𝐵𝐿𝑀 ACAB
+  Description: 🇲🇽🇩🇴 AfroMexicana-Dominicana • Human Rights 𝐙♡𝐌𝐁𝐈𝐄 • she/her/ella • 𝔟𝔯𝔲𝔧𝔢𝔯í𝔞🕯️hoodoo • BLM✊🏾 • Horror🔪•Ace 🖤🩶🤍💜 • ND
+  Location:    Human Rights Activist
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          b14b09a3-283d-4a75-8e57-22d34d68c4c8
+  Username:    KatieXO
+  Name:        Kate James
+  Description: Hoops fan chasing late-night NBA news and spicy takes after work.
+  Location:    Lakers HQ
+  Tweets:      14
+  Z-score:     -0.6364649224018809
+
+  ID:          b4b38a5d-9046-4d4a-ba80-9125ecbaf0f2
+  Username:    lilie_paris
+  Name:        lilie 🌸
+  Description: adolescente passionnée par la mode et le cinéma 🎥✨ | toujours à la recherche de nouvelles aventures | parisienne dans l'âme 🇫🇷
+  Location:    paris, france
+  Tweets:      18
+  Z-score:     -0.3519439233675442
+
+  ID:          b6d1ae84-f5d2-4c27-9c0e-86f4c719a724
+  Username:    KKBello__
+  Name:        AYOOLAMI😘😍
+  Description: Love n Respect ✊🏿 ❤️
+  Location:    (none)
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          c2a803a7-af82-4de9-b4ac-4643d6404e37
+  Username:    JordanAlways_
+  Name:        Bray Wyatt Forever 🪑⭕️ ❤️ • Nets (26-42)
+  Description: @windham6 fan for life ❤️ • #netsworld • #RingTheBell • #ForeverNe • Michigan State • Horror Movies
+  Location:    Firefly Funhouse 
+  Tweets:      60
+  Z-score:     1.5525729428465675
+
+  ID:          c2af8c73-2bc2-415b-abaa-2fd5083b56e8
+  Username:    PencilArt101
+  Name:        Emily
+  Description: Loving all the scribbles and doodles.
+  Location:    Brooklyn, NY
+  Tweets:      17
+  Z-score:     -0.49370158336393866
+
+  ID:          d8589b87-2db7-4e7a-85f0-e7235cd8e1d9
+  Username:    geekygirl90
+  Name:        Suzanne
+  Description: Computer Science in AI learner
+  Location:    Mountain View, CA
+  Tweets:      18
+  Z-score:     -0.44611380368462455
+
+  ID:          dcf22af4-2648-458a-9f20-da15f2170069
+  Username:    IronFist7777
+  Name:        Hellhammer
+  Description: Independent Hockey Raconteur. Goalie Enjoyerer. Stand Up Comedian/Former Talk Radio Personality. Proudly indigenous Sámi🦌🪶 & 🇺🇦! Let's Puck 🏒! 🦩native.
+  Location:    Boston, MA
+  Tweets:      60
+  Z-score:     1.3215533015665797
+
+  ID:          ef97d042-0ba1-4c45-aa67-c6c2d0a72689
+  Username:    topazfire22
+  Name:        Topaz
+  Description: Finding gems in everyday life
+  Location:    New York, NY
+  Tweets:      11
+  Z-score:     -0.8657714262786915
+
+  ID:          f980d6c8-25d7-4386-9053-b17cbc8c7896
+  Username:    karlthecat33
+  Name:        Karl
+  Description: Gourmet cheese enthusiast and professional nap taker
+  Location:    San Francisco, CA
+  Tweets:      17
+  Z-score:     -0.597935745318046
