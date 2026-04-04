@@ -5,17 +5,15 @@ build/
 dist/
 wheels/
 *.egg-info
+.pytest_cache/
 
 # Virtual environments
-.venv
+.venv/
+.uv-cache/
 
 .env
 
-# Fine-tuning artifacts
-python/artifacts/
-python/.uv-cache/
+# Local training artifacts
+artifacts/
 
-# Detector run cache (resumable runs)
-js/cache/*.json
-
-node_modules/
+.DS_Store

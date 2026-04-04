@@ -1,0 +1,803 @@
+model: ft:gpt-4.1-mini-2025-04-14:personal:fold-a-test-new:DQfUXAJR
+provider: openai
+collection: datasets_5_6
+dataset_ids: 5,6
+total_examples: 709
+completed_examples: 709
+status: complete
+created_at: 2026-04-04T16:23:24.053157+00:00
+updated_at: 2026-04-04T16:27:50.298904+00:00
+
+[predictions]
+{"user_id": "0046a53f-de19-4e6b-88e1-404e263456a0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "01d14de6-ff50-451b-ac90-7f4bd4425327", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "02db40d7-319c-4193-9547-e41ced7113da", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0355b4b3-e0cc-4d45-8b45-90a18dcafe5b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "03b3615c-085d-4177-ae23-2347584fa809", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "03f09acd-bbb4-4c57-b8af-3e96f9fe91d5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0494efa5-6332-48a9-a236-77f304ed3f09", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "0549150b-7dcd-4b13-b656-91a0487bfd52", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "06b3227a-202e-4f11-bc88-2568d02c12c8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "06dd0b04-6a19-45f2-9859-bbb22bdf6e62", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "07659501-9148-4bdc-93fa-5f7e32d58d6b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0821d6c0-ef52-425c-a336-b268f22c2496", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "085a44af-723e-4790-9270-b2b81733fa9e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0a8c729b-a0b4-42eb-8938-4fccef7e9f07", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0add2abc-4345-4139-9db8-b2c971d028ae", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0b9a6a8c-442b-427a-ab05-2e8503dd3493", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0bcf94db-0c35-4dd5-a814-d9084ffe21d7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0c3bac00-2b5b-4296-a354-5601ad1f4aaf", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0cc1078b-2113-4f53-b01b-893dbdc0f953", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0cc2606e-eeb4-4db3-b6b8-983c52e0051b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0d2c60c9-ae9b-4d6f-9782-8d68502150f2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0e16625d-f3cd-4865-a201-031ea7adc8db", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0f8eaa82-b623-4d96-a9fb-aeccb20d46fb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "10602ca3-e362-45cc-bb91-5b41958f5dd6", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "12356279-e65a-43ad-a11e-ed42c3696530", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "13063f7f-bc3d-4166-9e7f-7be0f42d56d1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "13187a49-dd55-4ad0-9264-8ecce3c06734", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "133ed02f-dcaf-4cd2-a2ec-61aa9c4786ba", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "134f7e2a-c221-4e26-a923-3f2390efb25c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "16f364ff-c2c2-478f-bd43-754beba1bcd6", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "1827c42d-8963-44ca-a63c-77f1d2eaac8d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "197f77ca-de60-4330-ad0e-6061ca633776", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1a87d02b-b37d-40a6-b59b-db53c272c560", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1b14e4dd-5803-4a54-a42e-b61ccceb0683", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "1b2c0660-87aa-418b-bf43-0eff89434b86", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1baded2f-a7df-442d-aff9-0d2afb5ee5fe", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1bd0254f-78e4-474c-9688-bbd10e245372", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1e0b7044-6c54-4995-b0f4-4371fdf16ab0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1e3a4bb4-1e13-4e97-aefe-2702f1858dd9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1e3d7956-5873-4f5f-a7f0-374fd0fc6df9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1e4ef2f1-4303-4c49-a16d-cb6b86672de2", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "1f56825a-b675-455f-a930-87fe0c08a0c7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "21e20666-5acd-4a46-ba14-f4665c38d50b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "227d783f-fa39-4698-a49d-1d3257be9075", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "22fabe87-c511-4a1d-8f99-72413b60e55b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "248c14c9-a26d-4df1-8c77-d32a1964ffa2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "24ca2932-eb92-4eeb-ac24-e37ea09ee0ca", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "24e96f05-d7cd-4248-bf59-7304211b0307", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "24f2a979-818a-4341-91dd-d4f03157c5fb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "24fbb73d-079e-43f1-ac7c-943882816456", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2545e5ae-1ee7-421a-ad07-e80b9d8ad369", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "25858179-0e47-4290-903d-5aa9b9ce2136", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2592bfd8-5c43-4f4f-aa8d-ee64ffe853e0", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "262aedf5-4783-4a1d-9a66-3d604c88d7f3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "266282fa-79e9-4187-827f-eafec8662673", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "268b3cc0-c0c4-481b-8b45-3cddfeb4dae3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "26ce09f5-ef18-493b-96e0-8f1656836c80", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "26eb8110-14cc-4a39-b9d7-13bfc5509f63", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2776f21d-00cb-4c1d-9357-e3733c518bca", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2876bf19-7d6f-4c3b-baf2-91ab1d21f76e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "289ae751-8949-42dc-910f-ceb5b6bfe960", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "29713013-77d7-4074-8be8-39797163c98f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "29ad0656-3af8-478e-9074-1ca3264c7b51", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "29ed8989-9dde-409b-9053-ec773ce77339", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2a76eea8-9ed5-4cb3-85dd-3a1f0ed08a53", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2aa1c7f7-f219-45bd-971a-b6d88082941a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2b1d78ad-64f5-4d53-878e-71f34354046e", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "2b93cfbd-ee06-47e1-970d-d10f6f80975d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2baece3a-a508-4a82-908a-92d6f33469eb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2cf0e429-94ad-4c50-90ff-50aa27cf9a77", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "2dad2108-7fa6-4d00-915c-fd1a600618c7", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "2dc57744-f9b1-4258-8ee0-d649abfd3c31", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2f1ce9de-a5f9-4e7a-9449-d883a4f66a39", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2f89f3dd-4121-4b9e-8f82-d08277438f79", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2f8aac16-d66c-4021-8b7c-fd5209a721d0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "31b2dedf-8a3b-4ef0-959b-67b3bebb3d2f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "32a52666-a32a-4a95-88bd-8eb801f9fcaf", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "338ceeaa-25b8-4afa-b24e-94b9903c529a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "33e72f2b-a23b-4343-b7f4-815d7662bb9c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "34014cea-8477-41ff-a3f8-0ffcca961b02", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "34d7e11c-5527-43c2-9239-bf4c25018d60", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "35ca48c2-46c4-4084-9b3a-e731d8d11e52", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "361f8272-e4d5-49b0-a47a-89623b33189e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "36b30ce3-e1a5-4131-9153-2119809f714b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "37c06465-0cd5-4d71-9f6e-f01a2305867f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "380fb168-43cf-43a2-a052-5dfbdccd3feb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "38383784-2784-4207-af19-e71d8f590a52", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "383f81ad-ee2c-47ed-94e3-60ef25b4d951", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3886a345-154c-4ec5-8347-2a6e03d0c8f4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3a419a72-5001-43e9-ac96-ad45e9155557", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "3a70d92d-5466-4e61-a270-b40c8ca7172d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3aeea736-c013-4cc5-b135-3d7ff4e9527b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3dfece5b-b19c-4d1c-9489-97a337bcb2b3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3e1405b0-5855-4b0f-ab65-a715c1106be1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3e5e9c74-41cc-400d-b83f-a3c15c71bfb7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3e9a9e17-8dac-4fc0-bab0-84589c91d1cb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3ea6a902-411c-4f48-9b68-7e0802fe545a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3f627d9f-53ab-46d6-a390-9ff87ecaf858", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "40342832-9028-4594-b46e-7a0aa7a0f2e7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "409c93ea-3a98-45fb-80f7-472c2cdc7bcd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "40f605b4-2abb-4ebc-b750-cfe63149d1af", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "41a93ee9-8d4a-4855-ae46-21694aba5732", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "423a88b3-8f35-4ca3-85fb-8449dad5811e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "426c6392-73d7-48b6-a871-479c8286f576", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "42dd220b-46c9-4468-8391-fda444d21eb6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "42e464d4-7ee6-4494-b1c6-2cbe84066bb6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "438e8393-05df-47e9-8394-0e252f918981", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "43b6143b-4380-4ec3-b07b-440c4f0ed177", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "43d8d922-f6c3-4017-8a39-87cff2931d40", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "442e8f8a-f99f-4ec4-9a5e-ff82e7ac3c30", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "444ad0a5-ee5d-4ff9-80c3-870c2462e00f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "44acc47c-c86f-4212-bf3a-b14cbe55d82e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "45052d8c-138b-4888-aea8-9a7724770325", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "455d169a-6192-4957-8b99-252adab22f59", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "459fc56a-335d-4d6f-9a54-21478dadc43e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "45a9c304-8e4a-48b7-804b-c0e22227469f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "461d0029-4c97-4cd7-a4a0-26b3005f130c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "464f2d6e-3cf9-433c-8ec5-d103fdad9f18", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "46dd94c3-83af-48ca-b6b5-9d8b80b6357e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "46eec4fc-70ae-4d3a-9889-7e70b7abe7cd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "47fcb2fb-2c11-488a-baf2-0a840ec37692", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "48f2c4e1-3d0e-4274-a9a0-6ec9e902d0de", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "49646966-9947-4592-a256-1ae4f1d86ec6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "49653540-23f3-4fe3-af94-85deae20faff", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "49916eb8-062e-4748-bf27-bed4a7100ae1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "49937058-0a49-493c-b245-fb3b06babfb4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4c8b58c8-bd84-489f-bb56-792229a19d09", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4d2f2dc9-2128-4dd6-be50-ec61978195c6", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "4e93c236-e27d-4c83-bbbd-8506c95faedb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5026c121-09fb-439b-9390-591b698021f0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "505ffa47-5beb-45d3-9617-fd07cd42a0ba", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "50ba54b9-b67c-4fa9-86ac-d6815ad2cba4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "50d81037-0e8d-4e71-8613-667c321a3cd4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "524c6b25-b26d-49b1-8a28-28362324a836", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "526306ed-a9d8-4879-9a9d-22b3fc53bf04", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "529d198b-a518-4d04-8829-948ba68070aa", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "52b7a3c1-5320-4193-86fb-9be5bea83609", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "53e53745-5df9-4dee-9e7a-0c8ba2afa845", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "559213c2-f6f2-4a51-84f8-2d7bbd9f273a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "566c54a2-3926-47d3-9826-febdb037923e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "56721e58-b824-4849-80e9-67e7b6040e26", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "572ae174-f1c1-491a-976c-830ff53ab5e0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "574f6b1f-769e-400b-91d7-00324ab8cbf5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "57629427-a37a-4ece-8e94-a237199b87d8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "576f8a23-0517-4586-b0cb-9ae3522cadba", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "57b93da1-28cc-46a3-a751-c0cf9acb9c44", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "58b8082c-65c4-4ec1-a19d-700e6b7f3f71", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5955b975-b303-4f0b-8084-4993d81424cb", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "5a17040a-b65f-4aa8-8c4a-490644339a50", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5caf94fe-35b2-461b-afe7-8012469bf82d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5d41303f-3fd4-4f58-8489-6fff3e72a5a3", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "5ea738eb-77a3-4781-a371-25aaa999b0ef", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "5efe0447-3ee4-4d7d-853f-00dead27806f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5f49840e-f0bc-4003-a0b7-73f301ab3773", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5f5b53c4-8be6-4365-a066-afbec6375306", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "608bbf21-e0b6-4194-b660-a4c807096a33", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "61922f5d-a931-40c9-b952-2567d26fe0de", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "636d6886-bc37-4b1e-81de-6c39e5a92fca", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "63e5cc68-2b7f-4aaf-b666-46526f0757ad", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "64943f59-e476-4635-bf30-66d8b9d99f3c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "65b1e9e8-3871-442b-9953-59e468d16200", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "66944b01-9596-4b65-ae91-e3b605d0cdf4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "69342e22-d813-4da6-8425-9a7ad72ef0bf", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "693821e0-9954-46a4-bbf8-9ba763b9a466", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6b0d066c-8814-46ca-8924-2f5a06e4fcb3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6b2a8a85-cb75-4f5c-a97c-63db58824053", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6b5114e4-f4aa-499c-bec7-d50863126eff", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6c9afecd-d335-49aa-bb2d-bd621a89fc96", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6ccdbf86-5ea3-490b-a7c4-c900838d160b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6cfcc329-00a8-4d15-a885-048c69cd5c3f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6dcb6002-8225-418f-8853-23a949a3129c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6df60e27-1745-4830-9288-eec895d2642e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6e9187ee-5dcf-43a0-9c62-42d0b040a3a6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6eb72610-e9c2-4d6b-9e5c-cd644f7f5c69", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "70f1ab1e-a459-4256-ab15-60d3e7e4aee0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "71260d4b-64a9-4795-8d6f-b75339bd0c25", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "713aba05-3d0e-4b75-8819-974e924de8af", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "715b186d-71de-413a-9d75-ce8639b84c33", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "71c8c3e0-2dd2-4d89-aaa3-f4589c297de8", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "7283e3b9-a363-4bcc-ba39-15ba80cf463d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "72c109c8-e822-44f7-b43c-a4900f34fa46", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "732c3107-d100-4a14-a474-7bd43617d7c6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "735ee92f-0d4b-4d8d-b62b-c575d0f2bf7f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "74c7a326-a45b-4320-8778-9b2893ef66b4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "74cf1682-c18c-4d4e-81ef-eeb366ba5ff6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "74d80eb0-f518-4f27-bcfb-12c42b47713c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "753eba0c-823b-429e-aff2-e690c07940e4", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "75dd643b-804f-48ff-847a-dab8cbe8d806", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "760aaefd-aacd-41a4-bf9c-c4d9a60bd8cc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "760daf3b-866d-4560-b12b-8b8090f05412", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "76494f07-1d1a-4fa9-8f3d-b9b2dcddf255", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "773c7d04-5fed-4a76-ae90-d4e22153b7c3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "774b3a98-d141-4a6b-bc2f-12c8c03f4274", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "77e32d74-3b6a-44b5-b6e4-c9ea5b01dc47", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "792c5590-7d38-418b-807c-864673c9ff2f", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "797a6f0b-ffb0-4d00-b3f8-e5b6aa6222b3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7ad32a09-f784-49c6-b490-63c4ed63061d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7ad466d7-e811-4d50-a70c-02b5277a9ff4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7b6514d9-7f33-43d8-91b9-f1c2ecd521ef", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7bf6bff0-86b1-4e42-8b72-d85d5d1c4ac8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7c2e7d37-f6a3-474b-82a9-1a8957cac62c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7e6f411f-7709-4ad5-8cd5-64f55d18b12a", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "7ea15aee-c8fa-4922-8ce9-190300ce88d6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7ea6b59f-9eea-4ee3-8e8e-c180af0b6d09", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7ef2b8af-fb20-4f6b-8fee-b0825a001211", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7fa3efb9-4f8c-4639-b55d-2646eb65b1f0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7faab923-9874-469e-bd03-a2cd1e14d260", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7fecd15d-90d0-4cb1-a046-8b73bfa1c63d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7feec96d-5af0-4a92-964c-dcc30cafda54", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "80142851-4d4e-4449-989b-9ea33f12c6b4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "802a5679-f79e-4ca8-9a4c-3531a5076846", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "80f83f06-6e89-4e48-9a54-03c72ac34fcc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8362babc-7893-452d-b7a8-15a3066b81d1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "83ab6bc3-3845-4ec8-9f5e-b54349bce2e5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "84c3d322-1a15-406b-bc5a-cd84f8562e78", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "87eea155-6451-41bc-a24d-f70f75a4abba", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "8820998d-0066-46cd-aaaa-39d167c5863b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "88fcf62d-0bdd-4adc-b710-2801014fb5bc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "89b730da-1ac9-4d66-84cc-0a7f0101bb7e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8a3bb26c-ac51-49f5-84fb-6fe0e8698381", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "8ad0f0c9-92f7-4c9c-813a-1fe90d53df77", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8b5c9bfd-abd7-48b2-aa17-b74911da57d2", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "8bc6f46d-2f99-4da7-856b-a5a13742df1f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8bfeaa9a-e837-4718-9a0b-02c24444169c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8c9d8de6-686a-4aa9-9968-3180e96d2b65", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8c9d9be4-d430-4725-ac3e-09ad83ed2273", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8d0c3013-039d-4242-905f-2b40423f309f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8e888b67-26a2-4998-b86f-e29b4c60b672", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8f5ebb9a-97bb-4194-8d51-d48bb3e57835", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8f7b43ce-aad3-462e-a76c-e3ed05e19917", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "924af1c4-493a-4b21-bd16-e1f66fb65e08", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "92657e6e-6d89-4d7a-8e35-fbea69150e71", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "927a6433-7c14-4723-929c-7b0c786b2c9a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "92920d16-143c-49df-bf55-2051e69b4611", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "92f86b79-d680-49ae-a34a-927318f6fdf0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "93fee2a0-1bee-45bd-a8e1-60c6b0806f17", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "949bd302-ad14-4021-ba83-90974d55792e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9502e17a-347f-4a1d-ab39-c16ed94dff76", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "95112d63-c856-4eec-9e30-7a796ce391d6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "95fd7d3a-ee23-4e5d-92ff-3c8807748cb9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "965f2364-1507-4b83-8e41-f2182db4708c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9687256d-c89f-4537-9415-52c4cac6b213", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "986efba2-566a-4030-befe-8b1f8cc4feef", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "98fc8c01-34f3-444d-ac67-cbd7cfa1cfeb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9935a99f-1a78-4163-bae4-38d441450701", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "99533b93-844e-4a0d-9206-84b5a889f9e5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "99ec7637-da05-448a-bc5e-3cec9ce0b06a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "99ee04c6-f944-4636-b0ae-255bf8b52c2b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9a4f4742-6aac-4861-832e-8361bc08e374", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9a535f12-63c5-4233-bb3a-aa233cc762fe", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9a68f785-23a7-495c-bb97-527460651dd3", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "9a70588f-7638-4898-a8f0-ef69fd44300b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9ad6c67c-6865-4011-9cff-88ee0725c358", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9b4e8410-a725-4bb9-8254-d58c6e63fb5c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9bdea994-c4e4-4be0-a1de-ec8f82d27406", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9cc9805e-4c91-4392-8aab-ba5a748942be", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9d50f369-27b0-48a2-be8c-b4e179297790", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9d926987-8001-4667-a3dd-5a4dc03e1667", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9efbf6ae-408a-455a-807b-99134880a9ff", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "9f8f9b3d-890c-4ee2-a807-9fcd9b92b674", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9fa8eb0a-d216-4c0f-9328-66cee80bddfe", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a035d3a4-0594-4d92-91af-c5f9b0f9b928", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "a15c0321-9d43-416e-a0c3-e82e70fd8915", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a2715e97-5e45-4f10-abfa-d88a6b3defc6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a2c4e3c1-414f-488f-8a5c-2f23dd5c2759", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a2f8e5dd-906c-45a2-9f10-19140e2cd691", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a483ebeb-495a-499b-b410-3ed056f4a09c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a4bbda0e-e3c6-471b-9380-7f1f96d5c9f8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a5de187a-6bbd-4c93-ba28-ec8a1d810e80", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a624ddf7-e496-4c75-921b-55ff0f4845e2", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "a62a72da-0189-4b21-b96d-126f3207408a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a68dc69b-577f-4fa7-ba0a-a704362f682f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a7920567-18e7-4451-8550-e1b6166702dd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a838c772-d31b-4762-ab6f-720fe971d68e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a869f99a-c372-44c4-8947-61429b707454", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a906d210-3097-4f8e-912b-4f5e8078136d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a927e6bb-4cce-40fd-acd4-5369daa0c094", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "aa1a4e53-7f16-4535-a39a-9cf1c17fdbd1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ab02df95-486f-4c44-aae7-12024f834923", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "ab275b7a-4ce5-44c7-827a-3ce36120d0e8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ac8bdaa8-6b52-46fb-8657-d5838b1757aa", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ad14c50f-0fd8-43b1-a85e-79785d5b83f4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ad6676d7-35b6-4d94-8c3a-60763c23f2b1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "adaba27b-d378-446a-90b1-fbae2d2dee9a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "adcb2e85-a77b-4985-850d-04af785ec041", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "aeeb88aa-1722-4466-bb0d-4a9e5b0cf573", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "af99e159-6dc2-4d7f-949d-c2e06a7f7cf4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b038cc1d-7c04-4cbe-9669-013ddb854669", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b1beabbc-416b-457e-ae70-d1891d59a0fb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b219196a-5544-4056-8acc-0638fc95a610", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b24bff47-171a-4b56-9bc4-e15b005625cd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b2a7b4c8-5f79-4d17-9d5d-2d4fabcf6d31", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b3158c39-79d4-4ed3-983f-343022243fee", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b38d8c89-575e-4faf-a30c-b77517070d4e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b503c5d5-b8e1-4cf9-88ca-1c5c94ad1b29", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b50fda8b-d582-4b3a-bd38-e846ab9754b5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b75cdf7f-a61d-4afd-ade1-71d190264c6e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b7847de8-7c59-40de-871f-a7bbd3875f72", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b7d10888-13bf-46ed-aebe-5e927f5c1725", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b84e1c6a-c835-4a54-b7cf-582d41c30f13", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b8bf4049-9dc5-401e-8fd2-d9f668bc402f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b8e3dd3a-f0ae-49d4-8904-91791d4488d0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b8e8fba4-e650-4256-bad9-6cb0400a33d5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bad07b74-0049-4eb3-ac01-8e600fecd190", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bb3e99d4-95f5-4fc8-a0e7-4477d244ab77", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bb987b77-0b4c-4891-b963-0e803a46be48", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bbb5c13d-e9fc-45a8-b690-c6478f271dc2", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "bcd829d0-b02e-4008-bf2f-9ff4d0f91a11", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "bd8b7aef-cdfc-4744-8934-f4506ff103ac", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "be1f8544-92db-4a59-97c0-a574a0053d1f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "beebb3af-db0c-4eff-b249-18d9ee3d5ede", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c0270717-9ac5-4b42-9a97-65e286eb180e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c0d63998-80eb-4467-ae2c-5b46b8f7f1c9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c25d0ce8-7dbd-4e8e-b891-cb8dc05ddad5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c2e6a40e-1f48-474e-a9a0-dee1484441de", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c3c7a580-5e14-4e5a-b20a-80369ad3362e", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "c3c7e717-4020-4346-ba1f-0b364c8702a3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c428feba-3336-446c-88fd-c991624a17dd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c592f22c-9b9a-40b3-9efa-7096fba8b8ec", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c65743c8-4b0b-4feb-be18-f5e1f312d951", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c793ad25-506a-4ad4-812e-b5a569602c89", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c7f1acd3-edc5-4dfc-be78-0ddcf0740164", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c7f6827d-802e-4b77-81f8-e8bac986fe5f", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "c892e849-e879-4543-9769-95ac04243a4a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c8c7e174-d2ce-448e-9150-360859967943", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c8e29009-f0c1-480e-9cd3-14949bef0e78", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c9b37542-c1f2-474e-a19d-91d3985ea603", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "c9d4df2c-0c89-4d51-b85e-8d41b7d07f3c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ca427ee5-622e-4fe1-9272-d1ca5b593621", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "caf80d38-463b-43cc-96a0-c0ffa3bf0b0f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "cba161df-049b-4895-82af-25ad9827700e", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "cc6d5af8-f0a6-4b54-94ca-d70cdd3a6e29", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "cc7a4e1d-48b0-45a9-b774-acfb47687576", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ccd84240-204a-4b80-9799-bde3b72b3748", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "cd15b4db-7534-4b4f-8e96-81ea6f8321c2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "cdb1337c-699f-4ba8-b66b-7fab0c99794a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ce4e3d4e-3ac7-4ebf-9f49-f26bbed697a1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ce9a3c56-c6a8-4c48-b963-583286b38c48", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "cebdf413-249d-4e0d-b195-d5b398ecefb5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "cef312db-f3a6-4c36-a1a7-bd4498110861", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "cf557743-3bec-4299-8122-75350b2acec2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "cfc4fd59-697e-4f46-88e8-2a1568a26855", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d1038069-2b09-4038-bdd3-1d10398015eb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d1305cfc-a23e-4bd2-947a-d979f9830580", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d3888752-ba58-4a8a-b764-48035a67e3d4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d496c07d-a42f-4484-9c16-4d122868e93d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d4f6b7ad-cc51-40a5-be64-7024cf496d92", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d5b0f25d-9506-4473-9134-924bb5a387a0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d6e305c2-8764-4d74-ac3f-c3da4b34a010", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d84df66c-1e7d-4345-859f-533f3081f88a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d86bd62c-ca74-445c-8736-53bdbecff128", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d87b21b5-07bf-493c-bf74-510dc4cbaf88", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "d97a0d51-c588-4cd5-9499-586a873f77f0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "da1bce00-0ceb-4169-b6fc-73b52838b204", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "dac1e47c-4a59-4022-8c6f-16f644f6e14b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "db0ba164-5e28-413d-88ea-c15ed2680115", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "db1b09e9-73ac-47ec-893a-b48648340189", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "db30e063-b0e9-4a03-a6b3-7484a8af3745", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "db67883f-b278-43dd-9309-5415316cc836", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "dc848d68-7696-4a7e-b3d7-906dde37a0c1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "dc95ccb1-cede-49e7-82aa-55424c402f82", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "dd1ca81d-5915-4b89-8d38-960122150679", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "dd4559bc-5134-4ac4-9920-a6be09c01be6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ddc36cbb-b61a-4eb5-a8ea-6ea2024ee08f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ddc52371-3e60-44a2-a9ec-6f29dbc19b94", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ddcd978c-28d5-4929-b782-c27120ec542d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "df9266f0-7668-4a89-9ce9-d36300ab1f35", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e071ded2-7dfd-40b4-970a-1ec0d2229dd0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e100e0ec-2a67-4d46-a038-004c8e37e1d1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e14644c4-531c-4abc-b6a2-8627509e9a85", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e18e9159-6ba6-4a2a-be93-bc3df82571aa", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e1aeff51-4b4f-44aa-91ea-2494a033d2de", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e269ef64-6e43-4024-aa23-66f519b01ca7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e289c6c6-769f-415d-a479-9c12e2982530", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e29abe68-6a23-4f58-9f17-bf0a92c214e7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e2e19e79-4c12-4982-b3be-e1d37dd1d67d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e30cb045-a88b-45cf-afa4-11f0f19876f3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e3ef1c09-85ed-47a8-af02-64364a8014ac", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e667e793-528e-4efe-b53f-99087a09a3e9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e6abc6c3-005c-41bf-b621-c698a32c95b3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e7b98e8c-4f2a-481f-933e-eca46760decb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e832502a-d63d-4743-b946-d8475ea3e872", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e852f760-6ede-4fe1-bc94-006b04cd04d3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e918f33a-d33d-4364-9c88-1893420dc7e8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ea27c7e9-63eb-4ef1-8a2e-82e3ac31fed1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ea6ab6d0-33bb-41b4-b344-3f1d58796b70", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ea912c4d-ddf3-49b8-a9c7-839d3951c27c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ea9e787d-3867-4201-bfe3-c9d216e3941d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "eb3df9be-0029-41de-91b1-9feba98177f1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "eb4f4afe-4851-4025-a041-1cb9b778b844", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ec86f5ce-9d57-47ba-a5e8-f5ebd32ac2e2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ecae619d-99e0-44cf-a395-786b5cb37a33", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ecdca52d-4375-429c-a985-18a70b82f9b5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ed8086af-e829-44e3-b267-2826fdedb030", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "edc6c32c-6ac0-459a-a21b-dc9ef3736878", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "edd10c5f-56f1-4f40-ad7b-e266591a4fd1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "eede1067-18b8-4975-9734-ee60ff731873", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "efc5811f-f2fa-45ae-a9ad-af9491c34009", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "f0e32056-5eed-4d9c-9e98-2c5703fa3ce5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f15c0644-218c-4207-9aac-54b9d8f68e3f", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "f1b23c64-3a69-4556-bb4f-3d6b10f6291b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f3f75ad9-0775-4ba4-adde-d65b67c4bb8b", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "f47ee223-137b-479c-93cf-8ab47ccb02c1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f54ed529-7277-4783-8370-bf0a3da30043", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f5cbd463-700a-4a88-8891-2538027b46de", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f6c43761-e9e1-450f-abe7-9bf3cdae3fb1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f86a5c66-c705-4d09-85ee-314149690b7d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f8c74999-f2d1-46ce-84e3-56bc0e8fd45a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f95f30c8-c2e3-42ca-a976-66c41727c081", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f9dacfff-5be3-4706-8a88-9dafddb5f49f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fae567e0-c3f5-462d-986a-2884382fd917", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fb0c7373-6b87-4c22-b40d-b767e8791b14", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fb5f4164-c103-4919-acee-575091611fef", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fb9b1df9-3972-4c21-8c96-fb9e3c49b3af", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fbd5ccf4-9565-4e19-82e7-49287adc0354", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fc4a6469-6af2-4237-a9ca-7cf58028d09a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fc7275ac-8987-4228-b2b4-033664e92e06", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fc87b4be-131d-41b0-9d2a-2a594396853e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fd32c209-58f5-4ef4-871b-497315574442", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fddac66d-6ff0-44f1-9695-1e8627dcce91", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fe5f4da0-44f5-481e-86c8-52a84da0aa4c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fef8cadc-1dd4-4631-8fb2-df5d49037dc5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ff23b192-f78e-4e84-97f8-ea2d2c738c34", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ff796097-3c28-4f6b-8e1f-f188979cbd84", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ffa87912-e54b-409d-8897-3374905edb4f", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "fff130b2-3494-40c1-930b-0f3f9ece5bba", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "02cf5b58-caeb-4dd2-b511-574932603f75", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "0341b744-e47e-4af3-afca-32acca268762", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0385fc1c-2af3-4b62-99c0-71c7f5c495c8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "04395759-88f0-47d8-ba36-51c7ed3dae18", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "06ef8b5c-8dcb-4a89-85d6-0b9089600ac9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "08241851-abeb-4dc5-8190-6c9a9f62098e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "087f99de-f828-435b-9ef7-3e407dcd4b86", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "08954249-41e5-4f2c-b9ed-c401ef06e2c4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0950a372-25e4-43fa-bf5a-027156aac6de", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0c1366e2-7662-4625-804a-1465cf1ec03f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0da9884a-c0d8-4bec-8bc6-382819b19efb", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "0e3d25e6-ec47-41fd-8032-d6dfce4a3330", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "0fa51a34-910e-49c7-a697-6264efc0856a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "103527f1-bb86-4ac5-95df-d4a1524fdd1b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "10c8eb17-422f-417a-acaa-fa1f10ea4062", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "11cb4219-b971-4484-9f00-21a780b5ab9a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "13001782-c810-4683-be03-4861a3a9bedd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "134b370d-2856-4563-bf71-5128eb12e8c8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "13607239-09e0-432b-99c6-81299fac6eb3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "14efcbe9-0122-4e3c-b417-33e31cd4c7d4", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "14f459a0-58de-4edc-8fe3-612759e22e6c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "16fbe5b9-e015-4891-99aa-8836e14207fb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "18b4c2a9-9d9d-4ebf-b41e-e10f2264cc27", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "18f939bf-f47f-4896-996a-1a339c701869", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1b14da60-3046-4c01-bb3b-64f8ecb4424f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1b40026b-356c-4f7d-9a8a-5859ed00a5e1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1c0a3f98-9c31-4781-ab63-6fc992c7d540", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1cd8061d-6be7-412e-8c0c-c4b092d4ff54", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1ee4c29c-a639-4b25-bcfa-af9993f6a5fc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "1ee8b1ac-c6d2-4177-97f0-f22654f8ba37", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "206c5043-b883-422b-81a6-c207d8fd69c5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "20cea413-0586-421b-a4e2-e9786d4d8f47", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "211a481f-2184-4507-b321-7e9bf8184d3d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "269e226b-5125-4bc2-824b-fa90153e31e3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "273e8378-66b8-4ca0-aaf6-d308f866d438", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "28faf795-373c-45e4-8339-b52e3b2be1b9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "29ef4839-c62c-4c6b-b474-9a4b6aebac29", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2abddc8e-ff68-4d61-b325-ec331d0839c6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2c194fa8-2a70-40ea-8edd-338c385dd9af", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2e732471-d406-456c-ae1f-5541a1756861", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2ed5e0e9-f7d2-43f9-8586-d553ad858152", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "2fd2c71b-a001-4844-b39b-7ca52b328a76", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "30fbc2f6-c2a5-49e3-b68d-6238961ac702", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3112e63e-7c10-40a1-a3f4-3c3e39b66dac", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "325b782e-595e-4539-acdb-862bd59ef208", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "33e77f75-ea0f-4494-a015-efe5d8faab35", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "34332afb-eb26-492a-b6a4-ea31595cc75b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "34f5632e-0592-4193-9b1d-d696733eec13", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "37353eec-660d-408b-8de6-e8f40f22dfdd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "37be1123-a6ae-4a95-8834-728179bdbec4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "37ebdbdb-59ba-4dd6-ab32-91bb9b2e9ee4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3859694a-25f5-4344-ad6c-939fd0024842", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "38eb5249-6956-4d34-a4c3-aeb01f6b3b1d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3b25462b-09a3-4da2-8887-07886cd51606", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3cb67e17-b89f-48fa-a384-a7197a5eb82f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "3dc374dc-73f7-45ca-89a9-b055b035ff37", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "3e9cdb73-af45-4d06-bdfe-b7f6dd4186d3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "41b00652-34c2-48ea-95a7-29a3d81114ee", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "436ad3ac-4822-4294-a7d1-c6a803901987", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "44c38fbc-a7dd-4ce2-ab01-d0ebaea3ecb7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "44fb1bc0-158e-495d-8da7-0937f35deb6a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "459d206e-b9a8-4ecc-8cca-f647f1e17ecd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "45ee036c-edd9-4e24-9870-7276e47fe04f", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "47ce69ae-b2f1-4869-ba8c-c019366c4ffa", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "47e53a31-3d4c-450c-a0a9-9bfbecf69d28", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "482aa44a-1e53-4ed1-bff7-dccf6bcf3d0d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "49905ae0-93ba-4a71-804b-827268b44edd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4af18a1f-d21b-4e7a-b8cb-8e5c8c0894a3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4bebe94a-9172-4f3c-a866-7666a9ac3c7d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4c9bf448-bafe-4da0-b620-ae58533c6adf", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4d39e9e3-9fdf-4f5f-a624-930d224026d4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4d76ff7d-1dea-49b1-8916-807225e1cbcb", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "4db28c5d-fda6-4f46-b4fc-70f5e6d649c6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4e0c557d-f3f6-4cc0-bab6-27f6791676ee", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "4e6812fd-d982-4a8d-8737-c5bcd9952f3d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5044f683-350e-4ed9-89f4-f8f93300c031", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "51547f5f-e5b6-4b76-811f-7d83c0f61306", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "52c91738-e666-4531-b541-421f937786d5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "531d0de4-7e62-4818-9146-70b6ec157427", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5336d303-a8ad-4527-8b4d-39abc3322f81", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "539b9918-e028-43b7-9622-4553d7e9ae1a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "53c90724-e4e4-4c26-9393-49cb23f19073", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "5493aadc-2783-4826-84be-3edffe581c85", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5865613d-1d8c-4038-b104-0549197f7411", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "59656fa5-14b2-4283-99d1-612592241dd9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "59ead833-be3f-41c6-96b1-5c7a4c612187", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "5a2ce81d-f0c0-4c94-974b-878ffa3231b4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5b3a5dab-dee1-48a0-99fe-bdc0f4c26f9a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5c73c6ac-987b-4459-8a55-14ca4cca96e3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5db91a36-1af5-4a27-b9f0-fa3025341adb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "5e9ec24c-fabc-477c-8c45-cf17909606ca", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "611889c6-2909-44d7-bf5a-91a28223e0ec", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "62e83468-ef25-4463-83bb-8e28fa89fced", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "63874f71-7f06-4bef-9af7-ff7bf863719a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "645e46f7-1911-4079-ab23-3829db0b91d1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "64d206ef-d2ac-416a-bb02-ebeffef94fbc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "64f458c1-8cf7-4541-bbe2-8a59d3d87490", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "65c3a152-7dfe-472e-b02f-cd25a26760cc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "65e73df5-ee3e-471e-ba09-45eda8f425f2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "668e8156-5a36-4880-ac0a-bbb7645f25cd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "66a55719-1817-4b63-bf65-02c4377e45a6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "67da4dda-9988-4c55-9d9d-e3b6f8a401cc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "68488d98-d04b-4c24-bcc4-1aeff8f94e0b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "693dea57-f08d-4bc9-b57a-be72af690527", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "69b8d889-7f97-467f-9bb3-a3703c13a7a8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6b009b93-966e-41d5-84e5-448bd6afceeb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6b38e744-b10d-4c76-ae78-7931a658a32e", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "6c90c656-f05d-4bb7-9cfe-fae49df99799", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6e1c8965-7a66-427a-8fc7-8e2711bba6ef", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6e7eedbf-55a5-42a6-af0e-87e09ae6a55e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6e953fba-c838-4093-b62a-872672ababe0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "6f70d765-2ee3-4fb8-b3ca-d393c9c8d85e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "70434422-e59a-4e75-8eca-9c36f3cf0984", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7067d72e-3c69-402c-b9b0-55eb20305851", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "70e6ee5b-2bb1-4ddc-b014-c79e501c04e2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "712d08d1-6363-48ae-8231-1f050a189ada", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "713db5d0-3bbe-4d37-9e6f-e5f5fdd24e47", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "75ff9bcc-204c-4042-b32d-bac8fb94e8ef", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "76043baf-8e15-43a1-9938-96cce4165d3e", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "76883b69-971e-4b99-bb8d-2aad51c0f816", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "76993b83-8629-4082-b566-6818f9f4e6f8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7741b68b-d4ef-4568-911b-d7af7e65939c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "783db528-6bf7-4ca1-b4d2-ffe7b672349c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7ae3c188-7c55-4b6c-866c-7a1d3ff5584c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7b77e886-c32f-408f-a9fe-5f94bc8aa753", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7c1a6152-99d5-487f-993f-9b9014627835", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7c6a3503-c1d4-49ae-bef6-a4845b9e95f0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7d991fac-81b5-4166-b122-a88e7090ffc1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7dbf60cc-df78-4e37-91fd-28c271a6a9a6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7f10aa89-8f0c-4cb7-857f-96b11b134c64", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "7fd73335-a5f3-4cbd-b1f4-c5294846c3f5", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "80e1f35a-ae77-481f-b137-0cb4b991e974", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "80e2309c-667a-4e59-8bb0-9d3974f45efd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "80f5a8fc-becd-4fde-84b9-1493a8c77aad", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "82aedb86-fc26-48c5-bf70-f9183413bc55", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8330247e-71f5-4000-9986-a07c1e937b15", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "84763dbf-0b75-487e-84f2-d44aa13d6e97", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "86e8d412-cb13-4ca0-98b2-b795ee1b3968", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "87e7867e-67e2-44b7-9441-506984b9ef95", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "88347837-d3f8-4d9e-b8f0-1c372c250c11", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "893aeced-8350-4e05-a036-098ce050ed76", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8aa70e18-5f1f-4ab9-aede-a023bc5d0668", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8b5563b9-c3bd-4736-b0e6-adb02b741051", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8ba7884d-a67d-498e-9410-2b8cd0ff199e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8c96c51a-047c-43ea-afd7-fdd703a933d7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8d0b62a3-daf7-4f3a-85b7-2cc29825677b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8da76202-a551-4b5c-83e2-1987277a20b2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8ed6abff-e0a6-41cd-b292-b506a15bee0b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "8f23399a-c4c5-4b4c-9066-865be6ac96db", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "90c459f9-30c3-4eff-9f96-6c1a88305d6b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "91f7b44e-b0b8-4fea-8602-0950379fcd18", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9202174b-864c-4d41-887b-d1bde921a5dc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "92070853-bca7-4c95-a257-222a339cff8e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "920c71ef-6edc-44bf-bb9a-94a58c244167", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "927f3035-c5df-4160-a5f2-6f28e1b7466c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9296bec0-2bf8-475a-9c3b-8a4b02ba03bd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "92a97c31-5d13-453f-8041-3c0cdef6a2b7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "93dd83cf-590a-4e62-b0af-40c3522568da", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "9461b00c-699a-4f14-a721-ab95e8f44195", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9480d96d-02be-40d3-8882-4613bb0a81e0", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "94d50732-0a59-4f8d-830c-d5acd45182d7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "94f3dd5a-5955-4648-aed3-af83fe1ce259", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "95743ceb-3eaf-4b7f-8eb3-53ca88bd2da4", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "969faa38-2278-45ef-a4d9-5fc8cceab62c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9783f550-15c4-47d5-9560-84586b031c7f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "97d2b348-1d57-4588-9ad2-4d1c8026ffd4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "987256a7-315b-4089-b181-e820fa6027fd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "990a785b-113b-4e19-a963-b8b74d3eac5a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9917097c-e02e-4714-852c-062eda173dc2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "995c0176-80d9-42dd-a198-8fe784cda145", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "99b6a162-77ab-47b1-a992-42ebfe0d3e21", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9cb6cafd-e97f-46cd-a429-f7e640991efe", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9dbadfe2-69cd-46f5-92b0-2aa9361a619e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9dc735c6-5f52-4817-b5bf-0b1ea985eb84", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9dc87803-8a38-474e-81fe-6e98ac037618", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9eaddc24-fcad-42c2-9fde-5b2d05fc0a89", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "9f00ecbc-672d-4e15-b58a-a36dbe810af4", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "9fe1f490-30c8-4451-b983-e77e130f971b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a0703526-3385-4d82-a40a-d3f06933058a", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "a08c6331-22d4-44fc-9f80-ec636baf6fcc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a139a772-9385-418c-9f84-c18bdcdb4102", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a23c49f3-78fc-40c7-ade1-cbdc1a093012", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a2b98dac-89fe-41c7-9305-89ea80b0acb3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a2ed5ab5-8fbd-4b12-9290-2048d366371b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a46b0272-0a45-45c4-ab99-86cb66e6157c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a5423dd4-9c3e-4156-928a-6b50b1612521", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a5fd0184-cd26-4595-8736-a6945cf1e04d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "a9327010-3518-4edb-b79e-37313932f255", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "abc8cc1c-11cb-4718-91de-161575ee5930", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ac4a2f86-7d81-411e-96b4-fbe704156747", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "ae0589da-1a04-4e6f-9e9c-6ddefa93b45f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ae0ee556-6bd7-4278-a474-3c9c90f832ac", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ae339e33-e25f-402b-8c54-5868746f57a3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ae4d3105-07cb-4ea9-9342-652b8fd135d3", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "af8622b2-726a-4eda-a19a-a9e70b9d66c8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b0d766fc-ba6d-49a2-9231-51dc6645fc26", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b0e3c049-e35f-4eeb-a327-e9c51f8b6f52", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b17267cf-443e-46eb-aacc-5be766bd1d86", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b17394d9-3920-49d5-b2be-ca43c45fbcd6", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b1f13f95-2458-4bb2-bd5e-4f81af9f617f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b32c0060-3f5f-4e05-8748-896d1ab4e0c8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b459fa82-33cb-4bfd-952d-e47de2114011", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b6682f17-783e-4a5a-bcac-f3e2a23600d3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b71956a4-cec9-4acb-9e15-ce899094e88d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b846c6a0-66a2-4a7f-9810-16234e3a8267", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b8cf8119-570f-46f9-96e9-08bf42ef3c72", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "b9e9f1db-1cb8-4b4c-b825-2820608f3b2c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bb07f872-e9aa-49e3-88b8-73fbf1f34c23", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bb191a97-140b-4cd2-b342-ecf4f6fb91ce", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bb1f1b70-80f0-4e8b-ae78-41d37d7ff733", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bc8082a4-7621-4ee2-81b4-630620c0ec6b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "be66eb88-2574-4e4a-b73f-c742ac151321", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "be81e4d4-4af2-4600-915a-d36a608f259e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bf170e40-ea3b-452d-ad93-8e91bb952f01", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "bfbccfa9-da2a-424a-a07a-b5cc22a2c098", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c1758aab-909f-422b-ae6b-55e7efa258cb", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "c188fff1-297b-4882-a14d-b9e9223bd9d8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c1eff449-e685-4d2f-b9cf-055181c6269c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c21103da-d90d-46f7-9f9a-95d2c5dbebcb", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c21a28eb-694e-474a-ac17-7361ce7fc288", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c31b06fb-b928-47a5-ae71-4603672031e2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c637916f-93e3-43f3-a263-fb0a15879bbd", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "c6fa0382-07d8-487b-8f30-8ebc9776db4a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ca4c664a-df1c-4cfc-b062-950a9e87693b", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "cc3457f6-aa9a-4576-b4cc-cf261613c068", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ce92c4d9-6634-465b-974e-21b474d65801", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "cf249bc3-8498-42f1-b599-0de4aea9366a", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "cf96a91c-831b-4ec0-97b4-403c12a1b238", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d072e9f7-6c0a-46a6-b9fb-a52aabca1d81", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d0975107-d32e-4434-b657-bb1400d4cd97", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d2d474f2-a726-4f23-b528-74709330c620", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d6698159-58ce-40e5-9e0d-dfd597dcf361", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d8b0ffc9-b256-4811-87a6-a5e8d6f266d0", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "d94561c4-592b-4cf8-8f04-60d348d441d7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d99f2921-d7ac-41d9-8c50-acd3d62b2945", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d9bc1474-d9fa-4835-acf0-4ec29e25ba54", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "d9d8b26b-af9d-4eb1-8224-aa3ef46e069a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "da9eaa72-2c29-4366-9b0f-b77ed669e132", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "db6441bf-fe3c-4cd8-a972-1be45a158b08", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "dbee3447-08f8-436d-8be1-1f03093e3487", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "dd6d8295-5ec8-4d4e-8873-534334b276b9", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "dfa5aa17-317b-48f0-bf15-7d7df100ebc3", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e4e8eb21-cff4-4930-a721-54cf28cfb7b1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e523f4a0-9e68-40cc-845b-134a4e7e97f7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e5303023-ea6a-4210-914d-679d6767f78d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e628f227-ee5c-4cac-acc5-16026c6dd38a", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "e6720505-2664-460b-b571-9b40688e8091", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e69988f8-7f52-4b50-8a4b-ce6f08a422ce", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e78d5f64-f356-4355-9375-a304129454fc", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e820d5d6-f4c3-4e08-ba1a-a445a59479e0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e83f91d7-fdff-43f9-a93d-86a53beed07d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e9849787-2502-4392-8171-d2af79bc1fbe", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "e9e2ab67-b47f-42ff-82c7-6017deed212f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ea6bc237-ac78-47f6-9752-42da33ed4205", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "eae5078c-a440-4135-ae43-8efa0eb54ef1", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "eb1bde08-c68e-4888-98d3-242923201cc7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "eb73e6ea-269d-4d28-898c-85b8fe6a3e6d", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ed4ed6e0-765d-4624-8b9e-1b78dfc3c2e7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ed6fcc24-b671-4b83-b706-ea5abe17314c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ee4266e2-0f1b-4407-88bb-603feb867ed0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ee95f262-9db9-4cff-9d14-f3c650fda796", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ef8ead1e-15d8-4359-9821-f907a39c6633", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "efc61efc-8484-42f1-a884-6bbdd1b660ee", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f0a89ee5-6e21-458b-a66b-b21500bf082c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f0d4646c-784b-4635-9499-adaf34b2294e", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f11ac411-5e5f-4275-825a-614192e84e05", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f1ca0897-861e-47d1-879c-458b2fc76fb7", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f220ba42-0f7d-46b0-8a0b-34b3f14a503f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f2605d5d-42aa-4439-b15f-07ef4d9377f8", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f2ae203d-6e1f-4e7e-b736-61b1a83efb8b", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f37f0ebf-a435-46fb-83d4-6a2b52bc009c", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f38c572c-29d6-48c1-b32b-f743eab40a72", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "f4b68671-b04a-42b3-83b2-debff167241a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f4bf1308-4252-47d8-9501-a11817abfec4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f4bfe99d-6814-4a5a-87d5-01520d830080", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "f8be3065-11b1-407d-80bd-e7a16d309e0a", "predicted_label": "BOT", "raw_output": "BOT"}
+{"user_id": "f8ce46a8-06e4-4dfe-89d8-b3faed92226a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fa7a8cb7-8f0d-4b23-882b-4fb99b9a0405", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fd506971-bdf8-4b74-b3bb-0983d92376c0", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fdce6f62-4390-4ae3-a0b7-b3eb7eb6eb5f", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "fe9814cf-3dcb-4297-8826-7745c03533e4", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ff0197e4-6553-41f4-ab0f-ef7bf74cf84a", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+{"user_id": "ff432fcd-9851-4cbe-9446-b9c65e2c40c2", "predicted_label": "HUMAN", "raw_output": "HUMAN"}
+
+[detected_bot_ids]
+02cf5b58-caeb-4dd2-b511-574932603f75
+0494efa5-6332-48a9-a236-77f304ed3f09
+0da9884a-c0d8-4bec-8bc6-382819b19efb
+10602ca3-e362-45cc-bb91-5b41958f5dd6
+14efcbe9-0122-4e3c-b417-33e31cd4c7d4
+16f364ff-c2c2-478f-bd43-754beba1bcd6
+1b14e4dd-5803-4a54-a42e-b61ccceb0683
+1e4ef2f1-4303-4c49-a16d-cb6b86672de2
+1ee8b1ac-c6d2-4177-97f0-f22654f8ba37
+2592bfd8-5c43-4f4f-aa8d-ee64ffe853e0
+26ce09f5-ef18-493b-96e0-8f1656836c80
+2b1d78ad-64f5-4d53-878e-71f34354046e
+2cf0e429-94ad-4c50-90ff-50aa27cf9a77
+2dad2108-7fa6-4d00-915c-fd1a600618c7
+3a419a72-5001-43e9-ac96-ad45e9155557
+3dc374dc-73f7-45ca-89a9-b055b035ff37
+426c6392-73d7-48b6-a871-479c8286f576
+442e8f8a-f99f-4ec4-9a5e-ff82e7ac3c30
+45ee036c-edd9-4e24-9870-7276e47fe04f
+47e53a31-3d4c-450c-a0a9-9bfbecf69d28
+4d2f2dc9-2128-4dd6-be50-ec61978195c6
+4d76ff7d-1dea-49b1-8916-807225e1cbcb
+505ffa47-5beb-45d3-9617-fd07cd42a0ba
+53c90724-e4e4-4c26-9393-49cb23f19073
+5955b975-b303-4f0b-8084-4993d81424cb
+59ead833-be3f-41c6-96b1-5c7a4c612187
+5d41303f-3fd4-4f58-8489-6fff3e72a5a3
+5ea738eb-77a3-4781-a371-25aaa999b0ef
+5f5b53c4-8be6-4365-a066-afbec6375306
+61922f5d-a931-40c9-b952-2567d26fe0de
+636d6886-bc37-4b1e-81de-6c39e5a92fca
+693dea57-f08d-4bc9-b57a-be72af690527
+6b38e744-b10d-4c76-ae78-7931a658a32e
+6eb72610-e9c2-4d6b-9e5c-cd644f7f5c69
+71c8c3e0-2dd2-4d89-aaa3-f4589c297de8
+753eba0c-823b-429e-aff2-e690c07940e4
+76043baf-8e15-43a1-9938-96cce4165d3e
+792c5590-7d38-418b-807c-864673c9ff2f
+7e6f411f-7709-4ad5-8cd5-64f55d18b12a
+802a5679-f79e-4ca8-9a4c-3531a5076846
+87eea155-6451-41bc-a24d-f70f75a4abba
+8a3bb26c-ac51-49f5-84fb-6fe0e8698381
+8b5c9bfd-abd7-48b2-aa17-b74911da57d2
+8f7b43ce-aad3-462e-a76c-e3ed05e19917
+93dd83cf-590a-4e62-b0af-40c3522568da
+9480d96d-02be-40d3-8882-4613bb0a81e0
+94f3dd5a-5955-4648-aed3-af83fe1ce259
+95743ceb-3eaf-4b7f-8eb3-53ca88bd2da4
+9a68f785-23a7-495c-bb97-527460651dd3
+9efbf6ae-408a-455a-807b-99134880a9ff
+9f00ecbc-672d-4e15-b58a-a36dbe810af4
+a035d3a4-0594-4d92-91af-c5f9b0f9b928
+a0703526-3385-4d82-a40a-d3f06933058a
+a624ddf7-e496-4c75-921b-55ff0f4845e2
+ab02df95-486f-4c44-aae7-12024f834923
+ac4a2f86-7d81-411e-96b4-fbe704156747
+adcb2e85-a77b-4985-850d-04af785ec041
+ae4d3105-07cb-4ea9-9342-652b8fd135d3
+bbb5c13d-e9fc-45a8-b690-c6478f271dc2
+bcd829d0-b02e-4008-bf2f-9ff4d0f91a11
+c1758aab-909f-422b-ae6b-55e7efa258cb
+c3c7a580-5e14-4e5a-b20a-80369ad3362e
+c7f6827d-802e-4b77-81f8-e8bac986fe5f
+c9b37542-c1f2-474e-a19d-91d3985ea603
+ca4c664a-df1c-4cfc-b062-950a9e87693b
+cba161df-049b-4895-82af-25ad9827700e
+ccd84240-204a-4b80-9799-bde3b72b3748
+cef312db-f3a6-4c36-a1a7-bd4498110861
+cf249bc3-8498-42f1-b599-0de4aea9366a
+d87b21b5-07bf-493c-bf74-510dc4cbaf88
+d8b0ffc9-b256-4811-87a6-a5e8d6f266d0
+db67883f-b278-43dd-9309-5415316cc836
+dc95ccb1-cede-49e7-82aa-55424c402f82
+e628f227-ee5c-4cac-acc5-16026c6dd38a
+ed8086af-e829-44e3-b267-2826fdedb030
+efc5811f-f2fa-45ae-a9ad-af9491c34009
+f15c0644-218c-4207-9aac-54b9d8f68e3f
+f38c572c-29d6-48c1-b32b-f743eab40a72
+f3f75ad9-0775-4ba4-adde-d65b67c4bb8b
+f8be3065-11b1-407d-80bd-e7a16d309e0a
+ffa87912-e54b-409d-8897-3374905edb4f

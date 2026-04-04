@@ -1,0 +1,14 @@
+model: ft:gpt-4.1-mini-2025-04-14:personal:fold-a-final-test:D9DjeW1a
+provider: openai
+collection: both
+completed: 12/12
+points: 6
+tp: 3
+fp: 0
+fn: 0
+percentage: 1.0000
+invalid_outputs: 0
+
+errors: 0
+
+No errors.

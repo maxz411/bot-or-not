@@ -1,0 +1,15 @@
+model: ft:gpt-4.1-mini-2025-04-14:personal:fold-a-test-new:DQfUXAJR
+provider: openai
+collection: datasets_5_6
+dataset_ids: 5,6
+raw_results_path: /Users/max/code/bot-or-not/raw/openai_datasets_5_6_ft_gpt_4_1_mini_2025_04_14_personal_fold_a_test_new_DQfUXAJR_20260404T162323Z.txt
+completed: 709/709
+points: 162/162
+tp: 81
+fp: 0
+fn: 0
+percentage: 1.0000
+
+errors: 0
+
+No errors.
