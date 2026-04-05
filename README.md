@@ -1,7 +1,5 @@
 # bot-or-not
 
-Entry for the [Bot or Not](https://www.bot-or-not.com/) challenge -- a competition to detect bot-generated social media posts among real human ones.
-
 Our approach: fine-tune OpenAI models (GPT-4.1 Mini) on labeled bot/human datasets using both supervised and reinforcement fine-tuning, then run inference on unlabeled competition datasets to produce final bot detection submissions.
 
 ## Repo structure
